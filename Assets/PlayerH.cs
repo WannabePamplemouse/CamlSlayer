@@ -20,6 +20,8 @@ public class PlayerH : MonoBehaviour
 	
 	void Update ()
 	{
+        if (transform.position.y < -15)
+            Death();
 	}
 	
 	
