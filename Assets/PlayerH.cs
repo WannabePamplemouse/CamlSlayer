@@ -43,6 +43,6 @@ public class PlayerH : MonoBehaviour
 	
 	void Death ()
 	{
-		isDead = true;
+		Destroy (gameObject);
 	}       
 }

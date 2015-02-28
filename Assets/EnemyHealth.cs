@@ -20,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
 	}
 	
 	
-	public void TakeDamage (int amount, Vector3 hitPoint)
+	public void TakeDamage (int amount)
 	{
 		// Reduce the current health by the amount of damage sustained.
 		currentHealth -= amount;
