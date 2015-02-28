@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\EnemyHealth.cs" />
+     <Compile Include="Assets\Scripts\ExitScript.cs" />
      <Compile Include="Assets\Scripts\KillCount.cs" />
      <Compile Include="Assets\Scripts\LoadGameScript.cs" />
      <Compile Include="Assets\Scripts\PlayerH.cs" />
