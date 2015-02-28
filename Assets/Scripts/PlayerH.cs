@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
@@ -44,5 +44,10 @@ public class PlayerH : MonoBehaviour
 	void Death ()
 	{
 		Destroy (gameObject);
+
+		if (ToSettingsScript.isEnglish)
+			Application.LoadLevel ("DeathScene");
+		else
+			Application.LoadLevel ("FrenchDeathScene");
 	}       
 }
