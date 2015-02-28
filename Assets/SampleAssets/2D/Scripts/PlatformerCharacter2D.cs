@@ -5,6 +5,8 @@ namespace UnitySampleAssets._2D
 
     public class PlatformerCharacter2D : MonoBehaviour
     {
+		private int enemyKilled;
+
         private bool facingRight = true; // For determining which way the player is currently facing.
 
         [SerializeField] private float maxSpeed = 10f; // The fastest the player can travel in the x axis.
@@ -26,7 +28,7 @@ namespace UnitySampleAssets._2D
 
         private void Awake()
         {
-            // Setting up references.
+			enemyKilled = 0;
             groundCheck = transform.Find("GroundCheck");
             ceilingCheck = transform.Find("CeilingCheck");
             anim = GetComponent<Animator>();
@@ -101,5 +103,10 @@ namespace UnitySampleAssets._2D
             theScale.x *= -1;
             transform.localScale = theScale;
         }
+
+		public void EnemyKilled()
+		{
+			enemyKilled++;
+		}
     }
 }

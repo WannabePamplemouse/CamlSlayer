@@ -49,6 +49,7 @@
      <Compile Include="Assets\EnemyAI.cs" />
      <Compile Include="Assets\EnemyAttack.cs" />
      <Compile Include="Assets\EnemyHealth.cs" />
+     <Compile Include="Assets\KillCount.cs" />
      <Compile Include="Assets\PlayerH.cs" />
      <Compile Include="Assets\SampleAssets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\SampleAssets\2D\Scripts\CameraFollow.cs" />
@@ -71,6 +72,7 @@
      <Compile Include="Assets\Scripts\Teleport.cs" />
      <Compile Include="Assets\Spike.cs" />
      <Compile Include="Assets\Sword.cs" />
+     <Compile Include="Assets\TeleportBoss.cs" />
      <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh2.shader" />
      <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />

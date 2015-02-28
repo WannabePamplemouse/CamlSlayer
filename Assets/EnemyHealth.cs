@@ -3,13 +3,15 @@
 public class EnemyHealth : MonoBehaviour
 {
 	public int startingHealth = 100;            // The amount of health the enemy starts the game with.
-	public int currentHealth;                   // The current health the enemy has.
-	
-	bool isDead;                                // Whether the enemy is dead.
-	
+	public int currentHealth;     				// The current health the enemy has.
+
+	GameObject player;
+	KillCount KC;
+
 	void Awake ()
 	{
-		// Setting the current health when the enemy first spawns.
+		player = GameObject.FindGameObjectWithTag ("Player");
+		KC = player.GetComponent<KillCount> ();
 		currentHealth = startingHealth;
 	}
 	
@@ -36,10 +38,7 @@ public class EnemyHealth : MonoBehaviour
 	
 	void Death ()
 	{
-		// The enemy is dead.
-		isDead = true;
-
-        Destroy(gameObject);
-		
+		KC.enemyKilled ++;
+        Destroy(gameObject);	
 	}
 }
