@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\ToFrenchSettingsScript.cs" />
      <Compile Include="Assets\Scripts\ToSettingsScript.cs" />
      <Compile Include="Assets\Scripts\TogglePanelExitButton.cs" />
+     <Compile Include="Assets\pause.cs" />
      <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh2.shader" />
      <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
