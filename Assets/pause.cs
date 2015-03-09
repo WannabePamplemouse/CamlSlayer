@@ -3,20 +3,29 @@ using System.Collections;
 
 public class pause : MonoBehaviour {
 
-	private bool paused;
+	static public bool paused;
+	private GameObject panel;
 
 	// Use this for initialization
 	void Start () {
 		paused = false;
+		panel = GameObject.Find ("UI/Panel");
+		panel.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown("escape"))
 			paused = !paused;
-		if (paused)
+
+		if (paused) {
 			Time.timeScale = 0;
-		else
+			panel.SetActive (true);
+		} 
+
+		else {
 			Time.timeScale = 1;
+			panel.SetActive(false);
+		}
 	}
 }
