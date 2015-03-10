@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BoutonLangage.cs" />
+     <Compile Include="Assets\LangageText.cs" />
      <Compile Include="Assets\PanelResumeScript.cs" />
      <Compile Include="Assets\PanelToMenu.cs" />
      <Compile Include="Assets\SampleAssets\2D\Scripts\Camera2DFollow.cs" />

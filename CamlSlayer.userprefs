@@ -1,9 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\pause.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PanelToMenu.cs">
     <Files>
-      <File FileName="Assets\pause.cs" Line="6" Column="8" />
+      <File FileName="Assets\PanelToMenu.cs" Line="10" Column="42" />
+      <File FileName="Assets\LangageText.cs" Line="1" Column="1" />
+      <File FileName="Assets\BoutonLangage.cs" Line="1" Column="1" />
       <File FileName="Assets\active.cs" Line="1" Column="1" />
+      <File FileName="Assets\pause.cs" Line="1" Column="1" />
       <File FileName="Assets\PanelResumeScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
