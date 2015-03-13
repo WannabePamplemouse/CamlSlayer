@@ -8,11 +8,13 @@ namespace UnitySampleAssets._2D
     public class Platformer2DUserControl : MonoBehaviour
     {
         private PlatformerCharacter2D character;
+		private Sword sword;
         private bool jump;
 
         private void Awake()
         {
             character = GetComponent<PlatformerCharacter2D>();
+			sword = GetComponentInChildren<Sword> ();
         }
 
         private void Update()
@@ -24,12 +26,14 @@ namespace UnitySampleAssets._2D
 
         private void FixedUpdate()
         {
-            // Read the inputs.
-            bool crouch = Input.GetKey(KeyCode.LeftControl);
-            float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            // Pass all parameters to the character control script.
-            character.Move(h, crouch, jump);
-            jump = false;
+			if (sword.canDash) {
+				// Read the inputs.
+				bool crouch = Input.GetKey (KeyCode.LeftControl);
+				float h = CrossPlatformInputManager.GetAxis ("Horizontal");
+				// Pass all parameters to the character control script.
+				character.Move (h, crouch, jump);
+				jump = false;
+			}
         }
     }
 }

@@ -25,7 +25,6 @@ namespace UnitySampleAssets._2D
         private float ceilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
         private Animator anim; // Reference to the player's animator component.
 
-
         private void Awake()
         {
 			enemyKilled = 0;
@@ -48,7 +47,6 @@ namespace UnitySampleAssets._2D
 
         public void Move(float move, bool crouch, bool jump)
         {
-
 
             // If crouching, check to see if the character can stand up
             if (!crouch && anim.GetBool("Crouch"))
