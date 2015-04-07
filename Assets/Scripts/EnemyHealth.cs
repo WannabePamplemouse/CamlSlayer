@@ -7,20 +7,25 @@ public class EnemyHealth : MonoBehaviour
 
 	GameObject player;
 	KillCount KC;
+	EnemyHealth enemyHealth;
+    Sword sword;
 
 	void Awake ()
 	{
 		player = GameObject.FindGameObjectWithTag ("Player");
 		KC = player.GetComponent<KillCount> ();
 		currentHealth = startingHealth;
+        sword = player.GetComponentInChildren<Sword>();
 	}
-	
+
 	void Update ()
 	{
         if (transform.position.y < -15)
             Death();
 	}
+
 	
+
 	
 	public void TakeDamage (int amount)
 	{

@@ -5,6 +5,7 @@ public class Spike : MonoBehaviour {
 
 	GameObject player;
 	PlayerH playerHealth;
+	EnemyHealth enemyHealth;
 	private bool playerInRange;
 
 	void Awake()
@@ -17,6 +18,10 @@ public class Spike : MonoBehaviour {
 	{
 		if (other.gameObject == player)
 			playerInRange = true;
+		else if (other.gameObject.tag == "Enemy") {
+			enemyHealth = other.gameObject.GetComponent<EnemyHealth> ();
+			enemyHealth.TakeDamage(enemyHealth.currentHealth);
+		}
 	}
 
 	void OnTriggerExit2D (Collider2D other)

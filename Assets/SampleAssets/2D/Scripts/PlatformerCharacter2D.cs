@@ -5,18 +5,24 @@ namespace UnitySampleAssets._2D
 
     public class PlatformerCharacter2D : MonoBehaviour
     {
-		private int enemyKilled;
+        private int enemyKilled;
 
         public bool facingRight = true; // For determining which way the player is currently facing.
 
-        [SerializeField] private float maxSpeed = 10f; // The fastest the player can travel in the x axis.
-        [SerializeField] private float jumpForce = 400f; // Amount of force added when the player jumps.	
+        [SerializeField]
+        private float maxSpeed = 10f; // The fastest the player can travel in the x axis.
+        [SerializeField]
+        private float jumpForce = 400f; // Amount of force added when the player jumps.	
 
-        [Range(0, 1)] [SerializeField] private float crouchSpeed = .36f;
-                                                     // Amount of maxSpeed applied to crouching movement. 1 = 100%
+        [Range(0, 1)]
+        [SerializeField]
+        private float crouchSpeed = .36f;
+        // Amount of maxSpeed applied to crouching movement. 1 = 100%
 
-        [SerializeField] private bool airControl = false; // Whether or not a player can steer while jumping;
-        [SerializeField] private LayerMask whatIsGround; // A mask determining what is ground to the character
+        [SerializeField]
+        private bool airControl = false; // Whether or not a player can steer while jumping;
+        [SerializeField]
+        private LayerMask whatIsGround; // A mask determining what is ground to the character
 
         private Transform groundCheck; // A position marking where to check if the player is grounded.
         private float groundedRadius = .2f; // Radius of the overlap circle to determine if grounded
@@ -27,7 +33,7 @@ namespace UnitySampleAssets._2D
 
         private void Awake()
         {
-			enemyKilled = 0;
+            enemyKilled = 0;
             groundCheck = transform.Find("GroundCheck");
             ceilingCheck = transform.Find("CeilingCheck");
             anim = GetComponent<Animator>();
@@ -63,19 +69,19 @@ namespace UnitySampleAssets._2D
             if (grounded || airControl)
             {
                 // Reduce the speed if crouching by the crouchSpeed multiplier
-                move = (crouch ? move*crouchSpeed : move);
+                move = (crouch ? move * crouchSpeed : move);
 
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
                 anim.SetFloat("Speed", Mathf.Abs(move));
 
                 // Move the character
-                rigidbody2D.velocity = new Vector2(move*maxSpeed, rigidbody2D.velocity.y);
+                rigidbody2D.velocity = new Vector2(move * maxSpeed, rigidbody2D.velocity.y);
 
                 // If the input is moving the player right and the player is facing left...
                 if (move > 0 && !facingRight)
                     // ... flip the player.
                     Flip();
-                    // Otherwise if the input is moving the player left and the player is facing right...
+                // Otherwise if the input is moving the player left and the player is facing right...
                 else if (move < 0 && facingRight)
                     // ... flip the player.
                     Flip();
@@ -102,9 +108,9 @@ namespace UnitySampleAssets._2D
             transform.localScale = theScale;
         }
 
-		public void EnemyKilled()
-		{
-			enemyKilled++;
-		}
+        public void EnemyKilled()
+        {
+            enemyKilled++;
+        }
     }
 }

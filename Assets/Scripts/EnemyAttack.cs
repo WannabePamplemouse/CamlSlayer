@@ -48,11 +48,6 @@ public class EnemyAttack : MonoBehaviour
 	
 	void Update ()
 	{
-		if (player.transform.position.x > transform.position.x)
-			transform.localScale = new Vector3 (-1, 1, 1);
-		else
-			transform.localScale = new Vector3 (1, 1, 1);
-		
 		// Add the time since Update was last called to the timer.
 		timer += Time.deltaTime;
 		
@@ -63,10 +58,6 @@ public class EnemyAttack : MonoBehaviour
 			Attack ();
 		}
 		
-		// If the player has zero or less health...
-		if(playerHealth.currentHealth <= 0)
-		{
-		}
 	}
 	
 	
