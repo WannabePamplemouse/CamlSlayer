@@ -33,6 +33,8 @@ public class EnemyAI : MonoBehaviour {
 	private int currentWaypoint = 0;
 	
 	void Start () {
+        Physics2D.IgnoreLayerCollision(8, gameObject.layer);
+
 		seeker = GetComponent<Seeker>();
 		rb = GetComponent<Rigidbody2D>();
 		
