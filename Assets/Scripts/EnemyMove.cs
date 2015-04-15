@@ -37,7 +37,7 @@ public class EnemyMove : MonoBehaviour {
 
 	private void movement()
     {
-		Vector3 dir = new Vector3 (2, 0, 0);
+		Vector3 dir = new Vector3 (2, rb.velocity.y, 0);
 
 		if (facing_left)
         {
