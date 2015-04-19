@@ -14,6 +14,8 @@ public class EnemyAttack : MonoBehaviour
 	bool playerInRange;                         // Whether player is within the trigger collider and can be attacked.
 	float timer;                                // Timer for counting up to the next attack.
 	
+    [SerializeField] private float xKnockBack;
+    [SerializeField] private float yKnockBack;
 	
 	void Awake ()
 	{
@@ -30,20 +32,10 @@ public class EnemyAttack : MonoBehaviour
 		if(other.gameObject == player)
 		{
 			// ... the player is in range.
-			playerInRange = true;
+            Attack();
 		}
 	}
 	
-	
-	void OnCollisionExit2D (Collision2D other)
-	{
-		// If the exiting collider is the player...
-		if(other.gameObject == player)
-		{
-			// ... the player is no longer in range.
-			playerInRange = false;
-		}
-	}
 	
 	
 	void Update ()
@@ -72,5 +64,14 @@ public class EnemyAttack : MonoBehaviour
 			// ... damage the player.
 			playerHealth.TakeDamage (attackDamage);
 		}
+
+        if (player.transform.position.x > transform.position.x)
+        {
+            player.rigidbody2D.AddForce(new Vector2(xKnockBack, yKnockBack));
+        }
+        else
+        {
+            player.rigidbody2D.AddForce(new Vector2(-xKnockBack, yKnockBack));
+        }
 	}
 }
