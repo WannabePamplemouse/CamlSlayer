@@ -9,6 +9,7 @@ public class UIManagerScript : MonoBehaviour {
 	public Animator exitGameButton;
 	public Animator settings;
 	public Animator panelLevel;
+	public string level;
 
 
 	public void OpenSettings()
@@ -61,4 +62,41 @@ public class UIManagerScript : MonoBehaviour {
 		settingsButton.SetBool ("isHidden", false);
 		exitGameButton.SetBool ("isHidden", false);
 	}
+
+	public void ChangeLevel1()
+	{
+		level = "Monde1";
+		Application.LoadLevel (level);
+	}
+
+	public void ChangeLevel2 ()
+	{
+		level = "Monde2";
+		Application.LoadLevel (level);
+	}
+
+	public void ChangeLevel3()
+	{
+		level = "Monde3";
+		Application.LoadLevel (level);
+	}
+
+	public void ChangeLevel4()
+	{
+		level = "Monde4";
+		Application.LoadLevel (level);
+	}
+
+	public void ChangeLevel5()
+	{
+		level = "Monde5";
+		Application.LoadLevel (level);
+	}
+
+	public void LoadLevel()
+	{
+		Application.LoadLevel (level);
+	}
+
+
 }
