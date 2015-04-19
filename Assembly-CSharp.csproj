@@ -77,6 +77,7 @@
      <Compile Include="Assets\Scripts\ExitScript.cs" />
      <Compile Include="Assets\Scripts\KillCount.cs" />
      <Compile Include="Assets\Scripts\LoadGameScript.cs" />
+     <Compile Include="Assets\Scripts\ParticleSortLayerScript.cs" />
      <Compile Include="Assets\Scripts\PlayerEnergy.cs" />
      <Compile Include="Assets\Scripts\PlayerH.cs" />
      <Compile Include="Assets\Scripts\SettingsExitButtonScript.cs" />
