@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -11,7 +12,10 @@ public class EnemyHealth : MonoBehaviour
 	KillCount KC;
 	EnemyHealth enemyHealth;
 
-
+    [SerializeField] 
+    private float xHearthforce;
+    [SerializeField]
+    private float yHearthforce;
 
 	void Awake ()
 	{
@@ -42,6 +46,18 @@ public class EnemyHealth : MonoBehaviour
 	
 	void Death ()
 	{
+        GameObject hearth = GameObject.FindGameObjectWithTag("Hearth");
+        System.Random rand = new System.Random();
+        for (int i = rand.Next(1, 4); i > 0; i--)
+        {
+            GameObject created = (GameObject)Instantiate(hearth, transform.position, new Quaternion(0f, 0f, 0f, 0f));
+            int a = rand.Next(1,11);
+            if(a > 5) a = -a + 5;
+            int b = rand.Next(1, 6);
+            created.rigidbody2D.AddForce(new Vector2(xHearthforce * a, yHearthforce * b));       
+        }
+        
+        
 		KC.enemyKilled ++;
         Destroy(gameObject);	
 	}
