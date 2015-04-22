@@ -17,6 +17,8 @@ public class Sword : MonoBehaviour
     private float dashSpeed;
     [SerializeField]
     private float dashDuration;
+    [SerializeField]
+    private Vector2 forceBigBullet;
 
     public int damageOnCollision = 0;
     public bool doDamageOnHit;
@@ -63,8 +65,25 @@ public class Sword : MonoBehaviour
         {
             StartCoroutine(dash(dashDuration));
         }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            shoot();
+        }
     }
 
+    private void shoot()
+    {
+        GameObject spike = GameObject.FindGameObjectWithTag("Boooom");
+        spike = (GameObject)Instantiate(spike, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
+        if(dir.facingRight)
+        {
+            spike.rigidbody2D.AddForce(forceBigBullet);
+        }
+        else
+        {
+            spike.rigidbody2D.AddForce(new Vector2(-forceBigBullet.x, forceBigBullet.y));
+        }
+    }
 
     private void attack()
     {

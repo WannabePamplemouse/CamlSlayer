@@ -68,6 +68,7 @@
      <Compile Include="Assets\SampleAssets\CrossPlatformInput\Scripts\TiltInput.cs" />
      <Compile Include="Assets\SampleAssets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\SampleAssets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Scripts\BigBullet.cs" />
      <Compile Include="Assets\Scripts\ChangeLanguageScript.cs" />
      <Compile Include="Assets\Scripts\ChargeParametresScript.cs" />
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
