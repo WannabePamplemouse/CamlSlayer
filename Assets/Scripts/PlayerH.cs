@@ -10,6 +10,7 @@ public class PlayerH : MonoBehaviour
 	public bool isDead;                                                // Whether the player is dead.
 	bool damaged;                                               // True when the player gets damaged.
 	public bool canTakeDamage = true;
+    public bool canDash = true;
 
 	void Awake ()
 	{
@@ -20,7 +21,7 @@ public class PlayerH : MonoBehaviour
 
 	void Update ()
 	{
-        if (transform.position.y < -15)
+        if (transform.position.y < -30)
             Death();
 	}
 	

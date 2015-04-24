@@ -30,8 +30,7 @@ public class Sword : MonoBehaviour
     PlayerH playerHealth;
     EnemyHealth enemyHealth;
     GameObject enemy;
-
-    public bool canDash;
+    Tromblon tromblon;
 
     void Awake()
     {
@@ -39,9 +38,9 @@ public class Sword : MonoBehaviour
         dir = GetComponentInParent<PlatformerCharacter2D>();
         energy = GetComponentInParent<PlayerEnergy>();
         playerHealth = GetComponentInParent<PlayerH>();
+        tromblon = player.GetComponentInParent<Tromblon>();
         renderer.enabled = false;
         timer = 0;
-        canDash = true;
         doDamageOnHit = false;
     }
 
@@ -61,29 +60,13 @@ public class Sword : MonoBehaviour
         {
             attack();
         }
-        else if (Input.GetKeyDown(KeyCode.Z) && canDash)
+        else if (Input.GetKeyDown(KeyCode.Z) && playerHealth.canDash)
         {
             StartCoroutine(dash(dashDuration));
         }
-        else if (Input.GetKeyDown(KeyCode.E))
-        {
-            shoot();
-        }
     }
 
-    private void shoot()
-    {
-        GameObject spike = GameObject.FindGameObjectWithTag("Boooom");
-        spike = (GameObject)Instantiate(spike, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
-        if(dir.facingRight)
-        {
-            spike.rigidbody2D.AddForce(forceBigBullet);
-        }
-        else
-        {
-            spike.rigidbody2D.AddForce(new Vector2(-forceBigBullet.x, forceBigBullet.y));
-        }
-    }
+    
 
     private void attack()
     {
@@ -120,7 +103,7 @@ public class Sword : MonoBehaviour
             doDamageOnHit = true;
             playerHealth.canTakeDamage = false;
             damageOnCollision = 50;
-            canDash = false;
+            playerHealth.canDash = false;
             float time = 0;
 
             energy.UseEnergy(dashEnergyCost);
@@ -140,7 +123,7 @@ public class Sword : MonoBehaviour
 
             doDamageOnHit = false;
             playerHealth.canTakeDamage = true;
-            canDash = true;
+            playerHealth.canDash = true;
             damageOnCollision = 0;
             Physics2D.IgnoreLayerCollision(9, gameObject.layer, false);
         }

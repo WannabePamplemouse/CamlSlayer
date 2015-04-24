@@ -9,12 +9,14 @@ namespace UnitySampleAssets._2D
     {
         private PlatformerCharacter2D character;
 		private Sword sword;
+        private PlayerH playerHealth;
         private bool jump;
 
         private void Awake()
         {
             character = GetComponent<PlatformerCharacter2D>();
 			sword = GetComponentInChildren<Sword> ();
+            playerHealth = GetComponent<PlayerH>();
         }
 
         private void Update()
@@ -26,7 +28,7 @@ namespace UnitySampleAssets._2D
 
         private void FixedUpdate()
         {
-			if (sword.canDash) {
+			if (playerHealth.canDash) {
 				// Read the inputs.
 				bool crouch = Input.GetKey (KeyCode.LeftControl);
 				float h = CrossPlatformInputManager.GetAxis ("Horizontal");

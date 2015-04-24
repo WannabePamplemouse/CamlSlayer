@@ -50,6 +50,7 @@
      <Compile Include="Assets\LangageText.cs" />
      <Compile Include="Assets\PanelResumeScript.cs" />
      <Compile Include="Assets\PanelToMenu.cs" />
+     <Compile Include="Assets\Poulet.cs" />
      <Compile Include="Assets\SampleAssets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\SampleAssets\2D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\SampleAssets\2D\Scripts\Platformer2DUserControl.cs" />
@@ -91,6 +92,7 @@
      <Compile Include="Assets\Scripts\ToSettingsScript.cs" />
      <Compile Include="Assets\Scripts\TogglePanelExitButton.cs" />
      <Compile Include="Assets\Scripts\Trigger.cs" />
+     <Compile Include="Assets\Tromblon.cs" />
      <Compile Include="Assets\UIManagerScript.cs" />
      <Compile Include="Assets\pause.cs" />
      <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh2.shader" />
@@ -110,10 +112,10 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>C:/Users/Gabriel/Documents/GitHub/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>C:/Users/Hippolyte/Desktop/Github Repositories/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.JsonFx">
- <HintPath>C:/Users/Gabriel/Documents/GitHub/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
+ <HintPath>C:/Users/Hippolyte/Desktop/Github Repositories/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

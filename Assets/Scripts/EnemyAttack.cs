@@ -11,7 +11,6 @@ public class EnemyAttack : MonoBehaviour
     GameObject player;                          // Reference to the player GameObject.
     PlayerH playerHealth;                  		// Reference to the player's health.
     EnemyHealth enemyHealth;                    // Reference to this enemy's health.
-    bool playerInRange;                         // Whether player is within the trigger collider and can be attacked.
     float timer;                                // Timer for counting up to the next attack.
 
     [SerializeField]
@@ -31,7 +30,7 @@ public class EnemyAttack : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         // If the entering collider is the player...
-        if (other.gameObject == player)
+        if (other.gameObject == player && timer >= timeBetweenAttacks)
         {
             // ... the player is in range.
             Attack();
@@ -44,13 +43,6 @@ public class EnemyAttack : MonoBehaviour
     {
         // Add the time since Update was last called to the timer.
         timer += Time.deltaTime;
-
-        // If the timer exceeds the time between attacks, the player is in range and this enemy is alive...
-        if (timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0)
-        {
-            // ... attack.
-            Attack();
-        }
 
     }
 
