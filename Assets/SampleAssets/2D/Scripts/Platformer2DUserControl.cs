@@ -8,14 +8,12 @@ namespace UnitySampleAssets._2D
     public class Platformer2DUserControl : MonoBehaviour
     {
         private PlatformerCharacter2D character;
-		private Sword sword;
         private PlayerH playerHealth;
         private bool jump;
 
         private void Awake()
         {
             character = GetComponent<PlatformerCharacter2D>();
-			sword = GetComponentInChildren<Sword> ();
             playerHealth = GetComponent<PlayerH>();
         }
 

@@ -6,24 +6,29 @@ public class Tromblon : MonoBehaviour {
 
     [SerializeField]
     private Vector2 forceBigBullet, forcePoulet;
+
     private PlatformerCharacter2D dir;
     private float timer = 0;
-    private Sword sword;
-    private GameObject player;
     private bool poulet = false;
+    private PlayerEnergy energy;
+
 
 	// Use this for initialization
 	void Start () 
     {
-        player = GameObject.FindGameObjectWithTag("Player");
         dir = GetComponentInParent<PlatformerCharacter2D>();
-        sword = player.GetComponentInChildren<Sword>();
+        energy = GetComponentInParent<PlayerEnergy>();
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        if (timer != 0)
+        if(Input.GetKeyDown(KeyCode.Z) && energy.currentEnergy == energy.stratingEnergy)
+        {
+            poulet = !poulet;
+            energy.currentEnergy = 0;
+        }
+        else if (timer != 0)
         {
             timer += Time.deltaTime;
             if (timer > 1.25)
@@ -35,10 +40,6 @@ public class Tromblon : MonoBehaviour {
         {
             if (poulet) shootPoulet();
             else shoot();
-        }
-        else if(Input.GetKeyDown(KeyCode.Z))
-        {
-            poulet = !poulet;
         }
 	}
 

@@ -19,6 +19,7 @@ public class Poulet : MonoBehaviour {
         if (GameObject.FindGameObjectsWithTag("Poulet").Length > 1)
         {
             gameObject.tag = "Poulet1";
+            GetComponent<AudioSource>().Play();
             timer = 0;
             destroyable = true;
         }

@@ -30,7 +30,6 @@ public class Sword : MonoBehaviour
     PlayerH playerHealth;
     EnemyHealth enemyHealth;
     GameObject enemy;
-    Tromblon tromblon;
 
     void Awake()
     {
@@ -38,7 +37,6 @@ public class Sword : MonoBehaviour
         dir = GetComponentInParent<PlatformerCharacter2D>();
         energy = GetComponentInParent<PlayerEnergy>();
         playerHealth = GetComponentInParent<PlayerH>();
-        tromblon = player.GetComponentInParent<Tromblon>();
         renderer.enabled = false;
         timer = 0;
         doDamageOnHit = false;
