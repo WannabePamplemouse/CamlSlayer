@@ -1,18 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ParticleSortLayerScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SampleAssets\2D\Scripts\PlatformerCharacter2D.cs">
     <Files>
-<<<<<<< HEAD
-      <File FileName="Assets\UIManagerScript.cs" Line="12" Column="21" />
-=======
-      <File FileName="Assets\Scripts\ParticleSortLayerScript.cs" Line="4" Column="37" />
-      <File FileName="Assets\UIManagerScript.cs" Line="1" Column="1" />
->>>>>>> origin/master
-      <File FileName="Assets\SampleAssets\2D\Scripts\PlatformerCharacter2D.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Sword.cs" Line="1" Column="1" />
+      <File FileName="..\AnimationProject\Assets\RobotControllerScript.cs" Line="73" Column="3" />
+      <File FileName="Assets\SampleAssets\2D\Scripts\PlatformerCharacter2D.cs" Line="66" Column="1" />
+      <File FileName="Assets\RobotControllerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\pause.cs" Line="1" Column="1" />
       <File FileName="Assets\SampleAssets\2D\Scripts\Platformer2DUserControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\KillCount.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LoadGameScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
