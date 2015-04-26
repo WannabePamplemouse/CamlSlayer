@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BoutonLangage.cs" />
+     <Compile Include="Assets\Chest.cs" />
+     <Compile Include="Assets\Inventory.cs" />
      <Compile Include="Assets\LangageText.cs" />
      <Compile Include="Assets\PanelResumeScript.cs" />
      <Compile Include="Assets\PanelToMenu.cs" />
@@ -97,6 +99,7 @@
      <Compile Include="Assets\UIManagerScript.cs" />
      <Compile Include="Assets\pause.cs" />
      <Compile Include="Assets\test.cs" />
+     <Compile Include="Assets\throwbomb.cs" />
      <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh2.shader" />
      <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
