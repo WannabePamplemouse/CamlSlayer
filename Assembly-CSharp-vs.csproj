@@ -100,7 +100,6 @@
      <Compile Include="Assets\pause.cs" />
      <Compile Include="Assets\test.cs" />
      <Compile Include="Assets\throwbomb.cs" />
-     <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh2.shader" />
      <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
@@ -117,10 +116,10 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>C:/Users/Gabriel/Documents/GitHub/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>C:/Users/Hippolyte/Desktop/Github Repositories/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.JsonFx">
- <HintPath>C:/Users/Gabriel/Documents/GitHub/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
+ <HintPath>C:/Users/Hippolyte/Desktop/Github Repositories/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -46,23 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\AnimationLinkEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\AstarPathEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\AstarUpdateWindow.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\EditorGUIx.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\EditorUtilities.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\GraphEditors\GraphEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\GraphEditors\GridGeneratorEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\GraphEditors\PointGeneratorEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\GraphUpdateSceneEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\Misc\AstarEnumFlagDrawer.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\ModifierEditors\RaycastModifierEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\ModifierEditors\SmoothModifierEditor.cs" />
-     <Compile Include="Assets\AstarPathfindingEditor\Editor\SeekerEditor.cs" />
      <Compile Include="Assets\SampleAssets\CrossPlatformInput\Scripts\Editor\CrossPlatformInputInitialize.cs" />
      <Compile Include="Assets\SampleAssets\CrossPlatformInput\Scripts\Editor\InputAxisScrollbarCI.cs" />
-     <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh2.shader" />
      <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
@@ -82,10 +67,10 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>C:/Users/Gabriel/Documents/GitHub/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>C:/Users/Hippolyte/Desktop/Github Repositories/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.JsonFx">
- <HintPath>C:/Users/Gabriel/Documents/GitHub/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
+ <HintPath>C:/Users/Hippolyte/Desktop/Github Repositories/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
