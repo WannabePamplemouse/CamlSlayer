@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Boss2AI.cs" />
      <Compile Include="Assets\BoutonLangage.cs" />
      <Compile Include="Assets\Chest.cs" />
      <Compile Include="Assets\Inventory.cs" />
@@ -98,6 +99,7 @@
      <Compile Include="Assets\Tromblon.cs" />
      <Compile Include="Assets\UIManagerScript.cs" />
      <Compile Include="Assets\pause.cs" />
+     <Compile Include="Assets\spikeBall.cs" />
      <Compile Include="Assets\test.cs" />
      <Compile Include="Assets\throwbomb.cs" />
      <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />

@@ -4,7 +4,7 @@ using System.Collections;
 public class RobotControllerScript : MonoBehaviour {
 
 	private float maxSpeed = 10f;
-	bool facingRight = true;
+	public bool facingRight = true;
 	
 	Animator anim;
 	

@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnitySampleAssets._2D;
 
 public class Tromblon : MonoBehaviour {
 
     [SerializeField]
     private Vector2 forceBigBullet, forcePoulet;
 
-    private PlatformerCharacter2D dir;
+    private RobotControllerScript dir;
     private float timer = 0;
     private bool poulet = false;
     private PlayerEnergy energy;
@@ -16,7 +15,7 @@ public class Tromblon : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
-        dir = GetComponentInParent<PlatformerCharacter2D>();
+        dir = GetComponentInParent<RobotControllerScript>();
         energy = GetComponentInParent<PlayerEnergy>();
 	}
 	
@@ -63,6 +62,7 @@ public class Tromblon : MonoBehaviour {
         timer = 1f;
         GameObject spike = GameObject.FindGameObjectWithTag("Poulet");
         spike = (GameObject)Instantiate(spike, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
+        spike.GetComponent<AudioSource>().Play();
         if (dir.facingRight)
         {
             spike.rigidbody2D.AddForce(forcePoulet);
