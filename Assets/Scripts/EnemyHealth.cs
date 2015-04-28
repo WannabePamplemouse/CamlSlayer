@@ -22,11 +22,13 @@ public class EnemyHealth : MonoBehaviour
 		player = GameObject.FindGameObjectWithTag ("Player");
 		KC = player.GetComponent<KillCount> ();
 		currentHealth = startingHealth;
+        HealthSlider.maxValue = startingHealth;
+        HealthSlider.value = startingHealth;
 	}
 
 	void Update ()
 	{
-        if (transform.position.y < -15)
+        if (transform.position.y < -30)
             Death();
 	}
 	
@@ -46,6 +48,7 @@ public class EnemyHealth : MonoBehaviour
 	
 	void Death ()
 	{
+        HealthSlider.enabled = false;
         GameObject hearth = GameObject.FindGameObjectWithTag("Hearth");
         System.Random rand = new System.Random();
         for (int i = rand.Next(1, 4); i > 0; i--)
@@ -61,4 +64,9 @@ public class EnemyHealth : MonoBehaviour
 		KC.enemyKilled ++;
         Destroy(gameObject);	
 	}
+
+    public Slider getSlider()
+    {
+        return HealthSlider;
+    }
 }

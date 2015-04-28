@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Boss2AI : MonoBehaviour {
 
@@ -10,17 +11,24 @@ public class Boss2AI : MonoBehaviour {
     [SerializeField]
     private Vector2 force;
 
+    private Slider HealthSlider;
     private bool active = false;
     private float timer;
 
 	// Use this for initialization
 	void Start () {
         timer = time;
+        HealthSlider = GetComponent<EnemyHealth>().getSlider();
+        HealthSlider.enabled = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (target.position.x > 2200) active = true;
+        if (target.position.x > 2200)
+        {
+            active = true;
+            HealthSlider.enabled = true;
+        }
         if(active && timer >= time)
         {
             shoot();

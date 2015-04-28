@@ -10,6 +10,8 @@ public class Hearth : MonoBehaviour {
     {
         Physics2D.IgnoreLayerCollision(gameObject.layer, 14);
         Physics2D.IgnoreLayerCollision(gameObject.layer, 9);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, 17);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, 16);
     }
 
 

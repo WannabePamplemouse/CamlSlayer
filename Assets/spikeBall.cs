@@ -17,6 +17,9 @@ public class spikeBall : MonoBehaviour {
         Physics2D.IgnoreLayerCollision(gameObject.layer, 8);
         Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer);
         Physics2D.IgnoreLayerCollision(gameObject.layer, 14);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, 15);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, 17);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, 16);
         if (GameObject.FindGameObjectsWithTag("Spike").Length > 1)
         {
             gameObject.tag = "Spike1";
