@@ -4,12 +4,13 @@ using System.Collections;
 public class pause : MonoBehaviour {
 
 	static public bool paused;
+    [SerializeField]
 	private GameObject panel;
 
 	// Use this for initialization
 	void Start () {
 		paused = false;
-		panel = GameObject.Find ("UI/Panel");
+        panel = GameObject.FindGameObjectWithTag("Panel");
 		panel.SetActive (false);
 	}
 	

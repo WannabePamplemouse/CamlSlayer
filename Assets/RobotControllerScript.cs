@@ -12,6 +12,7 @@ public class RobotControllerScript : MonoBehaviour {
 	private Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
+    [SerializeField]
 	private float jumpForce = 700f;
 	
 	float timer;
@@ -106,6 +107,7 @@ public class RobotControllerScript : MonoBehaviour {
 		if(timer > 0.50)
 			anim.SetBool ("isAttacking", false);
         Physics2D.IgnoreLayerCollision(gameObject.layer, 19, !grounded || rigidbody2D.velocity.y > 0);
+        
 	}
 	
 	void Flip()

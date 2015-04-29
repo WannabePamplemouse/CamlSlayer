@@ -17,7 +17,8 @@ public class Teleport : MonoBehaviour {
 		KC = player.GetComponent<KillCount>();
 	}
 
-	void OnTriggerEnter2D (Collider2D other){
+	void OnTriggerEnter2D (Collider2D other)
+    {
 		if (other.tag == "Player" && KC.enemyKilled >= enemiesToKill && !teleported) {
 
 			other.gameObject.transform.position = target.transform.position;

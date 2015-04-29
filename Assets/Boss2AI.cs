@@ -12,7 +12,7 @@ public class Boss2AI : MonoBehaviour {
     private Vector2 force;
 
     private Slider HealthSlider;
-    private bool active = false;
+    private bool activated = false;
     private float timer;
 
 	// Use this for initialization
@@ -26,10 +26,10 @@ public class Boss2AI : MonoBehaviour {
 	void Update () {
         if (target.position.x > 2200)
         {
-            active = true;
+            activated = true;
             HealthSlider.enabled = true;
         }
-        if(active && timer >= time)
+        if(activated && timer >= time)
         {
             shoot();
         }

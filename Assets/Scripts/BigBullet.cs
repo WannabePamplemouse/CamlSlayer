@@ -16,6 +16,8 @@ public class BigBullet : MonoBehaviour {
     {
         Physics2D.IgnoreLayerCollision(gameObject.layer, 10);
         Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, 17);
+
         if (GameObject.FindGameObjectsWithTag("Boooom").Length > 1)
         {
             gameObject.tag = "Boooomed";

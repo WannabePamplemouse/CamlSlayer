@@ -4,7 +4,7 @@ using System.Collections;
 
 public class PlayerEnergy : MonoBehaviour {
 
-	public Slider EnergySlider;
+    public Slider EnergySlider;
 	public int stratingEnergy = 100;
 	public int currentEnergy;
 	float timer;
@@ -20,14 +20,8 @@ public class PlayerEnergy : MonoBehaviour {
 		timer += Time.deltaTime;
 		if (timer > 1 && currentEnergy < 100) {
 			timer = 0;
-			currentEnergy += 10;
-			if(currentEnergy > 100)
-			{
-				currentEnergy = 100;
-			}
+            UseEnergy(-10);
 		}
-		EnergySlider.value = currentEnergy;
-
 	}
 
 	public void UseEnergy(int amount)
@@ -36,6 +30,10 @@ public class PlayerEnergy : MonoBehaviour {
 		if (currentEnergy < 0) {
 			currentEnergy = 0;
 		}
+        else if (currentEnergy > 100)
+        {
+            currentEnergy = 100;
+        }
 		EnergySlider.value = currentEnergy;
 	}
 }
