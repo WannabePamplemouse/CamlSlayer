@@ -9,7 +9,10 @@ public class UIManagerScript : MonoBehaviour {
 	public Animator exitGameButton;
 	public Animator settings;
 	public Animator panelLevel;
+	public Animator commandLevel;
 	public string level;
+
+	public KeyCode bombKey = KeyCode.B;
 
 
 	public void OpenSettings()
@@ -49,6 +52,13 @@ public class UIManagerScript : MonoBehaviour {
 		//On fait entrer le menu de choix de level
 		panelLevel.enabled = true;
 		panelLevel.SetBool ("isHidden", false);
+	}
+
+	public void OpenCommandPanel()
+	{
+		settings.SetBool ("Shownable", true);
+		commandLevel.enabled = true;
+		commandLevel.SetBool ("isHidden", false);
 	}
 
 	public void ClosePanelLevel()
