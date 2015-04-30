@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class UIManagerScript : MonoBehaviour {
 
@@ -11,9 +12,8 @@ public class UIManagerScript : MonoBehaviour {
 	public Animator panelLevel;
 	public Animator commandLevel;
 	public string level;
-
-	public KeyCode bombKey = KeyCode.B;
-
+			
+	static public string bombCommand = "B";
 
 	public void OpenSettings()
 	{
@@ -105,8 +105,12 @@ public class UIManagerScript : MonoBehaviour {
 
 	public void LoadLevel()
 	{
-		Application.LoadLevel (level);
+		Application.LoadLevel ("Monde1");
 	}
 
-
+	public void GetCommandBomb(GameObject InputBomb)
+	{
+		InputField bomb = InputBomb.GetComponent<InputField>();
+		bombCommand = bomb.textComponent.text;
+	}
 }

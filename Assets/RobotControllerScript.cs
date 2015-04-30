@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class RobotControllerScript : MonoBehaviour {
 
@@ -39,8 +40,7 @@ public class RobotControllerScript : MonoBehaviour {
 	public bool haveBomb = false;
 	public bool haveTromblon = false;
 
-
-	
+	static private string bombCommandFinal;
 
 	void Start () 
 	{
@@ -48,6 +48,7 @@ public class RobotControllerScript : MonoBehaviour {
         energy = GetComponent<PlayerEnergy>();
 		anim = GetComponent<Animator> ();
 		groundCheck = transform.Find("GroundCheck");
+		bombCommandFinal = UIManagerScript.bombCommand;
 	}
 	
 	
@@ -81,16 +82,16 @@ public class RobotControllerScript : MonoBehaviour {
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 		}
 
-		if(Input.GetKeyDown(KeyCode.B))
+		if(Input.GetKeyDown((KeyCode) System.Enum.Parse(typeof(KeyCode), bombCommandFinal)))
 			SwitchBomb();
 
-		if (isWorld1finished && Input.GetKeyDown (KeyCode.T))
+		if (isWorld1finished && Input.GetKey((KeyCode) System.Enum.Parse(typeof(KeyCode),"T")))
 			SwitchTromblon();
 
-		if (Input.GetKeyDown (KeyCode.S))
+		if (Input.GetKeyDown((KeyCode) System.Enum.Parse(typeof(KeyCode),"S")))
 			SwitchSword ();
 
-		if (Input.GetKeyDown (KeyCode.Q)) 
+		if (Input.GetKeyDown ((KeyCode) System.Enum.Parse(typeof(KeyCode),"Q"))) 
 		{
 			timer = 0;
 			anim.SetBool ("isAttacking", true);
