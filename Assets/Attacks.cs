@@ -61,22 +61,26 @@ public class Attacks : MonoBehaviour {
 
     public IEnumerator dash(float dur)
     {
-        if (energy.currentEnergy >= dashEnergyCost)
+        if (energy.currentEnergy >= dashEnergyCost && playerHealth.canDash)
         {
             Physics2D.IgnoreLayerCollision(9, gameObject.layer);
             doDamageOnHit = true;
             playerHealth.canTakeDamage = false;
             playerHealth.canDash = false;
-            damageOnCollision = 50;
+            damageOnCollision = 20;
             float time = 0;
 
             energy.UseEnergy(dashEnergyCost);
 
             float realDashSpeed;
             if (controller.facingRight)
+            {
                 realDashSpeed = dashSpeed;
+            }
             else
+            {
                 realDashSpeed = -dashSpeed;
+            }
 
             while (time < dur)
             {
