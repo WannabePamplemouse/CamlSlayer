@@ -5,6 +5,11 @@ public class PanelResumeScript : MonoBehaviour {
 
 	public void ResumeButton (GameObject panel) {
 		panel.SetActive (!panel.activeSelf);
-		pause.paused = false;
+		Pauser.paused = false;
+	}
+
+	public void QuitMonde()
+	{
+		Application.LoadLevel ("Menu");
 	}
 }

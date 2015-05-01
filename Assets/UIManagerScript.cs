@@ -11,9 +11,12 @@ public class UIManagerScript : MonoBehaviour {
 	public Animator settings;
 	public Animator panelLevel;
 	public Animator commandLevel;
-	public string level;
+	static public string level = "Monde1";
 			
 	static public string bombCommand = "B";
+	static public string swordCommand = "E";
+	static public string gunCommand = "G";
+	static public string attackCommand = "Q";
 
 	public void OpenSettings()
 	{
@@ -31,8 +34,10 @@ public class UIManagerScript : MonoBehaviour {
 
 	public void CloseSettings()
 	{
-		//On ferme le menu Settings
+		//On ferme le menu Settings et le menu command
 		settings.SetBool ("isHidden", true);
+		settings.SetBool ("Shownable", false);
+		commandLevel.SetBool ("isHidden", true);
 
 		//On ramène tous les autres boutons
 		startButton.SetBool ("isHidden", false);
@@ -54,13 +59,6 @@ public class UIManagerScript : MonoBehaviour {
 		panelLevel.SetBool ("isHidden", false);
 	}
 
-	public void OpenCommandPanel()
-	{
-		settings.SetBool ("Shownable", true);
-		commandLevel.enabled = true;
-		commandLevel.SetBool ("isHidden", false);
-	}
-
 	public void ClosePanelLevel()
 	{
 		//On ferme le menu panelLevel
@@ -71,6 +69,19 @@ public class UIManagerScript : MonoBehaviour {
 		levelButton.SetBool ("isHidden", false);
 		settingsButton.SetBool ("isHidden", false);
 		exitGameButton.SetBool ("isHidden", false);
+	}
+
+	public void OpenCommandPanel()
+	{
+		settings.SetBool ("Shownable", true);
+		commandLevel.enabled = true;
+		commandLevel.SetBool ("isHidden", false);
+	}
+
+	public void CloseCommandPanel()
+	{
+		settings.SetBool ("Shownable", false);
+		commandLevel.SetBool ("isHidden", true);
 	}
 
 	public void ChangeLevel1()
@@ -105,12 +116,35 @@ public class UIManagerScript : MonoBehaviour {
 
 	public void LoadLevel()
 	{
-		Application.LoadLevel ("Monde1");
+		Application.LoadLevel (level);
 	}
 
 	public void GetCommandBomb(GameObject InputBomb)
 	{
 		InputField bomb = InputBomb.GetComponent<InputField>();
 		bombCommand = bomb.textComponent.text;
+	}
+
+	public void GetCommandSword(GameObject InputSword)
+	{
+		InputField sword = InputSword.GetComponent<InputField> ();
+		swordCommand = sword.textComponent.text;
+	}
+
+	public void GetCommandGun(GameObject InputGun)
+	{
+		InputField gun = InputGun.GetComponent<InputField> ();
+		gunCommand = gun.textComponent.text;
+	}
+
+	public void GetCommandAttack(GameObject InputAttack)
+	{
+		InputField attack = InputAttack.GetComponent<InputField> ();
+		attackCommand = attack.textComponent.text;
+	}
+	
+	public void QuitGame()
+	{
+		Application.Quit ();
 	}
 }

@@ -28,6 +28,7 @@ public class RobotControllerScript : MonoBehaviour {
     private PlayerEnergy energy;
     private PlayerH playerHealth;
     private bool doDamageOnHit;
+	private bool poulet = false;
 	
 	float timer;
 
@@ -36,11 +37,14 @@ public class RobotControllerScript : MonoBehaviour {
 	public bool isWorld3finished = false;
 	public bool isWorld4finished = false;
 
-	public bool haveSword = true;
-	public bool haveBomb = false;
-	public bool haveTromblon = false;
+	public bool haveSword;
+	public bool haveBomb;
+	public bool haveTromblon;
 
 	static private string bombCommandFinal;
+	static private string swordCommandFinal;
+	static private string gunCommandFinal;
+	static private string attackCommandFinal;
 
 	void Start () 
 	{
@@ -48,7 +52,17 @@ public class RobotControllerScript : MonoBehaviour {
         energy = GetComponent<PlayerEnergy>();
 		anim = GetComponent<Animator> ();
 		groundCheck = transform.Find("GroundCheck");
+
+		haveBomb = false;
+		haveSword = true;
+		haveTromblon = false;
+
 		bombCommandFinal = UIManagerScript.bombCommand;
+		swordCommandFinal = UIManagerScript.swordCommand;
+		gunCommandFinal = UIManagerScript.gunCommand;
+		attackCommandFinal = UIManagerScript.attackCommand;
+
+
 	}
 	
 	
@@ -82,25 +96,40 @@ public class RobotControllerScript : MonoBehaviour {
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 		}
 
-		if(Input.GetKeyDown((KeyCode) System.Enum.Parse(typeof(KeyCode), bombCommandFinal)))
-			SwitchBomb();
-
-		if (isWorld1finished && Input.GetKey((KeyCode) System.Enum.Parse(typeof(KeyCode),"T")))
-			SwitchTromblon();
-
-		if (Input.GetKeyDown((KeyCode) System.Enum.Parse(typeof(KeyCode),"S")))
+		if (Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), bombCommandFinal)))
+			SwitchBomb ();
+		else if (isWorld1finished && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), gunCommandFinal)))
+			SwitchTromblon ();
+		else if (Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), swordCommandFinal)))
 			SwitchSword ();
-
-		if (Input.GetKeyDown ((KeyCode) System.Enum.Parse(typeof(KeyCode),"Q"))) 
-		{
+		else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) {
+			timer = 0;
+			anim.SetBool ("isAttacking", true);
+			attackSword ();
+		} else if (haveTromblon && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) {
+			if (poulet)
+				shootPoulet ();
+			else
+				shootBigBullet ();
+		} else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y"))) {
+			timer = 0;
+			dash (0.2f);
+			anim.SetBool ("isAttacking", true);
+		} else if (haveTromblon && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y"))) {
+			poulet = !poulet;
+		} else if (haveBomb && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) {
 			timer = 0;
 			anim.SetBool ("isAttacking", true);
 		}
-		
+
 		timer += Time.deltaTime;
 		
-		if(timer > 0.50)
+		if (haveSword && timer > 0.50)
 			anim.SetBool ("isAttacking", false);
+		else if (haveBomb && timer > 0.45)
+			anim.SetBool ("isAttacking", false);
+
+
         Physics2D.IgnoreLayerCollision(gameObject.layer, 19, !grounded || rigidbody2D.velocity.y > 0);
         
 	}
@@ -119,9 +148,6 @@ public class RobotControllerScript : MonoBehaviour {
         if (energy.currentEnergy >= attackEnergyCost)
         {
             energy.UseEnergy(attackEnergyCost);
-
-            timer = 1;
-
             RaycastHit2D hit;
 
             if (facingRight)
@@ -210,6 +236,8 @@ public class RobotControllerScript : MonoBehaviour {
         haveSword = false;
         haveTromblon = false;
         anim.SetBool("haveBomb", true);
+		anim.SetBool ("haveSword", false);
+		anim.SetBool ("haveTromblon", false);
     }
 
     public void SwitchTromblon()
@@ -218,6 +246,8 @@ public class RobotControllerScript : MonoBehaviour {
         haveBomb = false;
         haveSword = false;
         anim.SetBool("haveTromblon", true);
+		anim.SetBool ("haveSword", false);
+		anim.SetBool ("haveBomb", false);
     }
 
     public void SwitchSword()
@@ -226,5 +256,7 @@ public class RobotControllerScript : MonoBehaviour {
         haveBomb = false;
         haveTromblon = false;
         anim.SetBool("haveSword", true);
+		anim.SetBool ("haveBomb", false);
+		anim.SetBool ("haveTromblon", false);
     }
 }

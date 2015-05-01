@@ -5,13 +5,19 @@ using UnityEngine.UI;
 public class pause : MonoBehaviour {
 
 	static public bool paused;
-    private GameObject panel;
+    public GameObject panel;
+
+	private Image img;
+	private Button [] butonArray;
 
 	// Use this for initialization
 	void Start () {
 		paused = false;
-        panel = GameObject.FindGameObjectWithTag("Panel");
-		panel.SetActive (false);
+		img = GetComponent<Image> ();
+		butonArray = GetComponentsInChildren<Button> ();
+		img.enabled = false;
+		butonArray [0].enabled = false;
+		butonArray [1].enabled = false;
 	}
 	
 	// Update is called once per frame
@@ -21,12 +27,16 @@ public class pause : MonoBehaviour {
 
 		if (paused) {
 			Time.timeScale = 0;
-			panel.SetActive (true);
+			img.enabled = true;
+			butonArray [0].enabled = true;
+			butonArray [1].enabled = true;
 		} 
 
 		else {
 			Time.timeScale = 1;
-			panel.SetActive(false);
+			img.enabled = false;
+			butonArray [0].enabled = false;
+			butonArray [1].enabled = false;
 		}
 	}
 }
