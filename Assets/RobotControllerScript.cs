@@ -9,7 +9,7 @@ public class RobotControllerScript : MonoBehaviour {
 	
 	Animator anim;
 	
-	bool grounded = false;
+	public bool grounded = false;
 	private Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
@@ -40,6 +40,8 @@ public class RobotControllerScript : MonoBehaviour {
 	static private string gunCommandFinal;
 	static private string attackCommandFinal;
 
+    public float velocity;
+
 	void Start () 
 	{
         energy = GetComponent<PlayerEnergy>();
@@ -63,6 +65,8 @@ public class RobotControllerScript : MonoBehaviour {
 	
 	void FixedUpdate () 
 	{
+        velocity = rigidbody2D.velocity.y;
+        Physics2D.IgnoreLayerCollision(gameObject.layer, 19, !grounded && !(rigidbody2D.velocity.y < 0) );
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
 		
@@ -79,6 +83,8 @@ public class RobotControllerScript : MonoBehaviour {
 			Flip ();
 		else if (move < 0 && facingRight)
 			Flip ();
+
+
 	}
 	
 	void Update()
@@ -90,7 +96,7 @@ public class RobotControllerScript : MonoBehaviour {
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 		}
 
-		if (Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), bombCommandFinal)))
+	    if (Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), bombCommandFinal)))
 			SwitchBomb ();
 
 		else if (isWorld1finished && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), gunCommandFinal)))
@@ -140,7 +146,6 @@ public class RobotControllerScript : MonoBehaviour {
 			anim.SetBool ("isAttacking", false);
 
 
-        Physics2D.IgnoreLayerCollision(gameObject.layer, 19, !grounded || rigidbody2D.velocity.y > 0);
         
 	}
 	

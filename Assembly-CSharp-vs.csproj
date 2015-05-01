@@ -101,6 +101,7 @@
      <Compile Include="Assets\Scripts\Trigger.cs" />
      <Compile Include="Assets\Tromblon.cs" />
      <Compile Include="Assets\UIManagerScript.cs" />
+     <Compile Include="Assets\bossCheck.cs" />
      <Compile Include="Assets\pause.cs" />
      <Compile Include="Assets\spikeBall.cs" />
      <Compile Include="Assets\test.cs" />
