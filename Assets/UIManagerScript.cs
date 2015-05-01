@@ -12,6 +12,10 @@ public class UIManagerScript : MonoBehaviour {
 	public Animator panelLevel;
 	public Animator commandLevel;
 	static public string level = "Monde1";
+
+
+	static public Button World1;
+	static public Button World2;
 			
 	static public string bombCommand = "B";
 	static public string swordCommand = "E";
