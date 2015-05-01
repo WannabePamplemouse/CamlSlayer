@@ -40,7 +40,14 @@ public class BigBullet : MonoBehaviour {
         timer += Time.deltaTime;
         if(timer >= time && destroyable)
         {
-            Destroy(gameObject);
+            gameObject.collider2D.enabled = false;
+            gameObject.rigidbody2D.gravityScale = 0;
+            gameObject.rigidbody2D.velocity = new Vector2(0, 0);
+            gameObject.rigidbody2D.fixedAngle = true;
+            PartExpl.SetActive(true);
+            PartExpl2.SetActive(true);
+            renderer.enabled = false;
+            Destroy(gameObject, 2);
         }
 	}
 
