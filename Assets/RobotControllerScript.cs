@@ -104,7 +104,6 @@ public class RobotControllerScript : MonoBehaviour {
         {
 			timer = 0;
             timer2 = 0;
-			attacks.attackSword ();
             anim.SetBool("isAttacking", true);
 		} 
         else if (haveTromblon && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) 
@@ -119,18 +118,16 @@ public class RobotControllerScript : MonoBehaviour {
 			timer = 0;
             timer2 = 0;
 			attacks.dash (0.2f);
-			anim.SetBool ("isAttacking", true);
 		} 
         else if (haveTromblon && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y")) && energy.currentEnergy == energy.stratingEnergy) 
         {
 			poulet = !poulet;
             energy.currentEnergy = 0;
 		} 
-        else if (haveBomb && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal)) && timer2 < 1 && inventory.canBomb()) 
+        else if (haveBomb && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal)) && timer2 > 1 && inventory.canBomb()) 
         {
 			timer = 0;
             timer2 = 0;
-            attacks.shootBomb();
 			anim.SetBool ("isAttacking", true);
 		}
 
@@ -140,7 +137,7 @@ public class RobotControllerScript : MonoBehaviour {
 
 		if (haveSword && timer > 0.50)
 			anim.SetBool ("isAttacking", false);
-		else if (haveBomb && timer > 0.45)
+		else if (haveBomb && timer > 0.35)
 			anim.SetBool ("isAttacking", false);
 
 
