@@ -4,21 +4,21 @@ using System.Collections;
 public class Trigger : MonoBehaviour {
 
     GameObject player;
-    Sword sword;
+    Attacks attacks;
     EnemyHealth enHealth;
 
 	// Use this for initialization
 	void Awake () {
         player = GameObject.FindGameObjectWithTag("Player");
-        sword = player.GetComponentInChildren<Sword>();
+        attacks = player.GetComponent<Attacks>();
         enHealth = GetComponentInParent<EnemyHealth>();
 	}
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject == player && sword.doDamageOnHit)
+        if (coll.gameObject == player && attacks.doDamageOnHit)
         {
-            enHealth.TakeDamage(sword.damageOnCollision);
+            enHealth.TakeDamage(attacks.damageOnCollision);
         }
     }
 }

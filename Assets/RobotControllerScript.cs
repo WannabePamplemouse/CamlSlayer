@@ -16,21 +16,14 @@ public class RobotControllerScript : MonoBehaviour {
 
     [SerializeField]
 	private float jumpForce = 700f;
-    [SerializeField]
-    private float dashSpeed, MaxDistanceSword;
-    [SerializeField]
-    private int dashEnergyCost, attackDamageSword, attackEnergyCost;
-    [SerializeField]
-    private int damageOnCollision = 0;
-    [SerializeField]
-    private Vector2 forceBigBullet, forcePoulet;
 
     private PlayerEnergy energy;
-    private PlayerH playerHealth;
-    private bool doDamageOnHit;
+    private Inventory inventory;
+    private Attacks attacks;
+
 	private bool poulet = false;
 	
-	float timer;
+	float timer, timer2 = 0;
 
 	public bool isWorld1finished = false;
 	public bool isWorld2finished = false;
@@ -48,9 +41,11 @@ public class RobotControllerScript : MonoBehaviour {
 
 	void Start () 
 	{
-        playerHealth = GetComponent<PlayerH>();
         energy = GetComponent<PlayerEnergy>();
 		anim = GetComponent<Animator> ();
+        inventory = GetComponent<Inventory>();
+        attacks = GetComponent<Attacks>();
+
 		groundCheck = transform.Find("GroundCheck");
 
 		haveBomb = false;
@@ -98,32 +93,51 @@ public class RobotControllerScript : MonoBehaviour {
 
 		if (Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), bombCommandFinal)))
 			SwitchBomb ();
+
 		else if (isWorld1finished && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), gunCommandFinal)))
 			SwitchTromblon ();
+
 		else if (Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), swordCommandFinal)))
 			SwitchSword ();
-		else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) {
+
+		else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal)) && timer2 > 1) 
+        {
 			timer = 0;
-			anim.SetBool ("isAttacking", true);
-			attackSword ();
-		} else if (haveTromblon && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) {
-			if (poulet)
-				shootPoulet ();
-			else
-				shootBigBullet ();
-		} else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y"))) {
+            timer2 = 0;
+			attacks.attackSword ();
+            anim.SetBool("isAttacking", true);
+		} 
+        else if (haveTromblon && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) 
+        {
+			if (poulet && timer2 > 0.1)
+				attacks.shootPoulet ();
+			else if(timer2 > 1)
+				attacks.shootBigBullet ();
+		}
+        else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y")) && timer2 > 1)
+        {
 			timer = 0;
-			dash (0.2f);
+            timer2 = 0;
+			attacks.dash (0.2f);
 			anim.SetBool ("isAttacking", true);
-		} else if (haveTromblon && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y"))) {
+		} 
+        else if (haveTromblon && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y")) && energy.currentEnergy == energy.stratingEnergy) 
+        {
 			poulet = !poulet;
-		} else if (haveBomb && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) {
+            energy.currentEnergy = 0;
+		} 
+        else if (haveBomb && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal)) && timer2 < 1 && inventory.canBomb()) 
+        {
 			timer = 0;
+            timer2 = 0;
+            attacks.shootBomb();
 			anim.SetBool ("isAttacking", true);
 		}
 
-		timer += Time.deltaTime;
 		
+        timer += Time.deltaTime;
+        timer2 += Time.deltaTime;
+
 		if (haveSword && timer > 0.50)
 			anim.SetBool ("isAttacking", false);
 		else if (haveBomb && timer > 0.45)
@@ -142,93 +156,6 @@ public class RobotControllerScript : MonoBehaviour {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-
-    private void attackSword()
-    {
-        if (energy.currentEnergy >= attackEnergyCost)
-        {
-            energy.UseEnergy(attackEnergyCost);
-            RaycastHit2D hit;
-
-            if (facingRight)
-                hit = Physics2D.Raycast(transform.position, Vector2.right, MaxDistanceSword);
-            else
-                hit = Physics2D.Raycast(transform.position, -Vector2.right, MaxDistanceSword);
-
-
-            if (hit.collider != null && hit.transform.gameObject.tag == "Enemy")
-            {
-                GameObject enemy = hit.transform.gameObject;
-                EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
-                enemyHealth.TakeDamage(attackDamageSword);
-            }
-        }
-    }
-
-    IEnumerator dash(float dur)
-    {
-        if (energy.currentEnergy >= dashEnergyCost)
-        {
-            Physics2D.IgnoreLayerCollision(9, gameObject.layer);
-            doDamageOnHit = true;
-            playerHealth.canTakeDamage = false;
-            damageOnCollision = 50;
-            playerHealth.canDash = false;
-            float time = 0;
-
-            energy.UseEnergy(dashEnergyCost);
-
-            float realDashSpeed;
-            if (facingRight)
-                realDashSpeed = dashSpeed;
-            else
-                realDashSpeed = -dashSpeed;
-
-            while (time < dur)
-            {
-                time += Time.deltaTime;
-                rigidbody2D.velocity = new Vector2(realDashSpeed, 0);
-                yield return 0;
-            }
-
-            doDamageOnHit = false;
-            playerHealth.canTakeDamage = true;
-            playerHealth.canDash = true;
-            damageOnCollision = 0;
-            Physics2D.IgnoreLayerCollision(9, gameObject.layer, false);
-        }
-    }
-
-    private void shootPoulet()
-    {
-        timer = 1f;
-        GameObject spike = GameObject.FindGameObjectWithTag("Poulet");
-        spike = (GameObject)Instantiate(spike, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
-        spike.GetComponent<AudioSource>().Play();
-        if (facingRight)
-        {
-            spike.rigidbody2D.AddForce(forcePoulet);
-        }
-        else
-        {
-            spike.rigidbody2D.AddForce(new Vector2(-forcePoulet.x, forcePoulet.y));
-        }
-    }
-
-    private void shootBigBullet()
-    {
-        timer = 0.1f;
-        GameObject spike = GameObject.FindGameObjectWithTag("Boooom");
-        spike = (GameObject)Instantiate(spike, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
-        if (facingRight)
-        {
-            spike.rigidbody2D.AddForce(forceBigBullet);
-        }
-        else
-        {
-            spike.rigidbody2D.AddForce(new Vector2(-forceBigBullet.x, forceBigBullet.y));
-        }
-    }
 
     public void SwitchBomb()
     {

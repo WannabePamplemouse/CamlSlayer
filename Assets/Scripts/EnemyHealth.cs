@@ -60,7 +60,11 @@ public class EnemyHealth : MonoBehaviour
             created.rigidbody2D.AddForce(new Vector2(xHearthforce * a, yHearthforce * b));       
         }
         
-        
+        if(name == "Boss")
+        {
+            UIManagerScript.World2.interactable = true;
+        }
+
 		KC.enemyKilled ++;
         Destroy(gameObject);	
 	}
