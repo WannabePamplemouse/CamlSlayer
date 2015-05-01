@@ -100,7 +100,7 @@ public class RobotControllerScript : MonoBehaviour {
 		else if (Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), swordCommandFinal)))
 			SwitchSword ();
 
-		else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal)) && timer2 > 1) 
+		else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal)) && timer2 > 0.5) 
         {
 			timer = 0;
             timer2 = 0;
@@ -113,7 +113,7 @@ public class RobotControllerScript : MonoBehaviour {
 			else if(timer2 > 1)
 				attacks.shootBigBullet ();
 		}
-        else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y")) && timer2 > 1)
+        else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y")) && timer2 > 0.5)
         {
 			timer = 0;
             timer2 = 0;
@@ -124,7 +124,7 @@ public class RobotControllerScript : MonoBehaviour {
 			poulet = !poulet;
             energy.currentEnergy = 0;
 		} 
-        else if (haveBomb && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal)) && timer2 > 1 && inventory.canBomb()) 
+        else if (haveBomb && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal)) && timer2 > 0.5 && inventory.canBomb()) 
         {
 			timer = 0;
             timer2 = 0;

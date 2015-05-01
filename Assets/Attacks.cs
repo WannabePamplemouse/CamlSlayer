@@ -41,12 +41,14 @@ public class Attacks : MonoBehaviour {
         {
             energy.UseEnergy(attackEnergyCost);
             RaycastHit2D hit;
+            gameObject.layer = 2;
 
             if (controller.facingRight)
                 hit = Physics2D.Raycast(transform.position, Vector2.right, MaxDistanceSword);
             else
                 hit = Physics2D.Raycast(transform.position, -Vector2.right, MaxDistanceSword);
 
+            gameObject.layer = 10;
 
             if (hit.collider != null && hit.transform.gameObject.tag == "Enemy")
             {
