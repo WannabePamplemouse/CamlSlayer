@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class pause : MonoBehaviour {
 
 	static public bool paused;
-    [SerializeField]
-	private GameObject panel;
+    private GameObject panel;
 
 	// Use this for initialization
 	void Start () {
