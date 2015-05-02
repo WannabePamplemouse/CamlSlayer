@@ -40,8 +40,6 @@ public class RobotControllerScript : MonoBehaviour {
 	static private string gunCommandFinal;
 	static private string attackCommandFinal;
 
-    public float velocity;
-
 	void Start () 
 	{
         energy = GetComponent<PlayerEnergy>();
@@ -65,7 +63,6 @@ public class RobotControllerScript : MonoBehaviour {
 	
 	void FixedUpdate () 
 	{
-        velocity = rigidbody2D.velocity.y;
         Physics2D.IgnoreLayerCollision(gameObject.layer, 19, !grounded && !(rigidbody2D.velocity.y < 0) );
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
