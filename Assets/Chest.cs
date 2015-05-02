@@ -9,6 +9,8 @@ public class Chest : MonoBehaviour {
     private int bombs;
     [SerializeField]
     private bool key;
+	[SerializeField]
+	private GameObject effect;
 
     void Awake()
     {
@@ -21,6 +23,7 @@ public class Chest : MonoBehaviour {
         {
             openChest.renderer.enabled = true;
             collect(coll.gameObject.GetComponent<Inventory>());
+			effect.SetActive(true);
             Destroy(gameObject);
         }
     }
