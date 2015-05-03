@@ -14,13 +14,13 @@ public class UIManagerScript : MonoBehaviour {
 	static public string level = "Monde1";
 
 
-	static public Button World1;
 	static public Button World2;
 			
 	static public string bombCommand = "B";
 	static public string swordCommand = "E";
 	static public string gunCommand = "G";
 	static public string attackCommand = "Q";
+	static public string firstAbility = "S";
 
 	public void OpenSettings()
 	{
@@ -145,6 +145,12 @@ public class UIManagerScript : MonoBehaviour {
 	{
 		InputField attack = InputAttack.GetComponent<InputField> ();
 		attackCommand = attack.textComponent.text;
+	}
+
+	public void GetCommandFirstAbility (GameObject InputFirstAbitily)
+	{
+		InputField ability = InputFirstAbitily.GetComponent<InputField> ();
+		firstAbility = ability.textComponent.text;
 	}
 	
 	public void QuitGame()

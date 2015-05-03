@@ -42,6 +42,7 @@ public class RobotControllerScript : MonoBehaviour {
 	static private string swordCommandFinal;
 	static private string gunCommandFinal;
 	static private string attackCommandFinal;
+	static private string firstAbilityFinal;
 
 	void Start () 
 	{
@@ -57,6 +58,7 @@ public class RobotControllerScript : MonoBehaviour {
 		swordCommandFinal = UIManagerScript.swordCommand;
 		gunCommandFinal = UIManagerScript.gunCommand;
 		attackCommandFinal = UIManagerScript.attackCommand;
+		firstAbilityFinal = UIManagerScript.firstAbility;
 	}
 	
 	
@@ -114,13 +116,13 @@ public class RobotControllerScript : MonoBehaviour {
 			else if(timer2 > 1)
 				attacks.shootUnicorn ();
 		}
-        else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y")) && timer2 > 0.5)
+        else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), firstAbilityFinal)) && timer2 > 0.5)
         {
 			timer = 0;
             timer2 = 0;
 			StartCoroutine(attacks.dash (0.2f));
 		} 
-        else if (haveTromblon && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y")) && energy.currentEnergy == energy.stratingEnergy) 
+        else if (haveTromblon && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), firstAbilityFinal)) && energy.currentEnergy == energy.stratingEnergy) 
         {
 			poulet = !poulet;
             energy.currentEnergy = 0;
