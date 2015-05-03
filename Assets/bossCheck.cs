@@ -3,13 +3,14 @@ using System.Collections;
 
 public class bossCheck : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public bool boss1 = false, boss2 = false, boss3 = false;
+
+    public void nextLevel()
+    {
+        if(boss1 && boss2 && boss3)
+        {
+            StartCoroutine(EnemyHealth.wait());
+            Application.LoadLevel("Monde3");
+        }
+    }
 }

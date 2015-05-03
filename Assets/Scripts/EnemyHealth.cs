@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System;
+using System.Collections;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -16,6 +16,7 @@ public class EnemyHealth : MonoBehaviour
     private float xHearthforce;
     [SerializeField]
     private float yHearthforce;
+
 
 	void Awake ()
 	{
@@ -63,11 +64,38 @@ public class EnemyHealth : MonoBehaviour
         if(name == "Boss")
         {
             UIManagerScript.World2.interactable = true;
+            StartCoroutine(wait());
+            Application.LoadLevel("Monde2");
+        }
+        else
+        {
+            GameObject checka = GameObject.FindGameObjectWithTag("check"); ;
+            bossCheck check = checka.GetComponent<bossCheck>();
+            if(name == "boss1")
+            {
+                check.boss1 = true;
+                check.nextLevel();
+            }
+            else if(name == "boss2")
+            {
+                check.boss2 = true;
+                check.nextLevel();
+            }
+            else if (name == "boss3")
+            {
+                check.boss3 = true;
+                check.nextLevel();
+            }
         }
 
 		KC.enemyKilled ++;
         Destroy(gameObject);	
 	}
+
+    static public IEnumerator wait()
+    {
+        yield return new WaitForSeconds(5);
+    }
 
     public Slider getSlider()
     {
