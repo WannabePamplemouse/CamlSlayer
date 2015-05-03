@@ -112,7 +112,7 @@ public class RobotControllerScript : MonoBehaviour {
 			if (poulet && timer2 > 0.1)
 				attacks.shootPoulet ();
 			else if(timer2 > 1)
-				attacks.shootBigBullet ();
+				attacks.shootUnicorn ();
 		}
         else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), "Y")) && timer2 > 0.5)
         {
@@ -183,7 +183,7 @@ public class RobotControllerScript : MonoBehaviour {
 		anim.SetBool ("haveBomb", false);
 		anim.SetBool ("haveTromblon", false);
     }
-
+    /*
 	public void Save()
 	{
 		BinaryFormatter save = new BinaryFormatter ();
@@ -191,17 +191,12 @@ public class RobotControllerScript : MonoBehaviour {
 
 		PlayerData data = new PlayerData();
 
-		PlayerH.currentHealth = data.health;
+		PlayerH.currentHealth = data.health; //hey nico ça marche pas comme ça !!! faut avoir une instance de la classe si tu veux faire ça
 		PlayerEnergy.currentEnergy = data.energy;
 		Inventory.key = data.key;
 		Inventory.bombs = data.bomb;
 
-	}
-
-	public void Load()
-	{
-
-	}
+	} */
 
 [Serializable]
 	class PlayerData

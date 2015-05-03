@@ -21,7 +21,7 @@ public class Attacks : MonoBehaviour {
     private float dashSpeed;
 
     [SerializeField]
-    private Vector2 forceBomb, forceBigBullet, forcePoulet;
+    private Vector2 forceBomb, forceUnicorn, forcePoulet;
 
     public bool doDamageOnHit = false;
     public int damageOnCollision = 0;
@@ -112,17 +112,17 @@ public class Attacks : MonoBehaviour {
         }
     }
 
-    public void shootBigBullet()
+    public void shootUnicorn()
     {
-        GameObject spike = GameObject.FindGameObjectWithTag("Boooom");
+        GameObject spike = GameObject.FindGameObjectWithTag("Unicorn");
         spike = (GameObject)Instantiate(spike, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
         if (controller.facingRight)
         {
-            spike.rigidbody2D.AddForce(forceBigBullet);
+            spike.rigidbody2D.AddForce(forceUnicorn);
         }
         else
         {
-            spike.rigidbody2D.AddForce(new Vector2(-forceBigBullet.x, forceBigBullet.y));
+            spike.rigidbody2D.AddForce(new Vector2(-forceUnicorn.x, forceUnicorn.y));
         }
     }
 
