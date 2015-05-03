@@ -167,4 +167,9 @@ public class UIManagerScript : MonoBehaviour {
 	{
 		Application.Quit ();
 	}
+
+    public void Multi()
+    {
+        Application.LoadLevel("Lobby");
+    }
 }
