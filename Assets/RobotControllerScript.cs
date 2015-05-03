@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class RobotControllerScript : MonoBehaviour {
 
@@ -31,9 +34,9 @@ public class RobotControllerScript : MonoBehaviour {
 	public bool isWorld3finished = false;
 	public bool isWorld4finished = false;
 
-	public bool haveSword;
-	public bool haveBomb;
-	public bool haveTromblon;
+	public bool haveSword = true;
+	public bool haveBomb = false;
+	public bool haveTromblon = false;
 
 	static private string bombCommandFinal;
 	static private string swordCommandFinal;
@@ -49,11 +52,7 @@ public class RobotControllerScript : MonoBehaviour {
         playerHealth = GetComponent<PlayerH>();
 
 		groundCheck = transform.Find("GroundCheck");
-
-		haveBomb = false;
-		haveSword = true;
-		haveTromblon = false;
-
+		
 		bombCommandFinal = UIManagerScript.bombCommand;
 		swordCommandFinal = UIManagerScript.swordCommand;
 		gunCommandFinal = UIManagerScript.gunCommand;
@@ -184,4 +183,46 @@ public class RobotControllerScript : MonoBehaviour {
 		anim.SetBool ("haveBomb", false);
 		anim.SetBool ("haveTromblon", false);
     }
+
+	public void Save()
+	{
+		BinaryFormatter save = new BinaryFormatter ();
+		FileStream file = File.Create (Application.persistentDataPath + "testsave.dat");	
+
+		PlayerData data = new PlayerData();
+
+		PlayerH.currentHealth = data.health;
+		PlayerEnergy.currentEnergy = data.energy;
+		Inventory.key = data.key;
+		Inventory.bombs = data.bomb;
+
+	}
+
+	public void Load()
+	{
+
+	}
+
+[Serializable]
+	class PlayerData
+	{
+		public int health;
+		public int energy;
+		public bool key;
+		public int bomb;
+		public int ennemyKilled;
+
+		public bool world1finished;
+		public bool world2finished;
+		public bool world3finished;
+		public bool world4finished;
+
+		public string level;
+
+		public string switchBomb;
+		public string switchSword;
+		public string switchTromblon;
+		public string attack;
+	}
+
 }

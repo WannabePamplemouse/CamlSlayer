@@ -5,12 +5,12 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour {
 
     [SerializeField]
-    private int bombs = 2;
+    public int bombs = 2;
     [SerializeField]
     Image Bombe1, Bombe2, Bombe3, keyI;
 
     private int maxBombs = 3;
-    private bool key = false;
+    public bool key = false;
 
     void Awake()
     {
