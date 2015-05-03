@@ -8,11 +8,13 @@ public class UIManagerScript : MonoBehaviour {
 	public Animator levelButton;
 	public Animator settingsButton;
 	public Animator exitGameButton;
+	public Animator multiButton;
+	public Animator loadButton;
 	public Animator settings;
 	public Animator panelLevel;
 	public Animator commandLevel;
-	static public string level = "Monde1";
 
+	static public string level = "Monde1";
 
 	static public Button World2;
 			
@@ -29,6 +31,8 @@ public class UIManagerScript : MonoBehaviour {
 		levelButton.SetBool ("isHidden", true);
 		settingsButton.SetBool ("isHidden", true);
 		exitGameButton.SetBool ("isHidden", true);
+		multiButton.SetBool ("isHidden", true);
+		loadButton.SetBool ("isHidden", true);
 
 		//On fait entrer le menu Settings
 		settings.enabled = true;
@@ -48,6 +52,8 @@ public class UIManagerScript : MonoBehaviour {
 		levelButton.SetBool ("isHidden", false);
 		settingsButton.SetBool ("isHidden", false);
 		exitGameButton.SetBool ("isHidden", false);
+		multiButton.SetBool ("isHidden", false);
+		loadButton.SetBool ("isHidden", false);
 	}
 
 	public void OpenPanelLevel()
@@ -57,6 +63,8 @@ public class UIManagerScript : MonoBehaviour {
 		levelButton.SetBool ("isHidden", true);
 		settingsButton.SetBool ("isHidden", true);
 		exitGameButton.SetBool ("isHidden", true);
+		multiButton.SetBool ("isHidden", true);
+		loadButton.SetBool ("isHidden", true);
 
 		//On fait entrer le menu de choix de level
 		panelLevel.enabled = true;
@@ -73,6 +81,8 @@ public class UIManagerScript : MonoBehaviour {
 		levelButton.SetBool ("isHidden", false);
 		settingsButton.SetBool ("isHidden", false);
 		exitGameButton.SetBool ("isHidden", false);
+		multiButton.SetBool ("isHidden", false);
+		loadButton.SetBool ("isHidden", false);
 	}
 
 	public void OpenCommandPanel()
