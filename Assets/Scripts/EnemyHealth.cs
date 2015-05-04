@@ -17,8 +17,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField]
     private float yHearthforce;
 
-
-	void Awake ()
+    void Awake ()
 	{
 		player = GameObject.FindGameObjectWithTag ("Player");
 		KC = player.GetComponent<KillCount> ();
@@ -46,7 +45,6 @@ public class EnemyHealth : MonoBehaviour
 		}
 	}
 	
-	
 	void Death ()
 	{
         HealthSlider.enabled = false;
@@ -69,19 +67,19 @@ public class EnemyHealth : MonoBehaviour
         }
         else
         {
-            GameObject checka = GameObject.FindGameObjectWithTag("check");
+            GameObject checka = GameObject.FindGameObjectWithTag("Check");
             bossCheck check = checka.GetComponent<bossCheck>();
-            if(name == "boss1")
+            if(name == "Boss1")
             {
-                check.boss1 = true;
-                check.nextLevel();
+                 check.boss1 = true;
+                 check.nextLevel();
             }
-            else if(name == "boss2")
+            else if(name == "Boss2")
             {
                 check.boss2 = true;
                 check.nextLevel();
             }
-            else if (name == "boss3")
+            else if (name == "Boss3")
             {
                 check.boss3 = true;
                 check.nextLevel();

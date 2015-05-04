@@ -7,6 +7,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class RobotControllerScript : MonoBehaviour {
 
+    private float lastSynchronizationTime = 0f;
+    private float syncDelay = 0f;
+    private float syncTime = 0f;
+    private Vector3 syncStartPosition = Vector3.zero;
+    private Vector3 syncEndPosition = Vector3.zero;
+
+
 	private float maxSpeed = 10f;
 	public bool facingRight = true;
 	
@@ -185,20 +192,27 @@ public class RobotControllerScript : MonoBehaviour {
 		anim.SetBool ("haveBomb", false);
 		anim.SetBool ("haveTromblon", false);
     }
-    /*
-	public void Save()
-	{
-		BinaryFormatter save = new BinaryFormatter ();
-		FileStream file = File.Create (Application.persistentDataPath + "testsave.dat");	
 
-		PlayerData data = new PlayerData();
+    void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info)
+    {
+        Vector3 syncPosition = Vector3.zero;
+        if (stream.isWriting)
+        {
+            syncPosition = rigidbody.position;
+            stream.Serialize(ref syncPosition);
+        }
+        else
+        {
+            stream.Serialize(ref syncPosition);
 
-		PlayerH.currentHealth = data.health; //hey nico ça marche pas comme ça !!! faut avoir une instance de la classe si tu veux faire ça
-		PlayerEnergy.currentEnergy = data.energy;
-		Inventory.key = data.key;
-		Inventory.bombs = data.bomb;
+            syncTime = 0f;
+            syncDelay = Time.time - lastSynchronizationTime;
+            lastSynchronizationTime = Time.time;
 
-	} */
+            syncStartPosition = rigidbody.position;
+            syncEndPosition = syncPosition;
+        }
+    }
 
 [Serializable]
 	class PlayerData
