@@ -16,13 +16,37 @@ public class UIManagerScript : MonoBehaviour {
 
 	static public string level = "Monde1";
 
-	static public Button World2;
+	public Button World2;
+	public Button World3;
+	public Button World4;
 			
 	static public string bombCommand = "B";
 	static public string swordCommand = "E";
 	static public string gunCommand = "G";
 	static public string attackCommand = "Q";
 	static public string firstAbility = "S";
+
+	static public bool isWorld1finished;
+	static public bool isWorld2finished;
+	static public bool isWorld3finished;
+
+	void Awake()
+	{
+		isWorld1finished = false;
+		isWorld2finished = false;
+		isWorld3finished = false;
+	}
+
+	void Update()
+	{
+		if(isWorld1finished)
+			World2.interactable = true;
+		if (isWorld2finished)
+			World3.interactable = true;
+		if (isWorld3finished)
+			World4.interactable = true;
+	}
+
 
 	public void OpenSettings()
 	{
@@ -168,6 +192,10 @@ public class UIManagerScript : MonoBehaviour {
 		Application.Quit ();
 	}
 
+	public void LoadFile()
+	{
+		RobotControllerScript.Load ();
+	}
     public void Multi()
     {
         Application.LoadLevel("Lobby");

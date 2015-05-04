@@ -36,10 +36,9 @@ public class RobotControllerScript : MonoBehaviour {
 	
 	float timer, timer2 = 0;
 
-	public bool isWorld1finished = false;
-	public bool isWorld2finished = false;
-	public bool isWorld3finished = false;
-	public bool isWorld4finished = false;
+	private bool isWorld1finished;
+	private bool isWorld2finished;
+	private bool isWorld3finished;
 
 	public bool haveSword = true;
 	public bool haveBomb = false;
@@ -60,7 +59,11 @@ public class RobotControllerScript : MonoBehaviour {
         playerHealth = GetComponent<PlayerH>();
 
 		groundCheck = transform.Find("GroundCheck");
-		
+
+		isWorld1finished = UIManagerScript.isWorld1finished;
+		isWorld2finished = UIManagerScript.isWorld2finished;
+		isWorld3finished = UIManagerScript.isWorld3finished;
+
 		bombCommandFinal = UIManagerScript.bombCommand;
 		swordCommandFinal = UIManagerScript.swordCommand;
 		gunCommandFinal = UIManagerScript.gunCommand;
@@ -214,26 +217,41 @@ public class RobotControllerScript : MonoBehaviour {
         }
     }
 
-[Serializable]
-	class PlayerData
+	static public void Save()
 	{
-		public int health;
-		public int energy;
-		public bool key;
-		public int bomb;
-		public int ennemyKilled;
+		BinaryFormatter save = new BinaryFormatter ();
+		FileStream file = File.Create (Application.persistentDataPath + "/filesaved.dat");
 
+		WorldData data = new WorldData ();
+		data.world1finished = UIManagerScript.isWorld1finished;
+		data.world2finished = UIManagerScript.isWorld2finished;
+		data.world3finished = UIManagerScript.isWorld3finished;
+
+		save.Serialize (file, data);
+		file.Close ();
+	}
+
+	static public void Load()
+	{
+		if(File.Exists(Application.persistentDataPath + "/filesaved.dat"))
+		{
+			BinaryFormatter load = new BinaryFormatter ();
+			FileStream file = File.Open (Application.persistentDataPath + "/filesaved.dat", FileMode.Open);
+			WorldData data = (WorldData)load.Deserialize(file);
+			file.Close ();
+		
+			UIManagerScript.isWorld1finished = data.world1finished;
+			UIManagerScript.isWorld2finished = data.world2finished;
+			UIManagerScript.isWorld3finished = data.world3finished;
+		}
+	}
+
+[Serializable]
+	class WorldData
+	{
 		public bool world1finished;
 		public bool world2finished;
 		public bool world3finished;
-		public bool world4finished;
-
-		public string level;
-
-		public string switchBomb;
-		public string switchSword;
-		public string switchTromblon;
-		public string attack;
 	}
 
 }

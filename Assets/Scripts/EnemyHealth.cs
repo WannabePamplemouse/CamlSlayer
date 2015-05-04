@@ -61,7 +61,7 @@ public class EnemyHealth : MonoBehaviour
         
         if(name == "Boss")
         {
-            UIManagerScript.World2.interactable = true;
+            UIManagerScript.isWorld1finished = true;
             StartCoroutine(wait());
             Application.LoadLevel("Monde2");
         }
