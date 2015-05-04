@@ -67,22 +67,27 @@ public class EnemyHealth : MonoBehaviour
         }
         else
         {
-            GameObject checka = GameObject.FindGameObjectWithTag("Check");
-            bossCheck check = checka.GetComponent<bossCheck>();
-            if(name == "Boss1")
+            GameObject checka = null;
+            checka = GameObject.FindGameObjectWithTag("Check");
+
+            if (checka != null)
             {
-                 check.boss1 = true;
-                 check.nextLevel();
-            }
-            else if(name == "Boss2")
-            {
-                check.boss2 = true;
-                check.nextLevel();
-            }
-            else if (name == "Boss3")
-            {
-                check.boss3 = true;
-                check.nextLevel();
+                bossCheck check = checka.GetComponent<bossCheck>();
+                if (name == "Boss1")
+                {
+                    check.boss1 = true;
+                    check.nextLevel();
+                }
+                else if (name == "Boss2")
+                {
+                    check.boss2 = true;
+                    check.nextLevel();
+                }
+                else if (name == "Boss3")
+                {
+                    check.boss3 = true;
+                    check.nextLevel();
+                }
             }
         }
 

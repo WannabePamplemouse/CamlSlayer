@@ -18,17 +18,9 @@ public class Unicorn : MonoBehaviour {
         Physics2D.IgnoreLayerCollision(gameObject.layer, 10);
         Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer);
         Physics2D.IgnoreLayerCollision(gameObject.layer, 17);
+        GetComponent<AudioSource>().Play();
 
-        if (GameObject.FindGameObjectsWithTag("Unicorn").Length > 1)
-        {
-            gameObject.tag = "Unicorned";
-            GetComponent<AudioSource>().Play();
-            destroyable = true;
-        }
-        else
-        {
-            destroyable = false;
-        }
+
     }
 
     void OnCollisionEnter2D(Collision2D coll)
