@@ -2,16 +2,16 @@
 using System.Collections;
 
 public class World2AudioControllerScript : MonoBehaviour {
-
-	[SerializeField]
-	private Transform RobotPosition;
-	[SerializeField]
-	private AudioClip newClip;
+	
+	public Transform RobotPosition;
+	public AudioClip newClip;
+	private bool toplay = true;
 
 	void Update()
 	{
-		if (RobotPosition.position.x > 2200) 
+		if (toplay && RobotPosition.position.x > 2200) 
 		{
+			toplay = false;
 			audio.clip = newClip;
 			audio.Play();
 		}
