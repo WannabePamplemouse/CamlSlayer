@@ -46,6 +46,7 @@ public class BigBullet : MonoBehaviour
             gameObject.rigidbody2D.gravityScale = 0;
             gameObject.rigidbody2D.velocity = new Vector2(0, 0);
             gameObject.rigidbody2D.fixedAngle = true;
+            GetComponent<AudioSource>().Play();
             PartExpl.SetActive(true);
             PartExpl2.SetActive(true);
             renderer.enabled = false;
@@ -61,6 +62,7 @@ public class BigBullet : MonoBehaviour
             gameObject.collider2D.enabled = false;
             gameObject.rigidbody2D.gravityScale = 0;
             gameObject.rigidbody2D.velocity = new Vector2(0, 0);
+            GetComponent<AudioSource>().Play();
             gameObject.rigidbody2D.fixedAngle = true;
             PartExpl.SetActive(true);
             PartExpl2.SetActive(true);

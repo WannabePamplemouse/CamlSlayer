@@ -33,6 +33,7 @@ public class Unicorn : MonoBehaviour {
             gameObject.rigidbody2D.gravityScale = 0;
             gameObject.rigidbody2D.velocity = new Vector2(0, 0);
             gameObject.rigidbody2D.fixedAngle = true;
+            GetComponent<AudioSource>().Play();
             PartExpl.SetActive(true);
             PartExpl2.SetActive(true);
             renderer.enabled = false;
