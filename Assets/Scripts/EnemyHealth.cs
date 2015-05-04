@@ -69,7 +69,7 @@ public class EnemyHealth : MonoBehaviour
         }
         else
         {
-            GameObject checka = GameObject.FindGameObjectWithTag("check"); ;
+            GameObject checka = GameObject.FindGameObjectWithTag("check");
             bossCheck check = checka.GetComponent<bossCheck>();
             if(name == "boss1")
             {
