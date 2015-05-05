@@ -65,6 +65,11 @@ public class EnemyHealth : MonoBehaviour
             StartCoroutine(wait());
             Application.LoadLevel("Monde2");
         }
+        else if(name == "boss3")
+        {
+            StartCoroutine(wait());
+            Application.LoadLevel("Menu");
+        }
         else
         {
             GameObject checka = null;

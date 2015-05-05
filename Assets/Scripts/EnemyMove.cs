@@ -7,7 +7,7 @@ public class EnemyMove : MonoBehaviour {
     [SerializeField] private int left; // min x position
 	[SerializeField] private int right; // max x position
 
-    private float scale;
+    private float scalex, scaley;
 	private Rigidbody2D rb;
 
 	private bool facing_left = true;
@@ -17,7 +17,8 @@ public class EnemyMove : MonoBehaviour {
     {
         Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer);
 		rb = GetComponentInParent<Rigidbody2D> ();
-        scale = transform.localScale.x;
+        scalex = transform.localScale.x;
+        scaley = transform.localScale.y;
 	}
 	
 	// Update is called once per frame
@@ -26,12 +27,12 @@ public class EnemyMove : MonoBehaviour {
 		if (!facing_left && transform.position.x >= right)
         {
 			facing_left = true;
-			transform.localScale = new Vector3(scale,scale,scale);
+			transform.localScale = new Vector3(scalex,scaley,1);
 		}
 		else if(facing_left && transform.position.x <= left)
         {
 			facing_left = false;
-			transform.localScale = new Vector3(-scale,scale,scale);
+			transform.localScale = new Vector3(-scalex,scaley,1);
 		}
 
 		movement ();
