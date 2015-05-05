@@ -8,20 +8,39 @@ public class NetworkManager : MonoBehaviour {
     private HostData[] hostList;
     public GameObject playerPrefab;
 
+	private float lastSynchronizationTime = 0f;
+	private float syncDelay = 0f;
+	private float syncTime = 0f;
+	private Vector3 syncStartPosition = Vector3.zero;
+	private Vector3 syncEndPosition = Vector3.zero;
+
+	public static GameObject Robot;
+
+	public static bool isMulti = false;
+
+	void Start()
+	{
+		isMulti = true;
+	}
     private void StartServer()
     {
         Network.InitializeServer(4, 25000, !Network.HavePublicAddress());
         MasterServer.RegisterHost(typeName, gameName);
     }
 
+	void OnDestroy()
+	{
+		Network.Disconnect ();  // VWALOU
+	}
+
     void OnServerInitialized()
     {
-        SpawnPlayer();
+		Robot = (GameObject)SpawnPlayer ();
     }
 
-    private void SpawnPlayer()
+    private GameObject SpawnPlayer()
     {
-        Network.Instantiate(playerPrefab, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+        return (GameObject)Network.Instantiate(playerPrefab, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
     }
 
     void OnGUI()
@@ -45,6 +64,42 @@ public class NetworkManager : MonoBehaviour {
         }
     }
 
+	void Update()
+	{
+		if (!networkView.isMine) {
+			SyncedMovement();
+		}
+
+	}
+
+	void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info)
+	{
+		Vector3 syncPosition = Vector3.zero;
+		Vector3 syncVelocity = Vector3.zero;
+		if (stream.isWriting) {
+			syncPosition = rigidbody.position;
+			stream.Serialize (ref syncPosition);
+
+			syncVelocity = rigidbody.velocity;
+			stream.Serialize (ref syncVelocity);
+		} 
+		else {
+			stream.Serialize(ref syncPosition);
+			stream.Serialize(ref syncVelocity);
+
+			syncTime = 0f;
+			syncDelay = Time.time - lastSynchronizationTime;
+			lastSynchronizationTime = Time.time;
+
+			syncEndPosition = syncPosition + syncVelocity * syncDelay;
+			syncStartPosition = rigidbody.position;
+		}
+	}
+	private void SyncedMovement()
+	{
+		syncTime += Time.deltaTime;
+		rigidbody.position = Vector3.Lerp (syncStartPosition, syncEndPosition, syncTime / syncDelay);
+	}
     private void RefreshHostList()
     {
         MasterServer.RequestHostList(typeName);
@@ -62,7 +117,8 @@ public class NetworkManager : MonoBehaviour {
     }
 
     void OnConnectedToServer()
-    {
-        SpawnPlayer();
+	{
+		if (Robot == null) 
+			Robot = (GameObject)SpawnPlayer ();
     }
 }

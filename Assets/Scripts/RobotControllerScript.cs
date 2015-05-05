@@ -50,6 +50,8 @@ public class RobotControllerScript : MonoBehaviour {
 	static private string attackCommandFinal;
 	static private string firstAbilityFinal;
 
+	private bool isMulti;
+
 	void Start () 
 	{
         energy = GetComponent<PlayerEnergy>();
@@ -69,8 +71,9 @@ public class RobotControllerScript : MonoBehaviour {
 		gunCommandFinal = UIManagerScript.gunCommand;
 		attackCommandFinal = UIManagerScript.attackCommand;
 		firstAbilityFinal = UIManagerScript.firstAbility;
+
+		isMulti = NetworkManager.isMulti;
 	}
-	
 	
 	void FixedUpdate () 
 	{
@@ -78,6 +81,8 @@ public class RobotControllerScript : MonoBehaviour {
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
 		
+		if (NetworkManager.Robot != this.gameObject && isMulti)
+			return;
 		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
 		
 		float move = Input.GetAxis ("Horizontal");
@@ -94,9 +99,14 @@ public class RobotControllerScript : MonoBehaviour {
 
 
 	}
-	
+
+
 	void Update()
 	{   
+
+		if (NetworkManager.Robot != this.gameObject && isMulti)
+			return;
+
 		if (grounded && Input.GetKeyDown (KeyCode.Space)) 
 		{
 			grounded = false;
@@ -151,10 +161,7 @@ public class RobotControllerScript : MonoBehaviour {
 		if (haveSword && timer > 0.50)
 			anim.SetBool ("isAttacking", false);
 		else if (haveBomb && timer > 0.35)
-			anim.SetBool ("isAttacking", false);
-
-
-        
+			anim.SetBool ("isAttacking", false);      
 	}
 	
 	void Flip()
