@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\World3SoundControllerScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NetworkManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\TeleportBoss.cs" Line="51" Column="1" />
+      <File FileName="Assets\Scripts\NetworkManager.cs" Line="36" Column="4" />
+      <File FileName="Assets\Scripts\TeleportBoss.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\EnemyHealth.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Parallaxing.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Teleport.cs" Line="1" Column="1" />
@@ -11,7 +12,7 @@
       <File FileName="Assets\Scripts\ParticleSortLayerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlayerH.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\KillCount.cs" Line="1" Column="1" />
-      <File FileName="Assets\World3SoundControllerScript.cs" Line="17" Column="4" />
+      <File FileName="Assets\World3SoundControllerScript.cs" Line="9" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
