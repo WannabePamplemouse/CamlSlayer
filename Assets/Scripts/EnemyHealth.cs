@@ -63,6 +63,7 @@ public class EnemyHealth : MonoBehaviour
         {
             UIManagerScript.isWorld1finished = true;
 			UIManagerScript.level = "Monde2";
+			RobotControllerScript.isWorld1finished = true;
             StartCoroutine(wait());
             Application.LoadLevel("Monde2");
         }

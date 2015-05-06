@@ -26,16 +26,9 @@ public class UIManagerScript : MonoBehaviour {
 	static public string attackCommand = "Q";
 	static public string firstAbility = "S";
 
-	static public bool isWorld1finished;
-	static public bool isWorld2finished;
-	static public bool isWorld3finished;
-
-	void Awake()
-	{
-		isWorld1finished = false;
-		isWorld2finished = false;
-		isWorld3finished = false;
-	}
+	static public bool isWorld1finished = false;
+	static public bool isWorld2finished = false;
+	static public bool isWorld3finished = false;
 
 	void Update()
 	{

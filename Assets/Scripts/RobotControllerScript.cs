@@ -36,9 +36,9 @@ public class RobotControllerScript : MonoBehaviour {
 	
 	float timer, timer2 = 0;
 
-	private bool isWorld1finished;
-	private bool isWorld2finished;
-	private bool isWorld3finished;
+	public static bool isWorld1finished;
+	public static bool isWorld2finished;
+	public static bool isWorld3finished;
 
 	public bool haveSword = true;
 	public bool haveBomb = false;
@@ -233,6 +233,7 @@ public class RobotControllerScript : MonoBehaviour {
 		data.world1finished = UIManagerScript.isWorld1finished;
 		data.world2finished = UIManagerScript.isWorld2finished;
 		data.world3finished = UIManagerScript.isWorld3finished;
+		data.level = UIManagerScript.level;
 
 		save.Serialize (file, data);
 		file.Close ();
@@ -250,6 +251,7 @@ public class RobotControllerScript : MonoBehaviour {
 			UIManagerScript.isWorld1finished = data.world1finished;
 			UIManagerScript.isWorld2finished = data.world2finished;
 			UIManagerScript.isWorld3finished = data.world3finished;
+			UIManagerScript.level = data.level;
 		}
 	}
 
@@ -259,6 +261,7 @@ public class RobotControllerScript : MonoBehaviour {
 		public bool world1finished;
 		public bool world2finished;
 		public bool world3finished;
+		public string level;
 	}
 
 }
