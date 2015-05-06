@@ -12,23 +12,30 @@ public class Unicorn : MonoBehaviour {
     [SerializeField]
     public GameObject PartExpl2;
 
+    private AudioSource[] audio;
+
     // Use this for initialization
     void Start()
     {
         Physics2D.IgnoreLayerCollision(gameObject.layer, 10);
         Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer);
         Physics2D.IgnoreLayerCollision(gameObject.layer, 17);
-        GetComponent<AudioSource>().Play();
 
-        if (GameObject.FindGameObjectsWithTag("Unicorn").Length > 1)
-        {
-            gameObject.tag = "Unicorned";
-            destroyable = true;
-        }
-        else
-        {
-            destroyable = false;
-        }
+        audio = GetComponents<AudioSource>();
+
+        int i;
+        for (i = 0; i < audio.Length && audio[i].priority != 255; i++) ;
+        audio[i].Play();
+
+            if (GameObject.FindGameObjectsWithTag("Unicorn").Length > 1)
+            {
+                gameObject.tag = "Unicorned";
+                destroyable = true;
+            }
+            else
+            {
+                destroyable = false;
+            }
     }
 
     void OnCollisionEnter2D(Collision2D coll)
@@ -44,7 +51,9 @@ public class Unicorn : MonoBehaviour {
             gameObject.rigidbody2D.gravityScale = 0;
             gameObject.rigidbody2D.velocity = new Vector2(0, 0);
             gameObject.rigidbody2D.fixedAngle = true;
-            GetComponent<AudioSource>().Play();
+            int i;
+            for (i = 0; i < audio.Length && audio[i].priority != 254; i++) ;
+            audio[i].Play();
             PartExpl.SetActive(true);
             PartExpl2.SetActive(true);
             renderer.enabled = false;

@@ -131,10 +131,16 @@ public class RobotControllerScript : MonoBehaviour {
 		} 
         else if (haveTromblon && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) 
         {
-			if (poulet && timer2 > 0.1)
-				attacks.shootPoulet ();
-			else if(timer2 > 1)
-				attacks.shootUnicorn ();
+            if (poulet && timer2 > 0.5)
+            {
+                attacks.shootPoulet();
+                timer2 = 0;
+            }
+            else if (timer2 > 2)
+            {
+                attacks.shootUnicorn();
+                timer2 = 0;
+            }
 		}
         else if (haveSword && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), firstAbilityFinal)) && timer2 > 0.5)
         {
