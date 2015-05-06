@@ -22,6 +22,8 @@ public class Attacks : MonoBehaviour {
 
     [SerializeField]
     private Vector2 forceBomb, forceUnicorn, forcePoulet;
+    [SerializeField]
+    private Transform pouletPos;
 
     public bool doDamageOnHit = false;
     public int damageOnCollision = 0;
@@ -67,7 +69,7 @@ public class Attacks : MonoBehaviour {
             doDamageOnHit = true;
             playerHealth.canTakeDamage = false;
             playerHealth.canDash = false;
-            damageOnCollision = 20;
+            damageOnCollision = 50;
             float time = 0;
 
             energy.UseEnergy(dashEnergyCost);
@@ -100,7 +102,7 @@ public class Attacks : MonoBehaviour {
     public void shootPoulet()
     {
         GameObject spike = GameObject.FindGameObjectWithTag("Poulet");
-        spike = (GameObject)Instantiate(spike, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
+        spike = (GameObject)Instantiate(spike, pouletPos.position, new Quaternion(0, 0, 0, 0));
         spike.GetComponent<AudioSource>().Play();
         if (controller.facingRight)
         {
