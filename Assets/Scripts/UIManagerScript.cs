@@ -39,6 +39,9 @@ public class UIManagerScript : MonoBehaviour {
 
 	void Update()
 	{
+		if (Input.GetKeyDown (KeyCode.A))
+			isWorld1finished = true;
+
 		if(isWorld1finished)
 			World2.interactable = true;
 		if (isWorld2finished)

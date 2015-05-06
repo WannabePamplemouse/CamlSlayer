@@ -117,7 +117,7 @@ public class RobotControllerScript : MonoBehaviour {
 	    if (Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), bombCommandFinal)))
 			SwitchBomb ();
 
-		else if (isWorld1finished && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), gunCommandFinal)))
+		else if (Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), gunCommandFinal)))
 			SwitchTromblon ();
 
 		else if (Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), swordCommandFinal)))
