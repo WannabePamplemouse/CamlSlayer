@@ -30,6 +30,22 @@ public class UIManagerScript : MonoBehaviour {
 	static public bool isWorld2finished = false;
 	static public bool isWorld3finished = false;
 
+	static public float defaultValue = 0.2f;
+	Slider volumeSlider;
+	static public float volumeValue;
+
+	void Start()
+	{
+		GameObject temp = GameObject.Find ("Volume Slider");
+		if (temp != null) 
+		{
+			volumeSlider = temp.GetComponent<Slider> ();
+			if(volumeSlider != null)
+				volumeSlider.normalizedValue = PlayerPrefs.HasKey("VolumeLevel") ? PlayerPrefs.GetFloat("VolumeLevel") : defaultValue;
+		}
+
+		volumeValue = volumeSlider.normalizedValue;
+	}
 	void Update()
 	{
 		if (Input.GetKeyDown (KeyCode.A))
@@ -196,4 +212,9 @@ public class UIManagerScript : MonoBehaviour {
     {
         Application.LoadLevel("Lobby");
     }
+
+	public void onValueChanged()
+	{
+		volumeValue = volumeSlider.normalizedValue;
+	}
 }
