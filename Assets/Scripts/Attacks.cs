@@ -110,6 +110,7 @@ public class Attacks : MonoBehaviour {
         }
         else
         {
+            spike.transform.localScale = new Vector3(-5, 5, 1);
             spike.rigidbody2D.AddForce(new Vector2(-forcePoulet.x, forcePoulet.y));
         }
     }
@@ -124,6 +125,7 @@ public class Attacks : MonoBehaviour {
         }
         else
         {
+            spike.transform.localScale = new Vector3(0.4f, 0.4f, 1);
             spike.rigidbody2D.AddForce(new Vector2(-forceUnicorn.x, forceUnicorn.y));
         }
     }
