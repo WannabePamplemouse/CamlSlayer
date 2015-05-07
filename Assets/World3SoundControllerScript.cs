@@ -7,6 +7,10 @@ public class World3SoundControllerScript : MonoBehaviour {
 	public Transform RobotPosition;
 	private bool toplay = true;
 
+	void Awake()
+	{
+		audio.volume = UIManagerScript.volumeValue;
+	}
 	void Update () 
 	{
 		if (toplay && RobotPosition.position.x > 2450) 
