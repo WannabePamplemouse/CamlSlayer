@@ -10,7 +10,7 @@ public class EnemyMove : MonoBehaviour {
     private float scalex, scaley;
 	private Rigidbody2D rb;
 
-	private bool facing_left = true;
+	public bool facing_left = true;
 
 	// Use this for initialization
 	void Start ()
