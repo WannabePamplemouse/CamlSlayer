@@ -1,11 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\World3SoundControllerScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Dialogues.cs">
     <Files>
-      <File FileName="Assets\Scripts\World2AudioControllerScript.cs" Line="12" Column="3" />
-      <File FileName="Assets\Scripts\UIManagerScript.cs" Line="60" Column="3" />
-      <File FileName="Assets\Scripts\BigBullet.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LoadGameScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Dialogues.cs" Line="19" Column="35" />
       <File FileName="Assets\Scripts\NetworkManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TeleportBoss.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\EnemyHealth.cs" Line="1" Column="1" />
@@ -16,10 +13,10 @@
       <File FileName="Assets\Scripts\ParticleSortLayerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PlayerH.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\KillCount.cs" Line="1" Column="1" />
-      <File FileName="Assets\World3SoundControllerScript.cs" Line="16" Column="50" />
-      <File FileName="Assets\Scripts\RobotControllerScript.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Nicolas\Documents\CamlSlayer\Assets\Plugins\AstarPathfindingProject\Core\AI\Seeker.cs" Line="1" Column="1" />
+      <File FileName="Assets\World3SoundControllerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\RobotControllerScript.cs" Line="119" Column="91" />
       <File FileName="Assets\Scripts\AudioControllerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UIManagerScript.cs" Line="222" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

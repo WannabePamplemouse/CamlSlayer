@@ -25,6 +25,7 @@ public class UIManagerScript : MonoBehaviour {
 	static public string gunCommand = "G";
 	static public string attackCommand = "Q";
 	static public string firstAbility = "S";
+	static public string actionCommand = "F";
 
 	static public bool isWorld1finished = false;
 	static public bool isWorld2finished = false;
