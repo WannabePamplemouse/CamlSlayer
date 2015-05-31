@@ -22,19 +22,27 @@ public class Dialogues : MonoBehaviour {
 			Diags[Display - 1].renderer.enabled = false;
 			Diags[Display].renderer.enabled = true;
 		}
+        if(Display == Diags.Length)
+        {
+			Destroy(gameObject);
+        }
 	}
 
-	void OnTriggerEnter2D ()
+	void OnTriggerEnter2D (Collider2D col)
 	{
-		isClose = true;
-		Diags[Display].renderer.enabled = true;
-		Fuckoff.renderer.enabled = false;
+		if (col.tag == "Player") {
+			isClose = true;
+			Diags [Display].renderer.enabled = true;
+			Fuckoff.renderer.enabled = false;
+		}
 	}
 
-	void OnTriggerExit2D ()
+	void OnTriggerExit2D (Collider2D col)
 	{
-		isClose = false;
-		Diags [Display].renderer.enabled = false;
-		Fuckoff.renderer.enabled = true;
+		if (col.tag == "Player") {
+			isClose = false;
+			Diags [Display].renderer.enabled = false;
+			Fuckoff.renderer.enabled = true;
+		}
 	}
 }
