@@ -73,6 +73,11 @@ public class EnemyHealth : MonoBehaviour
             StartCoroutine(wait());
             Application.LoadLevel("Menu");
         }
+        else if (name == "BossFinal")
+        {
+            StartCoroutine(wait());
+            //des credits ?
+        }
         else
         {
             GameObject checka = null;
