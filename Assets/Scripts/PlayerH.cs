@@ -12,10 +12,19 @@ public class PlayerH : MonoBehaviour
 	public bool canTakeDamage = true;
     public bool canDash = true;
 
+
+    // Handle camera shaking
+    public float camShakeAmt = 0.3f;
+    public float camShakeLength = 0.1f;
+    CameraShake camShake;
+
 	void Awake ()
 	{
 		// Set the initial health of the player.
 		currentHealth = startingHealth;
+        camShake = GetComponent<CameraShake>();
+        if (camShake == null)
+            Debug.LogError("No CameraShake script found on GM object.");
 	}
 
 
@@ -40,6 +49,10 @@ public class PlayerH : MonoBehaviour
 				// ... it should die.
 				Death ();
 			}
+
+            //shake the camera
+            if (amount > 0)
+                camShake.Shake(camShakeAmt, camShakeLength);
 		}
 	}
 
