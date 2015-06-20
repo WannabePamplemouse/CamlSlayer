@@ -1,0 +1,1477 @@
+fileFormatVersion: 2
+guid: 8ba9e88f43a692e4baa5279b0f4e7ad6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ennemi4_0
+    21300002: Ennemi4_1
+    21300004: Ennemi4_2
+    21300006: Ennemi4_3
+    21300008: Ennemi4_4
+    21300010: Ennemi4_5
+    21300012: Ennemi4_6
+    21300014: Ennemi4_7
+    21300016: Ennemi4_8
+    21300018: Ennemi4_9
+    21300020: Ennemi4_10
+    21300022: Ennemi4_11
+    21300024: Ennemi4_12
+    21300026: Ennemi4_13
+    21300028: Ennemi4_14
+    21300030: Ennemi4_15
+    21300032: Ennemi4_16
+    21300034: Ennemi4_17
+    21300036: Ennemi4_18
+    21300038: Ennemi4_19
+    21300040: Ennemi4_20
+    21300042: Ennemi4_21
+    21300044: Ennemi4_22
+    21300046: Ennemi4_23
+    21300048: Ennemi4_24
+    21300050: Ennemi4_25
+    21300052: Ennemi4_26
+    21300054: Ennemi4_27
+    21300056: Ennemi4_28
+    21300058: Ennemi4_29
+    21300060: Ennemi4_30
+    21300062: Ennemi4_31
+    21300064: Ennemi4_32
+    21300066: Ennemi4_33
+    21300068: Ennemi4_34
+    21300070: Ennemi4_35
+    21300072: Ennemi4_36
+    21300074: Ennemi4_37
+    21300076: Ennemi4_38
+    21300078: Ennemi4_39
+    21300080: Ennemi4_40
+    21300082: Ennemi4_41
+    21300084: Ennemi4_42
+    21300086: Ennemi4_43
+    21300088: Ennemi4_44
+    21300090: Ennemi4_45
+    21300092: Ennemi4_46
+    21300094: Ennemi4_47
+    21300096: Ennemi4_48
+    21300098: Ennemi4_49
+    21300100: Ennemi4_50
+    21300102: Ennemi4_51
+    21300104: Ennemi4_52
+    21300106: Ennemi4_53
+    21300108: Ennemi4_54
+    21300110: Ennemi4_55
+    21300112: Ennemi4_56
+    21300114: Ennemi4_57
+    21300116: Ennemi4_58
+    21300118: Ennemi4_59
+    21300120: Ennemi4_60
+    21300122: Ennemi4_61
+    21300124: Ennemi4_62
+    21300126: Ennemi4_63
+    21300128: Ennemi4_64
+    21300130: Ennemi4_65
+    21300132: Ennemi4_66
+    21300134: Ennemi4_67
+    21300136: Ennemi4_68
+    21300138: Ennemi4_69
+    21300140: Ennemi4_70
+    21300142: Ennemi4_71
+    21300144: Ennemi4_72
+    21300146: Ennemi4_73
+    21300148: Ennemi4_74
+    21300150: Ennemi4_75
+    21300152: Ennemi4_76
+    21300154: Ennemi4_77
+    21300156: Ennemi4_78
+    21300158: Ennemi4_79
+    21300160: Ennemi4_80
+    21300162: Ennemi4_81
+    21300164: Ennemi4_82
+    21300166: Ennemi4_83
+    21300168: Ennemi4_84
+    21300170: Ennemi4_85
+    21300172: Ennemi4_86
+    21300174: Ennemi4_87
+    21300176: Ennemi4_88
+    21300178: Ennemi4_89
+    21300180: Ennemi4_90
+    21300182: Ennemi4_91
+    21300184: Ennemi4_92
+    21300186: Ennemi4_93
+    21300188: Ennemi4_94
+    21300190: Ennemi4_95
+    21300192: Ennemi4_96
+    21300194: Ennemi4_97
+    21300196: Ennemi4_98
+    21300198: Ennemi4_99
+    21300200: Ennemi4_100
+    21300202: Ennemi4_101
+    21300204: Ennemi4_102
+    21300206: Ennemi4_103
+    21300208: Ennemi4_104
+    21300210: Ennemi4_105
+    21300212: Ennemi4_106
+    21300214: Ennemi4_107
+    21300216: Ennemi4_108
+    21300218: Ennemi4_109
+    21300220: Ennemi4_110
+    21300222: Ennemi4_111
+    21300224: Ennemi4_112
+    21300226: Ennemi4_113
+    21300228: Ennemi4_114
+    21300230: Ennemi4_115
+    21300232: Ennemi4_116
+    21300234: Ennemi4_117
+    21300236: Ennemi4_118
+    21300238: Ennemi4_119
+    21300240: Ennemi4_120
+    21300242: Ennemi4_121
+    21300244: Ennemi4_122
+    21300246: Ennemi4_123
+    21300248: Ennemi4_124
+    21300250: Ennemi4_125
+    21300252: Ennemi4_126
+    21300254: Ennemi4_127
+    21300256: Ennemi4_128
+    21300258: Ennemi4_129
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 20
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Ennemi4_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1855
+        width: 75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1855
+        width: 75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1855
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_3
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 1855
+        width: 70
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_4
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1855
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_5
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1855
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_6
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1855
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_7
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1855
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_8
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1855
+        width: 71
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1777
+        width: 71
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1777
+        width: 69
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_11
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1777
+        width: 70
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_12
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1777
+        width: 71
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_13
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 1777
+        width: 70
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_14
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1777
+        width: 69
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_15
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 1777
+        width: 73
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_16
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1690
+        width: 75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_17
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1690
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_18
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1690
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_19
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1690
+        width: 67
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_20
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1690
+        width: 68
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_21
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 1690
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_22
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1690
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_23
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1690
+        width: 75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1600
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_25
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1600
+        width: 75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_26
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1600
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_27
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1600
+        width: 70
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_28
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1600
+        width: 70
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_29
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1600
+        width: 68
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_30
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1602
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_31
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1602
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_32
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1525
+        width: 72
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_33
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1525
+        width: 70
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_34
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1525
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_35
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1525
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_36
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1527
+        width: 64
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_37
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 1527
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_38
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1527
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_39
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1527
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_40
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1430
+        width: 64
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_41
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1430
+        width: 66
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_42
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1430
+        width: 66
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_43
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1428
+        width: 64
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_44
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1430
+        width: 65
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_45
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1432
+        width: 63
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_46
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1433
+        width: 62
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_47
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1430
+        width: 62
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_48
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1433
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_49
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1349
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_50
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1351
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1351
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_52
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1272
+        width: 74
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_53
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1272
+        width: 75
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_54
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1272
+        width: 75
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_55
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1272
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_56
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1272
+        width: 75
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_57
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1272
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_58
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1193
+        width: 74
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_59
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1193
+        width: 75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_60
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 1193
+        width: 86
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_61
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1193
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_62
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1058
+        width: 75
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_63
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1058
+        width: 81
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_64
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1058
+        width: 75
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_65
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1058
+        width: 84
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_66
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1058
+        width: 75
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_67
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 942
+        width: 90
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_68
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 942
+        width: 103
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_69
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 942
+        width: 100
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_70
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 942
+        width: 102
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_71
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 942
+        width: 100
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_72
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 843
+        width: 99
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_73
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 843
+        width: 122
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_74
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 843
+        width: 118
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_75
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 843
+        width: 126
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_76
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 843
+        width: 120
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_77
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 764
+        width: 105
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_78
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 820
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_79
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 764
+        width: 133
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_80
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 764
+        width: 139
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_81
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 764
+        width: 130
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_82
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 689
+        width: 105
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_83
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 715
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_84
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 689
+        width: 131
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_85
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 689
+        width: 139
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_86
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 689
+        width: 140
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_87
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 689
+        width: 137
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_88
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 612
+        width: 100
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_89
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 608
+        width: 128
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_90
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 612
+        width: 129
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_91
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 608
+        width: 132
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_92
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 612
+        width: 124
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_93
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 520
+        width: 88
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_94
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 502
+        width: 107
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_95
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 502
+        width: 107
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_96
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 498
+        width: 113
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_97
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 503
+        width: 107
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_98
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 413
+        width: 77
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_99
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 387
+        width: 92
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_100
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 385
+        width: 88
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_101
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 383
+        width: 92
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_102
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 389
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_103
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 297
+        width: 68
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_104
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 269
+        width: 75
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_105
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 265
+        width: 69
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_106
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 265
+        width: 77
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_107
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 269
+        width: 69
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_108
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 190
+        width: 75
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_109
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 190
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_110
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 190
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_111
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 190
+        width: 75
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_112
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 190
+        width: 68
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_113
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 190
+        width: 67
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_114
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 190
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_115
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 115
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_116
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 115
+        width: 71
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_117
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 115
+        width: 69
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_118
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 115
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_119
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 115
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_120
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 115
+        width: 71
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_121
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 115
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_122
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 115
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_123
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 23
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_124
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 23
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_125
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 23
+        width: 77
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_126
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 23
+        width: 77
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_127
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 23
+        width: 77
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_128
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 23
+        width: 80
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Ennemi4_129
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 27
+        width: 167
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
