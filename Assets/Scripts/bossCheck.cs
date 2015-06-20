@@ -10,7 +10,7 @@ public class bossCheck : MonoBehaviour {
         if(boss1 && boss2 && boss3)
         {
             StartCoroutine(EnemyHealth.wait());
-            Application.LoadLevel("Monde3");
+            UIManagerScript.isWorld2finished = true;
         }
     }
 }

@@ -62,16 +62,12 @@ public class EnemyHealth : MonoBehaviour
         if(name == "Boss")
         {
             UIManagerScript.isWorld1finished = true;
-			UIManagerScript.level = "Monde2";
-			RobotControllerScript.isWorld1finished = true;
             StartCoroutine(wait());
-            Application.LoadLevel("Monde2");
         }
         else if(name == "boss3")
         {
-			UIManagerScript.level = "Monde3";
+			UIManagerScript.isWorld3finished = true;
             StartCoroutine(wait());
-            Application.LoadLevel("Menu");
         }
         else if (name == "BossFinal")
         {
