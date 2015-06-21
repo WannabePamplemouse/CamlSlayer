@@ -107,6 +107,13 @@ public class RobotControllerScript : MonoBehaviour {
 		if (NetworkManager.Robot != this.gameObject && isMulti)
 			return;
 
+		//getting the commands if they are changing in game
+		bombCommandFinal = UIManagerScript.bombCommand;
+		swordCommandFinal = UIManagerScript.swordCommand;
+		gunCommandFinal = UIManagerScript.gunCommand;
+		attackCommandFinal = UIManagerScript.attackCommand;
+		firstAbilityFinal = UIManagerScript.firstAbility;
+
 		if (grounded && Input.GetKeyDown (KeyCode.Space)) 
 		{
 			grounded = false;

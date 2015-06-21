@@ -8,7 +8,6 @@ public class PanelResumeScript : MonoBehaviour {
 		Pauser.paused = false;
 	}
 
-
 	public void SaveData()
 	{
 		RobotControllerScript.Save ();
