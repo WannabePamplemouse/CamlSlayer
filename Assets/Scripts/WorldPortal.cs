@@ -55,24 +55,39 @@ public class WorldPortal : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if(UIManagerScript.isWorld4finished && col.tag == "Player")
+        switch(worldindex)
         {
-            Application.LoadLevel("Credits");
-        }
-        else if(UIManagerScript.isWorld3finished && col.tag == "Player")
-        {
-            UIManagerScript.level = "Monde4";
-            Application.LoadLevel("Monde4");
-        }
-        else if (UIManagerScript.isWorld2finished && col.tag == "Player")
-        {
-            UIManagerScript.level = "Monde3";
-            Application.LoadLevel("Monde3");
-        }
-        else if(UIManagerScript.isWorld1finished && col.tag == "Player")
-        {
-            UIManagerScript.level = "Monde2";
-            Application.LoadLevel("Monde2");
+            case 1:
+                if(UIManagerScript.isWorld1finished && col.tag == "Player")
+                {
+                    UIManagerScript.level = "Monde2";
+                    Application.LoadLevel("Monde2");
+                }
+                break;
+            case 2:
+                if (UIManagerScript.isWorld2finished && col.tag == "Player")
+                {
+                    UIManagerScript.level = "Monde3";
+                    Application.LoadLevel("Monde3");
+                }
+                break;
+            case 3:
+                if (UIManagerScript.isWorld3finished && col.tag == "Player")
+                {
+                    UIManagerScript.level = "Monde4";
+                    Application.LoadLevel("Monde4");
+                }
+                break;
+            case 4:
+                if (UIManagerScript.isWorld4finished && col.tag == "Player")
+                {
+                    UIManagerScript.level = "Credits";
+                    Application.LoadLevel("Credits");
+                }
+                break;
+            default:
+                //Not supposed to happen.
+                break;
         }
     }
 }
