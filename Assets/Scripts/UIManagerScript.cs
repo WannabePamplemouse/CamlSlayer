@@ -15,7 +15,7 @@ public class UIManagerScript : MonoBehaviour {
 	public Animator commandLevel;
 
 	static public string level = "Monde1";
-
+    
 	public Button World2;
 	public Button World3;
 	public Button World4;
@@ -30,6 +30,7 @@ public class UIManagerScript : MonoBehaviour {
 	static public bool isWorld1finished = false;
 	static public bool isWorld2finished = false;
 	static public bool isWorld3finished = false;
+    static public bool isWorld4finished = false;
 
 	static public float defaultValue = 0.2f;
 	Slider volumeSlider;
