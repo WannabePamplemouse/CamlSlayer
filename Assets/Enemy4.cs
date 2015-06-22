@@ -34,7 +34,7 @@ public class Enemy4 : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer);
-        rb = GetComponentInParent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         scalex = transform.localScale.x;
         scaley = transform.localScale.y;
     }
