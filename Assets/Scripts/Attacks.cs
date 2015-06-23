@@ -23,6 +23,8 @@ public class Attacks : MonoBehaviour {
     [SerializeField]
     private Vector2 forceBomb, forceUnicorn, forcePoulet;
     [SerializeField]
+    private GameObject poulet, bombe;
+    [SerializeField]
     private Transform pouletPos;
 
     public bool doDamageOnHit = false;
@@ -101,7 +103,7 @@ public class Attacks : MonoBehaviour {
 
     public void shootPoulet()
     {
-        GameObject spike = GameObject.FindGameObjectWithTag("Poulet");
+        GameObject spike = poulet;
         spike = (GameObject)Instantiate(spike, pouletPos.position, new Quaternion(0, 0, 0, 0));
         spike.GetComponent<AudioSource>().Play();
         if (controller.facingRight)
@@ -121,6 +123,7 @@ public class Attacks : MonoBehaviour {
         spike = (GameObject)Instantiate(spike, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
         if (controller.facingRight)
         {
+            spike.transform.localScale = new Vector3(-0.4f, 0.4f, 1);
             spike.rigidbody2D.AddForce(forceUnicorn);
         }
         else
@@ -133,7 +136,7 @@ public class Attacks : MonoBehaviour {
     public void shootBomb()
     {
         inventory.GetBombs(-1);
-        GameObject spike = GameObject.FindGameObjectWithTag("Boooom");
+        GameObject spike = bombe;
         spike = (GameObject)Instantiate(spike, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
         if (controller.facingRight)
         {

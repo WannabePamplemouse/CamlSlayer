@@ -13,6 +13,7 @@ public class Unicorn : MonoBehaviour {
     public GameObject PartExpl2;
 
     private AudioSource[] audio;
+    private AudioSource uuhuhuhu, boooooom;
 
     // Use this for initialization
     void Start()
@@ -23,9 +24,18 @@ public class Unicorn : MonoBehaviour {
 
         audio = GetComponents<AudioSource>();
 
-        int i;
-        for (i = 0; i < audio.Length && audio[i].priority != 255; i++) ;
-        audio[i].Play();
+        if(audio[0].priority == 255)
+        {
+            uuhuhuhu = audio[0];
+            boooooom = audio[1];
+        }
+        else
+        {
+            uuhuhuhu = audio[1];
+            boooooom = audio[0];
+        }
+
+        uuhuhuhu.Play();
 
             if (GameObject.FindGameObjectsWithTag("Unicorn").Length > 1)
             {
@@ -51,9 +61,7 @@ public class Unicorn : MonoBehaviour {
             gameObject.rigidbody2D.gravityScale = 0;
             gameObject.rigidbody2D.velocity = new Vector2(0, 0);
             gameObject.rigidbody2D.fixedAngle = true;
-            int i;
-            for (i = 0; i < audio.Length && audio[i].priority != 254; i++) ;
-            audio[i].Play();
+            boooooom.Play();
             PartExpl.SetActive(true);
             PartExpl2.SetActive(true);
             renderer.enabled = false;
