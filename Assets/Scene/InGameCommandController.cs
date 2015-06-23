@@ -13,6 +13,8 @@ public class InGameCommandController : MonoBehaviour {
 
 	private GameObject commandPanel;
 
+	public Animator commandAnimator;
+
 	void Start () 
 	{
 		this.bombCommand = UIManagerScript.bombCommand;
@@ -87,15 +89,16 @@ public class InGameCommandController : MonoBehaviour {
 			actionCommand = "F";
 	}
 
-	public void OpenPanelCommand(GameObject mainPanel)
+	public void OpenPanelCommand()
 	{
+		commandAnimator.enabled = true;
+		commandAnimator.SetBool ("opening", true);
 		commandPanel.SetActive (!commandPanel.activeSelf);
-		mainPanel.SetActive (false);
 	}
 
-	public void ClosePanelCommand(GameObject mainPanel)
+	public void ClosePanelCommand()
 	{
 		commandPanel.SetActive (!commandPanel.activeSelf);
-		mainPanel.SetActive (true);
+		commandAnimator.SetBool ("opening", false);
 	}
 }
