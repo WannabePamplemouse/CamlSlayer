@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class Enemy4 : MonoBehaviour 
 {
@@ -25,14 +26,17 @@ public class Enemy4 : MonoBehaviour
     [SerializeField]
     private Transform bullet_position;
     [SerializeField]
-    private Vector2 force; 
+    private int force; 
 
     private GameObject player;
+    private RobotControllerScript controller;
+    private float timer = 2;
 
     // Use this for initialization
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        controller = player.GetComponent<RobotControllerScript>();
         Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer);
         rb = GetComponent<Rigidbody2D>();
         scalex = transform.localScale.x;
@@ -42,7 +46,9 @@ public class Enemy4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.x - range > player.transform.position.x || transform.position.x + range < player.transform.position.x)
+        bool xtest = (transform.position.x - range < player.transform.position.x && player.transform.position.x < transform.position.x) ^ (transform.position.x + range > player.transform.position.x && player.transform.position.x > transform.position.x);
+        bool ytest = !controller.grounded || (Math.Abs(player.transform.position.y - transform.position.y) < 1);
+        if (xtest && ytest)
         {
             player_in_range = true;
         }
@@ -53,18 +59,23 @@ public class Enemy4 : MonoBehaviour
 
         if(player_in_range)
         {
+            rb.velocity = new Vector2(0,0);
             if(player.transform.position.x > transform.position.x)
-            {
-                facing_left = false;
-                transform.localScale = new Vector3(scalex, scaley, 1);
-            }
-            else
             {
                 facing_left = false;
                 transform.localScale = new Vector3(-scalex, scaley, 1);
             }
+            else
+            {
+                facing_left = true;
+                transform.localScale = new Vector3(scalex, scaley, 1);
+            }
 
-            InvokeRepeating("shoot", 2, 2);
+            if(timer >= 2)
+            {
+                shoot();
+                timer = 0;
+            }
         }
         else
         {
@@ -80,6 +91,11 @@ public class Enemy4 : MonoBehaviour
             }
 
             movement();
+        }
+
+        if(timer < 2)
+        {
+            timer += Time.deltaTime;
         }
     }
 
@@ -103,11 +119,11 @@ public class Enemy4 : MonoBehaviour
         GameObject shoot_bullet = (GameObject)Instantiate(bullet, bullet_position.position, new Quaternion(0, 0, 0, 0));
         if (facing_left)
         {
-            shoot_bullet.rigidbody2D.AddForce(new Vector2(- force.x, force.y));
+            shoot_bullet.rigidbody2D.AddForce(new Vector2(-force, 0));
         }
         else
         {
-            shoot_bullet.rigidbody2D.AddForce(force);
+            shoot_bullet.rigidbody2D.AddForce(new Vector2(force,0));
         }
     }
 }

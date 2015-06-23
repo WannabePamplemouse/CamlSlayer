@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 
 public class SaveManagerScript : MonoBehaviour {
@@ -59,4 +59,4 @@ public class SaveManagerScript : MonoBehaviour {
 			}
 		}
 	}
-}
+}*/
