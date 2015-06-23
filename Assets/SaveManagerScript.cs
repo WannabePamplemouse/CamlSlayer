@@ -1,4 +1,4 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class SaveManagerScript : MonoBehaviour {
@@ -24,10 +24,10 @@ public class SaveManagerScript : MonoBehaviour {
 
 	void OnGUI()
 	{
-		selGridInt = GUI.SelectionGrid (new Rect (50, 50, 100, 100), selGridInt, selStrings, 1, GUI.skin.button.margin);
+		selGridInt = GUI.SelectionGrid (new Rect (120, 60, 120, 365), selGridInt, selStrings, 1);
 		//Debug.Log (selGridInt);
 
-		if (GUI.Button (new Rect (500, 350, 100, 50), "Save")) 
+		if (GUI.Button (new Rect (450, 550, 100, 50), "Save")) 
 		{
 			switch (selGridInt) 
 			{
@@ -43,7 +43,7 @@ public class SaveManagerScript : MonoBehaviour {
 			}
 		}
 
-		if (GUI.Button (new Rect (600, 350, 100, 50), "Load")) 
+		if (GUI.Button (new Rect (575, 550, 100, 50), "Load")) 
 		{
 			switch (selGridInt) 
 			{
@@ -58,5 +58,10 @@ public class SaveManagerScript : MonoBehaviour {
 					break;
 			}
 		}
+
+		if (GUI.Button (new Rect (700, 550, 100, 50), "Menu")) 
+		{
+			Application.LoadLevel("Menu");
+		}
 	}
-}*/
+}
