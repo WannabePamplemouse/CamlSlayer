@@ -13,7 +13,7 @@ public class BossFinal : MonoBehaviour
     PlayerH ph;
 
     [SerializeField]
-    GameObject sb1, sb2; // à voir pour le nombre
+    GameObject sb1, sb2, sb3; // à voir pour le nombre
     [SerializeField]
     GameObject bullet;
     [SerializeField]
@@ -124,6 +124,7 @@ public class BossFinal : MonoBehaviour
             p2 = true;
             Destroy(sb1.gameObject);
             Destroy(sb2.gameObject);
+            Destroy(sb3.gameObject);
             rb.gravityScale = 0;
         }
         else

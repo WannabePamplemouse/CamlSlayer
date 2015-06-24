@@ -24,7 +24,7 @@ public class SawBlade : MonoBehaviour {
     {
         if(coll.gameObject.tag == "Player")
         {
-            coll.GetComponent<PlayerH>().TakeDamage(30);
+            coll.GetComponent<PlayerH>().TakeDamage(10);
         }
     }
 }
