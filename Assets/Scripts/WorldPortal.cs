@@ -2,26 +2,10 @@
 using System.Collections;
 
 public class WorldPortal : MonoBehaviour {
+    [SerializeField]
     private int worldindex; //World the player is currently in. Don't forget to assign it.
 	
-    void Start()
-    {
-        switch (UIManagerScript.level)
-        {
-            case "Monde2":
-                worldindex = 2;
-                break;
-            case "Monde3":
-                worldindex = 3;
-                break;
-            case "Monde4":
-                worldindex = 4;
-                break;
-            default:
-                worldindex = 1;
-                break;
-        }
-    }
+
 
 	void Update () {
 	    switch(worldindex)
@@ -45,7 +29,8 @@ public class WorldPortal : MonoBehaviour {
                 }
                 break;
             case 4:
-                //TO DO : Add the extra credits or back to the menu when the world 4 is finished.
+                if(UIManagerScript.isWorld4finished)
+                    particleSystem.enableEmission = true;
                 break;
             default:
                 //Not supposed to happen, still does nothing.
