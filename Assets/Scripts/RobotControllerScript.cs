@@ -237,7 +237,7 @@ public class RobotControllerScript : MonoBehaviour {
         }
     }
 
-	static public void Save()
+	/*static public void Save()
 	{
 		BinaryFormatter save = new BinaryFormatter ();
 		FileStream file = File.Create (Application.persistentDataPath + "/filesaved.dat");
@@ -275,6 +275,6 @@ public class RobotControllerScript : MonoBehaviour {
 		public bool world2finished;
 		public bool world3finished;
 		public string level;
-	}
+	}*/
 
 }

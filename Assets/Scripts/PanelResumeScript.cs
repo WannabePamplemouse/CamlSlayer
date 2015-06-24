@@ -8,10 +8,10 @@ public class PanelResumeScript : MonoBehaviour {
 		Pauser.paused = false;
 	}
 
-	public void SaveData()
+	/*public void SaveData()
 	{
 		RobotControllerScript.Save ();
-	}
+	}*/
 
 	public void QuitMonde()
 	{

@@ -9,13 +9,20 @@ public class SaveManagerScript : MonoBehaviour {
 
 	int selGridInt = 0;
 	string [] selStrings;
-	Sprite [] images;
+    public Sprite [] images;
 	public Image pic1;
 	public Text date1;
+	public Text userName1;
 	public Image pic2;
 	public Text date2;
+	public Text userName2;
 	public Image pic3;
 	public Text date3;
+	public Text userName3;
+	public InputField input;
+	private string username;
+	private string loadedusername;
+	private string loadedtime;
 
 	void Start () 
 	{
@@ -36,6 +43,21 @@ public class SaveManagerScript : MonoBehaviour {
 		date1 = date1.GetComponent<Text> ();
 		date2 = date2.GetComponent<Text> ();
 		date3 = date3.GetComponent<Text> ();
+		userName1 = userName1.GetComponent<Text> ();
+		userName2 = userName2.GetComponent<Text> ();
+		userName3 = userName2.GetComponent<Text> ();
+
+		if (File.Exists (Application.persistentDataPath + "/filesaved0.dat")) 
+			pic1.enabled = true;
+		if (File.Exists (Application.persistentDataPath + "/filesaved1.dat"))
+			pic2.enabled = true;
+		if (File.Exists (Application.persistentDataPath + "/filesaved2.dat"))
+			pic3.enabled = true;
+
+		for (int i = 0; i < 3; i++) 
+		{
+			Load(i);
+		}
 	}
 	
 
@@ -47,6 +69,9 @@ public class SaveManagerScript : MonoBehaviour {
 			pic2.enabled = true;
 		if (File.Exists (Application.persistentDataPath + "/filesaved2.dat"))
 			pic3.enabled = true;
+
+		username = input.GetComponent<InputField> ().textComponent.text;
+		//userName1.text = username;
 		
 	
 	}
@@ -98,7 +123,7 @@ public class SaveManagerScript : MonoBehaviour {
 		}
 	}
 
-	static public void Save(int i)
+	public void Save(int i)
 	{
 		BinaryFormatter save = new BinaryFormatter ();
 		FileStream file;
@@ -112,29 +137,56 @@ public class SaveManagerScript : MonoBehaviour {
 		data.world1finished = UIManagerScript.isWorld1finished;
 		data.world2finished = UIManagerScript.isWorld2finished;
 		data.world3finished = UIManagerScript.isWorld3finished;
+		data.world4finished = UIManagerScript.isWorld4finished;
+		data.username = username;
+		data.savedTime = DateTime.Now.ToString ();
 		data.level = UIManagerScript.level;
 		
 		save.Serialize (file, data);
 		file.Close ();
 	}
 	
-	static public void Load()
+	public void Load(int i)
 	{
-		if(File.Exists(Application.persistentDataPath + "/filesaved.dat"))
+		if(File.Exists(Application.persistentDataPath + "/filesaved" + i + ".dat"))
 		{
 			BinaryFormatter load = new BinaryFormatter ();
-			FileStream file = File.Open (Application.persistentDataPath + "/filesaved.dat", FileMode.Open);
+			FileStream file = File.Open (Application.persistentDataPath + "/filesaved" + i + ".dat", FileMode.Open);
 			WorldData data = (WorldData)load.Deserialize(file);
 			file.Close ();
 			
 			UIManagerScript.isWorld1finished = data.world1finished;
 			UIManagerScript.isWorld2finished = data.world2finished;
 			UIManagerScript.isWorld3finished = data.world3finished;
+			UIManagerScript.isWorld4finished = data.world4finished;
+			loadedusername = data.username;
+			loadedtime = data.savedTime;
 			UIManagerScript.level = data.level;
+
+			if(i == 0)
+			{
+				chooseIcon(pic1);
+				userName1.text = loadedusername;
+				date1.text = loadedtime;
+			}
+
+			if(i == 1)
+			{
+				chooseIcon(pic2);
+				userName2.text = loadedusername;
+				date2.text = loadedtime;
+			}
+
+			if(i == 2)
+			{
+				chooseIcon(pic3);
+				userName3.text = loadedusername;
+				date3.text = loadedtime;
+			}
 		}
 	}
 
-	private void chooseIcon(Image img)
+	public void chooseIcon(Image img)
 	{
 		if (UIManagerScript.isWorld4finished)
 			img.sprite = images [3];
@@ -152,6 +204,9 @@ public class SaveManagerScript : MonoBehaviour {
 		public bool world1finished;
 		public bool world2finished;
 		public bool world3finished;
+		public bool world4finished;
+		public string username;
 		public string level;
+		public string savedTime;
 	}
 }

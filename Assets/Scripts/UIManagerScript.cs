@@ -206,10 +206,10 @@ public class UIManagerScript : MonoBehaviour {
 		Application.Quit ();
 	}
 
-	public void LoadFile()
+	/*public void LoadFile()
 	{
 		RobotControllerScript.Load ();
-	}
+	}*/
     public void Multi()
     {
         Application.LoadLevel("Lobby");
