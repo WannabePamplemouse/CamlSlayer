@@ -43,6 +43,18 @@ public class EnemyHealth : MonoBehaviour
 			// ... the enemy is dead.
 			Death ();
 		}
+
+        if(name == "Boss Final") // changer de partie pour le boss final
+        {
+            if(currentHealth < 500)
+            {
+                GetComponent<BossFinal>().switch_p(1);
+            }
+            if(currentHealth < 250)
+            {
+                GetComponent<BossFinal>().switch_p(2);
+            }
+        }
 	}
 	
 	void Death ()
@@ -69,7 +81,7 @@ public class EnemyHealth : MonoBehaviour
 			UIManagerScript.isWorld3finished = true;
             StartCoroutine(wait());
         }
-        else if (name == "BossFinal")
+        else if (name == "Boss Final")
         {
             StartCoroutine(wait());
             //des credits ?

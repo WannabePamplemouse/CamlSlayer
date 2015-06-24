@@ -4,59 +4,77 @@ using System.Collections;
 public class BossFinal : MonoBehaviour 
 {
 
-    bool p1 = false, p2 = false, p3 = false;
+    bool p1 = true, p2 = false, p3 = false, facing_left = false;
     EnemyHealth health;
     float timer = 0;
+    Transform target;
+    GameObject player;
 
     [SerializeField]
     SawBlade sb1, sb2; // à voir pour le nombre
     [SerializeField]
-    GameObject missile;
+    GameObject bullet;
     [SerializeField]
-    int mDamage;
+    Transform bullet_position;
 
 	// Use this for initialization
 	void Start () 
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        target = player.transform;
         health = GetComponent<EnemyHealth>();
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-	    //verifier la pos du joueur pour commencer quand il arrive.
-        //verifier la vie du boss pour passer à p2 et à p3
-        if(p1 && health.currentHealth < 100)
+        if(facing_left && target.position.x > transform.position.x)
         {
-            Destroy(sb1);
-            Destroy(sb2);
-            p1 = false;
-            p2 = true;
+            facing_left = false;
+            transform.localScale = new Vector2(1, 1);
+
         }
-        if(p2)
+        else if(!facing_left && target.position.x <= transform.position.x)
         {
-            if(health.currentHealth < 50)
-            {
-                p2 = false;
-                p3 = true;
-            }
-            else
-            {
-                if(timer > 1)
-                {
-                    timer = 0;
-                    shoot_missile();
-                }
-                else
-                {
-                    timer += Time.deltaTime;
-                }
-            }
+            facing_left = true;
+            transform.localScale = new Vector2(-1, 1);
+        }
+
+	    if(p2 && timer >= 1.5f) // test 1.5
+        {
+            shoot_missile();
+            timer = 0;
+        }
+        else if(p3 && timer >= 5) // test 5
+        {
+            // actions de p3
+        }
+        else if(!p1)
+        {
+            timer += Time.deltaTime;
         }
 	}
 
     void shoot_missile()
     {
-        // soit avec addforce() soit avec ennemymove à tester
+        Vector2 dir = (target.position - transform.position).normalized;
+        GameObject shoot_bullet = (GameObject)Instantiate(bullet, bullet_position.position, new Quaternion(0, 0, 0, 0));
+        shoot_bullet.rigidbody2D.AddForce(dir);
+    }
+
+    public void switch_p(int p)
+    {
+        if(p == 1)
+        {
+            p1 = false;
+            p2 = true;
+            Destroy(sb1);
+            Destroy(sb2);
+        }
+        else
+        {
+            p2 = false;
+            p3 = true;
+        }
     }
 }
