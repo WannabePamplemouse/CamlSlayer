@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Boss3AI.cs" />
      <Compile Include="Assets\BossFinal.cs" />
+     <Compile Include="Assets\BulletBoss.cs" />
      <Compile Include="Assets\BulletEnemy4.cs" />
      <Compile Include="Assets\CameraShake.cs" />
      <Compile Include="Assets\Door3.cs" />
