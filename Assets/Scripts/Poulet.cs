@@ -16,24 +16,15 @@ public class Poulet : MonoBehaviour {
     {
         Physics2D.IgnoreLayerCollision(gameObject.layer, 10);
         Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer);
-        if (GameObject.FindGameObjectsWithTag("Poulet").Length > 1)
-        {
-            gameObject.tag = "Poulet1";
-            GetComponent<AudioSource>().Play();
-            timer = 0;
-            destroyable = true;
-        }
-        else
-        {
-            destroyable = false;
-        }
+        GetComponent<AudioSource>().Play();
+        timer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= time && destroyable)
+        if (timer >= time)
         {
             Destroy(gameObject);
         }
