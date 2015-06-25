@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System.Collections;
 
 public class InGameCommandController : MonoBehaviour {
 
@@ -12,7 +14,7 @@ public class InGameCommandController : MonoBehaviour {
 	private string actionCommand;
 
 	private GameObject commandPanel;
-
+	private EventSystem es;
 	public Animator commandAnimator;
 
 	void Start () 
@@ -26,6 +28,8 @@ public class InGameCommandController : MonoBehaviour {
 
 		commandPanel = GameObject.FindGameObjectWithTag ("CommandPanel");
 		commandPanel.SetActive (false);
+
+		es = EventSystem.current;
 	
 	}
 	
@@ -89,11 +93,26 @@ public class InGameCommandController : MonoBehaviour {
 			actionCommand = "F";
 	}
 
-	public void OpenPanelCommand()
+	public void OpenPanelCommand(GameObject mainPanel)
 	{
-		commandAnimator.enabled = true;
-		commandAnimator.SetBool ("opening", true);
+		/*mainPanel.SetActive (false);
+		commandPanel.SetActive (!commandPanel.activeSelf);*/
+
+		/*commandAnimator.enabled = true;
+		commandAnimator.SetBool ("opening", true);*/
+		Button[] butons = mainPanel.GetComponents<Button> ();
+		foreach (Button bouton in butons) 
+		{
+			Image imag = bouton.GetComponent<Image>();
+			Color newcol = new Color(imag.color.r, imag.color.g, imag.color.b, 0);
+			imag.color = newcol;
+		}
+		Image img = mainPanel.GetComponent<Image> ();
+		Color newPanCol = new Color (img.color.r, img.color.g, img.color.b, 0);
+		img.color = newPanCol;
+
 		commandPanel.SetActive (!commandPanel.activeSelf);
+
 	}
 
 	public void ClosePanelCommand()
