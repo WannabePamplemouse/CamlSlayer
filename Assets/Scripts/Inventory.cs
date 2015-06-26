@@ -7,39 +7,21 @@ public class Inventory : MonoBehaviour {
     [SerializeField]
     public int bombs = 2;
     [SerializeField]
-    Image Bombe1, Bombe2, Bombe3, keyI;
+    Image Bombe1, Bombe2, Bombe3, Bombe4, Bombe5, keyI;
 
     private int maxBombs = 3;
     public bool key = false;
 
     void Awake()
     {
+        if(UIManagerScript.isWorld2finished)
+        {
+            maxBombs = 5;
+        }
+
         keyI.enabled = false;
 
-        if (bombs == 3)
-        {
-            Bombe1.enabled = true;
-            Bombe2.enabled = true;
-            Bombe3.enabled = true;
-        }
-        else if (bombs == 2)
-        {
-            Bombe3.enabled = false;
-            Bombe2.enabled = true;
-            Bombe1.enabled = true;
-        }
-        else if (bombs == 1)
-        {
-            Bombe3.enabled = false;
-            Bombe2.enabled = false;
-            Bombe1.enabled = true;
-        }
-        else
-        {
-            Bombe3.enabled = false;
-            Bombe2.enabled = false;
-            Bombe1.enabled = false;
-        }
+        checkBomb();
     }
 
     public void GetBombs(int amount)
@@ -47,29 +29,59 @@ public class Inventory : MonoBehaviour {
         bombs += amount;
 
         if (bombs > maxBombs) bombs = maxBombs;
-        if(bombs == 3)
+
+        checkBomb();
+    }
+
+    void checkBomb()
+    {
+        if (bombs == 5)
         {
             Bombe1.enabled = true;
             Bombe2.enabled = true;
             Bombe3.enabled = true;
+            Bombe4.enabled = true;
+            Bombe5.enabled = true;
         }
-        else if(bombs == 2)
+        else if (bombs == 4)
+        {
+            Bombe1.enabled = true;
+            Bombe2.enabled = true;
+            Bombe3.enabled = true;
+            Bombe4.enabled = true;
+            Bombe5.enabled = false;
+        }
+        else if (bombs == 3)
+        {
+            Bombe1.enabled = true;
+            Bombe2.enabled = true;
+            Bombe3.enabled = true;
+            Bombe4.enabled = false;
+            Bombe5.enabled = false;
+        }
+        else if (bombs == 2)
         {
             Bombe3.enabled = false;
             Bombe2.enabled = true;
             Bombe1.enabled = true;
+            Bombe4.enabled = false;
+            Bombe5.enabled = false;
         }
-        else if(bombs == 1)
+        else if (bombs == 1)
         {
             Bombe3.enabled = false;
             Bombe2.enabled = false;
             Bombe1.enabled = true;
+            Bombe4.enabled = false;
+            Bombe5.enabled = false;
         }
         else
         {
             Bombe3.enabled = false;
             Bombe2.enabled = false;
             Bombe1.enabled = false;
+            Bombe4.enabled = false;
+            Bombe5.enabled = false;
         }
     }
 
