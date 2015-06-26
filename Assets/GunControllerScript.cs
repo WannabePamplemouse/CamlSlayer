@@ -27,6 +27,7 @@ public class GunControllerScript : MonoBehaviour {
 
 	void Update () 
 	{
+        transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 3, player.transform.position.z);
 		if (fireRate == 0) 
 		{
 			if (Input.GetKeyDown (KeyCode.U))
@@ -44,11 +45,11 @@ public class GunControllerScript : MonoBehaviour {
 
 	private void Shoot()
 	{
-		/*Vector2 mousePos = new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint (Input.mousePosition).y);
+		Vector2 mousePos = new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint (Input.mousePosition).y);
 		Vector2 firePos = new Vector2 (gunPoint.position.x, gunPoint.position.y);
 		GameObject _shoot = (GameObject)Instantiate (toshot, transform.position, new Quaternion (0, 0, 0, 0));
-		_shoot.rigidbody2D.velocity = ((mousePos - firePos) * 50);
-		Debug.Log ("Mouse position in x = " + mousePos.x + "Mouse position in y = " + mousePos.y);*/
+		_shoot.rigidbody2D.velocity = ((mousePos - firePos) * 5);
+		Debug.Log ("Mouse position in x = " + mousePos.x + "Mouse position in y = " + mousePos.y);
 		//RaycastHit2D hit = Physics2D.Raycast (firePos, (mousePos - firePos), 100, whatToHit);
 		//Debug.DrawLine (firePos, (mousePos - firePos) * 100, Color.cyan);
 		/*Debug.Log ("Shooting dont know where");
@@ -56,10 +57,10 @@ public class GunControllerScript : MonoBehaviour {
 		{
 			Debug.DrawLine(firePos, hit.point, Color.red);
 			Debug.Log("We hit" + hit.collider.name);
-		}*/
-		Vector2 dir = (target.position - transform.position).normalized;
+		}
+		/*Vector2 dir = (target.position - transform.position).normalized;
 		GameObject shoot_bullet = (GameObject)Instantiate(toshot, transform.position, new Quaternion(0, 0, 0, 0));
-		shoot_bullet.rigidbody2D.velocity = dir * 25;
+		shoot_bullet.rigidbody2D.velocity = dir * 25;*/
 
 	}
 }
