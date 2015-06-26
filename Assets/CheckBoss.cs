@@ -6,6 +6,9 @@ public class CheckBoss : MonoBehaviour {
     private bool can_teleport = false;
     private float timer = 0;
 
+    [SerializeField]
+    Camera cam;
+
 	// Update is called once per frame
 	void Update () {
 	    if(can_teleport)
@@ -14,6 +17,7 @@ public class CheckBoss : MonoBehaviour {
             if(timer > 5)
             {
                 can_teleport = false;
+                cam.orthographicSize = 10;
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
                 player.gameObject.transform.position = new Vector3(2100, 15, 0);
             }

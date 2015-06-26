@@ -37,7 +37,7 @@ public class PlayerH : MonoBehaviour
 	
 	public void TakeDamage (int amount)
 	{
-		if(canTakeDamage){
+		if(canTakeDamage || amount < 0){
 			// Reduce the current health by the damage amount.
 			currentHealth -= amount;
 			

@@ -20,6 +20,7 @@ public class cochon : MonoBehaviour {
         Physics2D.IgnoreLayerCollision(gameObject.layer, 10);
         Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer);
         Physics2D.IgnoreLayerCollision(gameObject.layer, 17);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, 20);
 
         audio = GetComponents<AudioSource>();
 

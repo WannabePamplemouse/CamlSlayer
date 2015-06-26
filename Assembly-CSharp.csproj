@@ -131,7 +131,6 @@
      <Compile Include="Assets\Scripts\bossCheck.cs" />
      <Compile Include="Assets\Scripts\pause.cs" />
      <Compile Include="Assets\Scripts\spikeBall.cs" />
-     <Compile Include="Assets\Scripts\test.cs" />
      <Compile Include="Assets\Scripts\throwbomb.cs" />
      <Compile Include="Assets\Turret.cs" />
      <Compile Include="Assets\World3SoundControllerScript.cs" />
@@ -152,10 +151,10 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.3/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>C:/Users/Gabriel/Documents/GitHub/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>C:/Users/Hippolyte/Desktop/Github Repositories/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.JsonFx">
- <HintPath>C:/Users/Gabriel/Documents/GitHub/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
+ <HintPath>C:/Users/Hippolyte/Desktop/Github Repositories/CamlSlayer/Assets/Plugins/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

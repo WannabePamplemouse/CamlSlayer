@@ -11,6 +11,11 @@ public class Credits : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            Application.LoadLevel("Menu");
+        }
+
         camera.transform.Translate(Vector3.down * Time.deltaTime * speed);
         StartCoroutine(Wait());
     }
