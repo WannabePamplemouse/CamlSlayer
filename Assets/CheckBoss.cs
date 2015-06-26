@@ -15,7 +15,7 @@ public class CheckBoss : MonoBehaviour {
             {
                 can_teleport = false;
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
-                player.gameObject.transform.position = new Vector3(0, 0, 0);
+                player.gameObject.transform.position = new Vector3(2100, 15, 0);
             }
         }
 	}

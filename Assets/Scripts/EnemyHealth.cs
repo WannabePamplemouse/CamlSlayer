@@ -83,6 +83,7 @@ public class EnemyHealth : MonoBehaviour
         }
         else if (name == "Boss Final")
         {
+            UIManagerScript.isWorld4finished = true;
             checker.start_teleporting();
         }
         else
