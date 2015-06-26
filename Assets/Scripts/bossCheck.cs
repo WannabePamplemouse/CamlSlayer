@@ -9,7 +9,6 @@ public class bossCheck : MonoBehaviour {
     {
         if(boss1 && boss2 && boss3)
         {
-            StartCoroutine(EnemyHealth.wait());
             UIManagerScript.isWorld2finished = true;
         }
     }

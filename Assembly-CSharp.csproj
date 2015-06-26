@@ -51,6 +51,7 @@
      <Compile Include="Assets\BulletBoss.cs" />
      <Compile Include="Assets\BulletEnemy4.cs" />
      <Compile Include="Assets\CameraShake.cs" />
+     <Compile Include="Assets\CheckBoss.cs" />
      <Compile Include="Assets\Door3.cs" />
      <Compile Include="Assets\Enemy4.cs" />
      <Compile Include="Assets\SampleAssets\2D\Scripts\Camera2DFollow.cs" />

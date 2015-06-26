@@ -16,6 +16,8 @@ public class EnemyHealth : MonoBehaviour
     private float xHearthforce;
     [SerializeField]
     private float yHearthforce;
+    [SerializeField]
+    CheckBoss checker;
 
     void Awake ()
 	{
@@ -74,17 +76,14 @@ public class EnemyHealth : MonoBehaviour
         if(name == "Boss")
         {
             UIManagerScript.isWorld1finished = true;
-            StartCoroutine(wait());
         }
         else if(name == "boss3")
         {
 			UIManagerScript.isWorld3finished = true;
-            StartCoroutine(wait());
         }
         else if (name == "Boss Final")
         {
-            StartCoroutine(wait());
-            //des credits ?
+            checker.start_teleporting();
         }
         else
         {
@@ -115,11 +114,6 @@ public class EnemyHealth : MonoBehaviour
 		KC.enemyKilled ++;
         Destroy(gameObject);	
 	}
-
-    static public IEnumerator wait()
-    {
-        yield return new WaitForSeconds(5);
-    }
 
     public Slider getSlider()
     {

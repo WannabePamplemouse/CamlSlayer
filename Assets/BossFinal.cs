@@ -108,7 +108,7 @@ public class BossFinal : MonoBehaviour
         while (timer < 5)
         {
             Vector2 dir = (target.position - transform.position).normalized;
-            rb.velocity = dir * 15;
+            rb.velocity = dir * 12;
             yield return 0;
         }
         done_charging = true;
