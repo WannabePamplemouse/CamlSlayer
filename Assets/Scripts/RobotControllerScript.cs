@@ -32,7 +32,7 @@ public class RobotControllerScript : MonoBehaviour {
     private Attacks attacks;
     private PlayerH playerHealth;
 
-	private bool poulet = false;
+	private bool poulet = false, cochon = false;
 	
 	float timer, timer2 = 0;
 
@@ -138,9 +138,14 @@ public class RobotControllerScript : MonoBehaviour {
 		} 
         else if (haveTromblon && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) 
         {
-            if (poulet && timer2 > 0.5)
+            if (poulet && timer2 > 0.25)
             {
                 attacks.shootPoulet();
+                timer2 = 0;
+            }
+            else if(cochon && timer2 > 0.75)
+            {
+                attacks.shootCochon();
                 timer2 = 0;
             }
             else if (timer2 > 2)
@@ -157,8 +162,20 @@ public class RobotControllerScript : MonoBehaviour {
 		} 
         else if (haveTromblon && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), firstAbilityFinal)) && energy.currentEnergy == energy.stratingEnergy) 
         {
-			poulet = !poulet;
             energy.currentEnergy = 0;
+            if(poulet)
+            {
+                poulet = false;
+                cochon = true;
+            }
+            else if(cochon)
+            {
+                cochon = false;
+            }
+            else
+            {
+                poulet = true;
+            }
 		} 
         else if (haveBomb && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal)) && timer2 > 0.5 && inventory.canBomb()) 
         {

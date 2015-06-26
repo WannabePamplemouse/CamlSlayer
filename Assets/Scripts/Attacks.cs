@@ -21,9 +21,9 @@ public class Attacks : MonoBehaviour {
     private float dashSpeed;
 
     [SerializeField]
-    private Vector2 forceBomb, forceUnicorn, forcePoulet;
+    private Vector2 forceBomb, forceUnicorn, forcePoulet, forceCochon;
     [SerializeField]
-    private GameObject poulet, bombe;
+    private GameObject poulet, bombe, cochon;
     [SerializeField]
     private Transform pouletPos;
 
@@ -145,6 +145,22 @@ public class Attacks : MonoBehaviour {
         else
         {
             spike.rigidbody2D.AddForce(new Vector2(-forceBomb.x, forceBomb.y));
+        }
+    }
+
+    public void shootCochon()
+    {
+        GameObject spike = cochon;
+        spike = (GameObject)Instantiate(spike, pouletPos.position, new Quaternion(0, 0, 0, 0));
+        spike.GetComponent<AudioSource>().Play();
+        if (controller.facingRight)
+        {
+            spike.transform.localScale = new Vector3(-1, 1, 1);
+            spike.rigidbody2D.AddForce(forceCochon);
+        }
+        else
+        {
+            spike.rigidbody2D.AddForce(new Vector2(-forceCochon.x, forceCochon.y));
         }
     }
 }

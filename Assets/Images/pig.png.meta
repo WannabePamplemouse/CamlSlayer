@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: b023a9350c5c1bc48b70dcaaa1ac44a2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pig_0
+    21300002: pig_1
+    21300004: pig_2
+    21300006: pig_3
+    21300008: pig_4
+    21300010: pig_5
+    21300012: pig_6
+    21300014: pig_7
+    21300016: pig_8
+    21300018: pig_9
+    21300020: pig_10
+    21300022: pig_11
+    21300024: pig_12
+    21300026: pig_13
+    21300028: pig_14
+    21300030: pig_15
+    21300032: pig_16
+    21300034: pig_17
+    21300036: pig_18
+    21300038: pig_19
+    21300040: pig_20
+    21300042: pig_21
+    21300044: pig_22
+    21300046: pig_23
+    21300048: pig_24
+    21300050: pig_25
+    21300052: pig_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 45
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pig_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 245
+        width: 82
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 245
+        width: 88
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_2
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 245
+        width: 92
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_3
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 253
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_4
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 253
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 171
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_6
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 171
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_7
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 171
+        width: 82
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_8
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 171
+        width: 82
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 91
+        width: 96
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_10
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 122
+        width: 73
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_11
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 122
+        width: 63
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_12
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 101
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 101
+        width: 90
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_14
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 8
+        width: 96
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_15
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 8
+        width: 106
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_16
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 8
+        width: 105
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_17
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 8
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_18
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 8
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_19
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 8
+        width: 82
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_20
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 8
+        width: 85
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_21
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 8
+        width: 93
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_22
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 8
+        width: 97
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_23
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 8
+        width: 99
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_24
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 25
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_25
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 18
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pig_26
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 17
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

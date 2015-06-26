@@ -134,6 +134,7 @@
      <Compile Include="Assets\Scripts\throwbomb.cs" />
      <Compile Include="Assets\Turret.cs" />
      <Compile Include="Assets\World3SoundControllerScript.cs" />
+     <Compile Include="Assets\cochon.cs" />
      <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
