@@ -30,7 +30,7 @@ public class GunControllerScript : MonoBehaviour {
         transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 3, player.transform.position.z);
 		if (fireRate == 0) 
 		{
-			if (Input.GetKeyDown (KeyCode.U))
+			if (Input.GetButtonDown ("Fire1"))
 				Shoot ();
 		}
 		else 
