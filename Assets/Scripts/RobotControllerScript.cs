@@ -172,11 +172,13 @@ public class RobotControllerScript : MonoBehaviour {
             if(poulet)
             {
                 poulet = false;
-                cochon = true;
+                if(UIManagerScript.isWorld3finished)
+                    cochon = true;
             }
             else if(cochon)
             {
-                cochon = false;
+                if(UIManagerScript.isWorld3finished)
+                    cochon = false;
             }
             else
             {
