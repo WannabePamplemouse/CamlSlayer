@@ -51,6 +51,7 @@ public class RobotControllerScript : MonoBehaviour {
 	static private string firstAbilityFinal;
 
 	private bool isMulti;
+	GameObject multiGun;
 
 	void Start () 
 	{
@@ -73,6 +74,10 @@ public class RobotControllerScript : MonoBehaviour {
 		firstAbilityFinal = UIManagerScript.firstAbility;
 
 		isMulti = NetworkManager.isMulti;
+		if (isMulti) 
+		{
+			multiGun = Instantiate(Resources.Load("Prefabs/MultiGun")) as GameObject;
+		}
 	}
 	
 	void FixedUpdate () 
