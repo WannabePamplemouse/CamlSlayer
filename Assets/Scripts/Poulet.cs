@@ -8,6 +8,7 @@ public class Poulet : MonoBehaviour {
     [SerializeField]
     private int value;
     private float timer;
+    public ParticleSystem plumes;
 
     private bool destroyable;
 
@@ -17,6 +18,7 @@ public class Poulet : MonoBehaviour {
         Physics2D.IgnoreLayerCollision(gameObject.layer, 10);
         Physics2D.IgnoreLayerCollision(gameObject.layer, gameObject.layer);
         GetComponent<AudioSource>().Play();
+        plumes.particleSystem.enableEmission = true;
         timer = 0;
     }
 

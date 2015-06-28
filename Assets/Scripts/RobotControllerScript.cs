@@ -130,7 +130,7 @@ public class RobotControllerScript : MonoBehaviour {
 	    if (Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), bombCommandFinal)))
 			SwitchBomb ();
 
-		else if (Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), gunCommandFinal)))
+		else if (Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), gunCommandFinal))) //SwitchTromblon, dispo M1
 			SwitchTromblon ();
 
 		else if (Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), swordCommandFinal)))
@@ -142,7 +142,7 @@ public class RobotControllerScript : MonoBehaviour {
             timer2 = 0;
             anim.SetBool("isAttacking", true);
 		} 
-        else if (haveTromblon && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) 
+        else if (haveTromblon && Input.GetKey ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal))) //IDEM
         {
             if (poulet && timer2 > 0.25)
             {
