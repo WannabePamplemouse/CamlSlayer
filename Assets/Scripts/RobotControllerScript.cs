@@ -73,12 +73,7 @@ public class RobotControllerScript : MonoBehaviour {
 		attackCommandFinal = UIManagerScript.attackCommand;
 		firstAbilityFinal = UIManagerScript.firstAbility;
 
-		isMulti = NetworkManager.isMulti;
-		if (isMulti) 
-		{
-			if(NetworkManager2.isRobotGun)
-				multiGun = Instantiate(Resources.Load("Prefabs/MultiGun")) as GameObject;
-		}
+		isMulti = NetworkManager2.isMulti;
 	}
 	
 	void FixedUpdate () 
@@ -87,8 +82,9 @@ public class RobotControllerScript : MonoBehaviour {
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
 		
-		if (NetworkManager.Robot != this.gameObject && isMulti)
+		if (!networkView.isMine)
 			return;
+
 		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
 		
 		float move = Input.GetAxis ("Horizontal");
@@ -110,7 +106,7 @@ public class RobotControllerScript : MonoBehaviour {
 	void Update()
 	{   
 
-		if (NetworkManager.Robot != this.gameObject && isMulti)
+		if (!networkView.isMine)
 			return;
 
 		//getting the commands if they are changing in game

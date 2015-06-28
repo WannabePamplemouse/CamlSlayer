@@ -212,7 +212,7 @@ public class UIManagerScript : MonoBehaviour {
 	}*/
     public void Multi()
     {
-        Application.LoadLevel("Lobby");
+        Application.LoadLevel("Multi");
     }
 
 	public void onValueChanged()

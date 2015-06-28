@@ -11,26 +11,29 @@ public class GunControllerScript : MonoBehaviour {
 	private float timeToFire = 0;
 	private Transform gunPoint;
 
-	GameObject player;
+	public static GameObject player;
 	Transform target;
+
+
 	void Awake () 
 	{
 		gunPoint = GameObject.FindGameObjectWithTag ("MultiGun").gameObject.transform;
 		Physics2D.IgnoreLayerCollision (8, gameObject.layer);
 		if (gunPoint == null)
 			Debug.Log ("No gun found");
-
-		player = GameObject.FindWithTag ("Player");
-		target = player.transform;
 	}
 	
 
 	void Update () 
 	{
         transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 3, player.transform.position.z);
+
+		if (!networkView.isMine)
+			return;
+
 		if (fireRate == 0) 
 		{
-			if (Input.GetButtonDown ("Fire1"))
+			if (Input.GetKeyDown (KeyCode.U))
 				Shoot ();
 		}
 		else 
@@ -49,7 +52,7 @@ public class GunControllerScript : MonoBehaviour {
 		Vector2 firePos = new Vector2 (gunPoint.position.x, gunPoint.position.y);
 		GameObject _shoot = (GameObject)Instantiate (toshot, transform.position, new Quaternion (0, 0, 0, 0));
 		_shoot.rigidbody2D.velocity = ((mousePos - firePos) * 5);
-		Debug.Log ("Mouse position in x = " + mousePos.x + "Mouse position in y = " + mousePos.y);
+		//Debug.Log ("Mouse position in x = " + mousePos.x + "Mouse position in y = " + mousePos.y);
 		//RaycastHit2D hit = Physics2D.Raycast (firePos, (mousePos - firePos), 100, whatToHit);
 		//Debug.DrawLine (firePos, (mousePos - firePos) * 100, Color.cyan);
 		/*Debug.Log ("Shooting dont know where");
