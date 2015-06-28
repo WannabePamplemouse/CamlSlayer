@@ -76,7 +76,8 @@ public class RobotControllerScript : MonoBehaviour {
 		isMulti = NetworkManager.isMulti;
 		if (isMulti) 
 		{
-			multiGun = Instantiate(Resources.Load("Prefabs/MultiGun")) as GameObject;
+			if(NetworkManager2.isRobotGun)
+				multiGun = Instantiate(Resources.Load("Prefabs/MultiGun")) as GameObject;
 		}
 	}
 	

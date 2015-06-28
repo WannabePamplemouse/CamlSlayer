@@ -1,163 +1,60 @@
 Initialize engine version: 4.6.3f1 (4753d8b6ef2b)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
-    Vendor:   Intel
-    VRAM:     1052 MB
+    Version:  Direct3D 11.0 [level 10.0]
+    Renderer: NVIDIA GeForce GT 230  (ID=0x621)
+    Vendor:   NVIDIA
+    VRAM:     497 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
-Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
-Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
-Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
-- Completed reload, in  0.172 seconds
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+Platform assembly: C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
+Loading C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
+Platform assembly: C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
+Loading C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
+- Completed reload, in  0.109 seconds
+desktop: 1680x1050 60Hz; virtual: 1680x1050 at 0,0
 <RI> Initializing input.
-XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
-Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 16.833702 ms
+Platform assembly: C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Patrick\Documents\CamlSlayer\CamlSlayer_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 13.516069 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 56 unused Assets to reduce memory usage. Loaded Objects now: 4218.
-Total: 4.526903 ms (FindLiveObjects: 0.458848 ms CreateObjectMapping: 0.095995 ms MarkObjects: 1.674797 ms  DeleteObjects: 0.795136 ms)
+Unloading 64 unused Assets to reduce memory usage. Loaded Objects now: 277.
+Total: 1.358352 ms (FindLiveObjects: 0.029330 ms CreateObjectMapping: 0.019431 ms MarkObjects: 0.149950 ms  DeleteObjects: 0.382391 ms)
 
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
-  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
-  at AudioControllerScript.Update () [0x00000] in <filename unknown>:0 
+Server has been created successfully !
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
-  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
-  at UnitySampleAssets._2D.Camera2DFollow.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
-  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
-  at EnemyAI.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnloadTime: 14.098724 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 343 unused Assets to reduce memory usage. Loaded Objects now: 302.
-Total: 10.456916 ms (FindLiveObjects: 0.070034 ms CreateObjectMapping: 0.048299 ms MarkObjects: 0.429264 ms  DeleteObjects: 8.517073 ms)
-
-UnloadTime: 1.119348 ms
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4218.
-Total: 4.208727 ms (FindLiveObjects: 0.455829 ms CreateObjectMapping: 0.096599 ms MarkObjects: 1.771396 ms  DeleteObjects: 0.357418 ms)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
-  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
-  at AudioControllerScript.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
-  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
-  at UnitySampleAssets._2D.Camera2DFollow.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
-  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
-  at EnemyAI.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnloadTime: 11.311220 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 339 unused Assets to reduce memory usage. Loaded Objects now: 302.
-Total: 7.087398 ms (FindLiveObjects: 0.051922 ms CreateObjectMapping: 0.073053 ms MarkObjects: 0.464886 ms  DeleteObjects: 5.060616 ms)
-
-UnloadTime: 1.033616 ms
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4218.
-Total: 4.066243 ms (FindLiveObjects: 0.436509 ms CreateObjectMapping: 0.116523 ms MarkObjects: 1.703173 ms  DeleteObjects: 0.344740 ms)
-
+UnloadTime: 0.396690 ms
 NullReferenceException: Object reference not set to an instance of an object
-  at TeleportBoss.OnTriggerEnter2D (UnityEngine.Collider2D other) [0x00000] in <filename unknown>:0 
+  at Inventory.checkBomb () [0x00000] in <filename unknown>:0 
+  at Inventory.Awake () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-UnloadTime: 14.374034 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 4609.
+Total: 4.172581 ms (FindLiveObjects: 0.560206 ms CreateObjectMapping: 0.051694 ms MarkObjects: 2.750068 ms  DeleteObjects: 0.019797 ms)
+
+UnloadTime: 6.815595 ms
+NullReferenceException: Object reference not set to an instance of an object
+  at Inventory.checkBomb () [0x00000] in <filename unknown>:0 
+  at Inventory.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 4707.
-Total: 19.856066 ms (FindLiveObjects: 0.508959 ms CreateObjectMapping: 0.149729 ms MarkObjects: 2.226019 ms  DeleteObjects: 15.070759 ms)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
-  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
-  at World2AudioControllerScript.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
-  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
-  at Boss2AI.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
-  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
-  at Boss2AI.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
-  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
-  at UnitySampleAssets._2D.Camera2DFollow.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException
-  at (wrapper managed-to-native) UnityEngine.Transform:INTERNAL_get_position (UnityEngine.Vector3&)
-  at UnityEngine.Transform.get_position () [0x00000] in <filename unknown>:0 
-  at Boss2AI.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnloadTime: 24.393837 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 349 unused Assets to reduce memory usage. Loaded Objects now: 302.
-Total: 10.281829 ms (FindLiveObjects: 0.054337 ms CreateObjectMapping: 0.103844 ms MarkObjects: 0.818078 ms  DeleteObjects: 7.793180 ms)
-
-UnloadTime: 1.344546 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 588.
-Total: 4.627125 ms (FindLiveObjects: 0.099618 ms CreateObjectMapping: 0.143088 ms MarkObjects: 2.049120 ms  DeleteObjects: 0.591069 ms)
-
-UnloadTime: 4.264876 ms
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 59 unused Assets to reduce memory usage. Loaded Objects now: 4711.
-Total: 6.102685 ms (FindLiveObjects: 0.511374 ms CreateObjectMapping: 0.150333 ms MarkObjects: 2.428274 ms  DeleteObjects: 0.873623 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 4601.
+Total: 2.964912 ms (FindLiveObjects: 0.514377 ms CreateObjectMapping: 0.052794 ms MarkObjects: 1.658253 ms  DeleteObjects: 0.023464 ms)
 
