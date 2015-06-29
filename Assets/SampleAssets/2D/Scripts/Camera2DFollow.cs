@@ -30,7 +30,11 @@ namespace UnitySampleAssets._2D
         {
             if(target == null)
             {
-                target = GameObject.FindGameObjectWithTag("Player").gameObject.transform;
+                GameObject find = GameObject.FindGameObjectWithTag("Player");
+                if(find != null)
+                {
+                    target = find.gameObject.transform;
+                }
             }
 
             // only update lookahead pos if accelerating or changed direction

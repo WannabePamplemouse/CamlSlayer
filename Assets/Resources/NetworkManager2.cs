@@ -19,7 +19,7 @@ public class NetworkManager2 : MonoBehaviour
     private GameObject Player;
     private GameObject Robot;
     private GameObject UI;
-    public static bool isMulti;
+    public static bool isMulti = false;
 
     private float lastSynchronizationTime = 0f;
     private float syncDelay = 0f;
@@ -29,7 +29,7 @@ public class NetworkManager2 : MonoBehaviour
 
     void Awake()
     {
-
+        isMulti = true;
     }
 
     private void StartServer()
