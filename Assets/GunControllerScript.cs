@@ -16,7 +16,7 @@ public class GunControllerScript : MonoBehaviour
     Transform target;
 
 
-    void Awake()
+    void Start()
     {
         gunPoint = GameObject.FindGameObjectWithTag("MultiGun").gameObject.transform;
         Physics2D.IgnoreLayerCollision(8, gameObject.layer);
@@ -24,6 +24,10 @@ public class GunControllerScript : MonoBehaviour
             Debug.Log("No gun found");
 
         player = GameObject.FindGameObjectWithTag("Player");
+
+		if (player == null)
+			Debug.Log ("no player found");
+
         target = player.transform;
     }
 
@@ -32,8 +36,8 @@ public class GunControllerScript : MonoBehaviour
     {
         transform.position = new Vector3(target.position.x, target.position.y + 3, target.position.z);
 
-        if (!networkView.isMine)
-            return;
+        /*if (!networkView.isMine)
+            return;*/
 
         if (fireRate == 0)
         {
@@ -54,7 +58,7 @@ public class GunControllerScript : MonoBehaviour
     {
         Vector2 mousePos = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
         Vector2 firePos = new Vector2(gunPoint.position.x, gunPoint.position.y);
-        GameObject _shoot = (GameObject)Instantiate(toshot, transform.position, new Quaternion(0, 0, 0, 0));
+        GameObject _shoot = (GameObject)Network.Instantiate(toshot, transform.position, new Quaternion(0, 0, 0, 0), 0);
         _shoot.rigidbody2D.velocity = ((mousePos - firePos) * 5);
         //Debug.Log ("Mouse position in x = " + mousePos.x + "Mouse position in y = " + mousePos.y);
         //RaycastHit2D hit = Physics2D.Raycast (firePos, (mousePos - firePos), 100, whatToHit);

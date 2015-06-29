@@ -9,6 +9,12 @@ public class FireMulti : MonoBehaviour {
     private int value;
     private float timer;
 
+	private float lastSynchronizationTime = 0f;
+	private float syncDelay = 0f;
+	private float syncTime = 0f;
+	private Vector3 syncStartPosition = Vector3.zero;
+	private Vector3 syncEndPosition = Vector3.zero;
+
     private bool destroyable;
 
     // Use this for initialization
@@ -23,11 +29,16 @@ public class FireMulti : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (timer >= time)
-        {
-            Destroy(gameObject);
-        }
+		if (!networkView.isMine)
+			SyncedMovement ();
+		else 
+		{
+			timer += Time.deltaTime;
+			if (timer >= time) 
+			{
+				Destroy (gameObject);
+			}
+		}
     }
 
     void OnCollisionEnter2D(Collision2D coll)
@@ -38,4 +49,34 @@ public class FireMulti : MonoBehaviour {
             Destroy(gameObject);
         }
     }
+
+	void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info)
+	{
+		Vector3 syncPosition = Vector3.zero;
+		Vector3 syncVelocity = Vector3.zero;
+		if (stream.isWriting) {
+			syncPosition = rigidbody2D.position;
+			stream.Serialize (ref syncPosition);
+			
+			syncVelocity = rigidbody.velocity;
+			stream.Serialize (ref syncVelocity);
+		} 
+		else {
+			stream.Serialize(ref syncPosition);
+			stream.Serialize(ref syncVelocity);
+			
+			syncTime = 0f;
+			syncDelay = Time.time - lastSynchronizationTime;
+			lastSynchronizationTime = Time.time;
+			
+			syncEndPosition = syncPosition + syncVelocity * syncDelay;
+			syncStartPosition = rigidbody2D.position;
+		}
+	}
+
+	private void SyncedMovement()
+	{
+		syncTime += Time.deltaTime;
+		rigidbody.position = Vector3.Lerp (syncStartPosition, syncEndPosition, syncTime / syncDelay);
+	}
 }
