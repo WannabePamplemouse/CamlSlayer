@@ -10,11 +10,17 @@ public class World2AudioControllerScript : MonoBehaviour {
 
 	void Awake()
 	{
-		audio.volume = UIManagerScript.volumeValue;
+		if (UIManagerScript.volumeValue == 0f)
+			audio.volume = UIManagerScript.defaultValue;
+		else
+			audio.volume = UIManagerScript.volumeValue;
 	}
 
 	void Update()
 	{
+		if (InGameCommandController.isAvailable)
+			audio.volume = InGameCommandController.volumeValue;
+
 		if (toplay && RobotPosition.position.x > 2200) 
 		{
 			toplay = false;
