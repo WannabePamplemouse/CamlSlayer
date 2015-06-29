@@ -58,7 +58,7 @@ public class FireMulti : MonoBehaviour {
 			syncPosition = rigidbody2D.position;
 			stream.Serialize (ref syncPosition);
 			
-			syncVelocity = rigidbody.velocity;
+			syncVelocity = rigidbody2D.velocity;
 			stream.Serialize (ref syncVelocity);
 		} 
 		else {
