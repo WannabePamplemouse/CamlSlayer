@@ -168,6 +168,7 @@ public class UIManagerScript : MonoBehaviour {
 
 	public void LoadLevel()
 	{
+
 		Application.LoadLevel (level);
 	}
 
@@ -206,10 +207,11 @@ public class UIManagerScript : MonoBehaviour {
 		Application.Quit ();
 	}
 
-	/*public void LoadFile()
+	public void LoadFile()
 	{
-		RobotControllerScript.Load ();
-	}*/
+		Application.LoadLevel ("SaveScene");
+	}
+
     public void Multi()
     {
         Application.LoadLevel("Multi");

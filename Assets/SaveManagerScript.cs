@@ -57,10 +57,10 @@ public class SaveManagerScript : MonoBehaviour {
 		if (File.Exists (Application.persistentDataPath + "/filesaved2.dat"))
 			pic3.enabled = true;
 
-		for (int i = 0; i < 3; i++) 
+		/*for (int i = 0; i < 3; i++) 
 		{
 			Load(i);
-		}
+		}*/
 
 		Debug.Log (Application.persistentDataPath);
 		Debug.Log (levelloaded [0]);
@@ -78,9 +78,9 @@ public class SaveManagerScript : MonoBehaviour {
 		if (File.Exists (Application.persistentDataPath + "/filesaved2.dat"))
 			pic3.enabled = true;
 
-		Load(0);
+		/*Load(0);
 		Load(1);
-		Load(2);
+		Load(2);*/
 			
 	}
 
@@ -94,18 +94,30 @@ public class SaveManagerScript : MonoBehaviour {
 			{
 			case 0:
 				if(Save(selGridInt))
+				{
 					date1.text = DateTime.Now.ToString();
+					userName1.text = "Game 1";
+				}
 				chooseIcon(pic1);
+				Load(0);
 				break;
 			case 1:
-				Save(selGridInt);
+				if(Save(selGridInt))
+				{
+					date2.text = DateTime.Now.ToString();
+					userName2.text = "Game 2";
+				}
 				chooseIcon (pic2);
-				date2.text = DateTime.Now.ToString();
+				Load (1);
 				break;
 			case 2:
-				Save (selGridInt);
+				if(Save (selGridInt))
+				{
+					date3.text = DateTime.Now.ToString();
+					userName3.text = "Game 3";
+				}
 				chooseIcon(pic3);
-				date3.text = DateTime.Now.ToString();
+				Load (2);
 				break;
 			}
 		}
@@ -184,7 +196,6 @@ public class SaveManagerScript : MonoBehaviour {
 			if(i == 0)
 			{
 				chooseIcon(pic1);
-				userName1.text = "Game 1";
 				date1.text = loadedtime;
 				levelloaded[0] = UIManagerScript.level;
 			}
@@ -192,7 +203,6 @@ public class SaveManagerScript : MonoBehaviour {
 			if(i == 1)
 			{
 				chooseIcon(pic2);
-				userName2.text = "Game 2";
 				date2.text = loadedtime;
 				levelloaded[1] = UIManagerScript.level;
 			}
@@ -200,7 +210,6 @@ public class SaveManagerScript : MonoBehaviour {
 			if(i == 2)
 			{
 				chooseIcon(pic3);
-				userName3.text = "Game 3";
 				date3.text = loadedtime;
 				levelloaded[2] = UIManagerScript.level;
 			}
