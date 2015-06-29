@@ -13,6 +13,11 @@ public class PanelResumeScript : MonoBehaviour {
 		RobotControllerScript.Save ();
 	}*/
 
+	public void LoadSaveScene()
+	{
+		Application.LoadLevel("SaveScene");
+	}
+
 	public void QuitMonde()
 	{
 		Application.LoadLevel ("Menu");

@@ -16,6 +16,11 @@ public class AudioControllerScript : MonoBehaviour {
 	}
 	void Update()
 	{
+
+		if (InGameCommandController.isAvailable)
+			audio.volume = InGameCommandController.volumeValue;
+
+
 		if(toplay && RobotPosition.position.x > 450)
 		{
 			toplay = false;

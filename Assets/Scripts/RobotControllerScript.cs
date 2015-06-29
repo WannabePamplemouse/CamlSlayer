@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using System;
@@ -82,7 +82,7 @@ public class RobotControllerScript : MonoBehaviour {
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
 		
-		if (!networkView.isMine)
+		if (isMulti && !networkView.isMine)
 			return;
 
 		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
@@ -106,7 +106,7 @@ public class RobotControllerScript : MonoBehaviour {
 	void Update()
 	{   
 
-		if (!networkView.isMine)
+		if (isMulti && !networkView.isMine)
 			return;
 
 		//getting the commands if they are changing in game

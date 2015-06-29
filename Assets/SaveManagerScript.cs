@@ -19,10 +19,11 @@ public class SaveManagerScript : MonoBehaviour {
 	public Image pic3;
 	public Text date3;
 	public Text userName3;
-	public InputField input;
-	private string username;
-	private string loadedusername;
+
+
 	private string loadedtime;
+
+
 
 	void Start () 
 	{
@@ -70,10 +71,10 @@ public class SaveManagerScript : MonoBehaviour {
 		if (File.Exists (Application.persistentDataPath + "/filesaved2.dat"))
 			pic3.enabled = true;
 
-		username = input.GetComponent<InputField> ().textComponent.text;
-		//userName1.text = username;
-		
-	
+		Load(0);
+		Load(1);
+		Load(2);
+			
 	}
 
 	void OnGUI()
@@ -84,20 +85,21 @@ public class SaveManagerScript : MonoBehaviour {
 		{
 			switch (selGridInt) 
 			{
-				case 0:
-					//Debug.Log("lel");
-					Save(selGridInt);
-					chooseIcon(pic1);
+			case 0:
+				if(Save(selGridInt))
 					date1.text = DateTime.Now.ToString();
-					break;
-				case 1:
-					Save(selGridInt);
-					pic2.sprite = images[1];
-					date2.text = DateTime.Now.ToString();
-					break;
-				case 2:
-					Debug.Log("mdrderiredelol");
-					break;
+				chooseIcon(pic1);
+				break;
+			case 1:
+				Save(selGridInt);
+				chooseIcon (pic2);
+				date2.text = DateTime.Now.ToString();
+				break;
+			case 2:
+				Save (selGridInt);
+				chooseIcon(pic3);
+				date3.text = DateTime.Now.ToString();
+				break;
 			}
 		}
 
@@ -105,15 +107,24 @@ public class SaveManagerScript : MonoBehaviour {
 		{
 			switch (selGridInt) 
 			{
-				case 0:
-					Debug.Log("mdrjeloadle0");
-					break;
-				case 1:
-					Debug.Log("mdrjeloadle1");
-					break;
-				case 2:
-					Debug.Log("mdrjeloadle2");
-					break;
+			case 0:
+				Load(0);
+				if(UIManagerScript.level == "")
+					UIManagerScript.level = "Monde1";
+				Application.LoadLevel(UIManagerScript.level);
+				break;
+			case 1:
+				Load(1);
+				if(UIManagerScript.level == "")
+					UIManagerScript.level = "Monde1";
+				Application.LoadLevel(UIManagerScript.level);
+				break;
+			case 2:
+				Load(2);
+				if(UIManagerScript.level == "")
+					UIManagerScript.level = "Monde1";
+				Application.LoadLevel(UIManagerScript.level);
+				break;
 			}
 		}
 
@@ -123,8 +134,11 @@ public class SaveManagerScript : MonoBehaviour {
 		}
 	}
 
-	public void Save(int i)
+	public bool Save(int i)
 	{
+		if (!doesExist () && !InGameCommandController.isStarted)
+			return false;
+
 		BinaryFormatter save = new BinaryFormatter ();
 		FileStream file;
 
@@ -138,16 +152,20 @@ public class SaveManagerScript : MonoBehaviour {
 		data.world2finished = UIManagerScript.isWorld2finished;
 		data.world3finished = UIManagerScript.isWorld3finished;
 		data.world4finished = UIManagerScript.isWorld4finished;
-		data.username = username;
 		data.savedTime = DateTime.Now.ToString ();
 		data.level = UIManagerScript.level;
 		
 		save.Serialize (file, data);
 		file.Close ();
+
+		return true;
 	}
 	
 	public void Load(int i)
 	{
+
+		UIManagerScript.level = "";
+
 		if(File.Exists(Application.persistentDataPath + "/filesaved" + i + ".dat"))
 		{
 			BinaryFormatter load = new BinaryFormatter ();
@@ -159,28 +177,27 @@ public class SaveManagerScript : MonoBehaviour {
 			UIManagerScript.isWorld2finished = data.world2finished;
 			UIManagerScript.isWorld3finished = data.world3finished;
 			UIManagerScript.isWorld4finished = data.world4finished;
-			loadedusername = data.username;
 			loadedtime = data.savedTime;
 			UIManagerScript.level = data.level;
 
 			if(i == 0)
 			{
 				chooseIcon(pic1);
-				userName1.text = loadedusername;
+				userName1.text = "Game 1";
 				date1.text = loadedtime;
 			}
 
 			if(i == 1)
 			{
 				chooseIcon(pic2);
-				userName2.text = loadedusername;
+				userName2.text = "Game 2";
 				date2.text = loadedtime;
 			}
 
 			if(i == 2)
 			{
 				chooseIcon(pic3);
-				userName3.text = loadedusername;
+				userName3.text = "Game 3";
 				date3.text = loadedtime;
 			}
 		}
@@ -198,6 +215,12 @@ public class SaveManagerScript : MonoBehaviour {
 			img.sprite = images [0];
 	}
 
+	public bool doesExist()
+	{
+		return ((File.Exists (Application.persistentDataPath + "/filesaved0.dat"))
+		        && (File.Exists (Application.persistentDataPath + "/filesaved1.dat"))
+		        && (File.Exists (Application.persistentDataPath + "/filesaved2.dat")));
+	}
 	[Serializable]
 	class WorldData
 	{
