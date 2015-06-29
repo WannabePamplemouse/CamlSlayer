@@ -19,19 +19,16 @@ public class EnemyAttack : MonoBehaviour
 
     void Awake()
     {
-        // Setting up the references.
-        player = GameObject.FindGameObjectWithTag("Player");
-        playerHealth = player.GetComponent<PlayerH>();
     }
 
 
     void OnCollisionEnter2D(Collision2D other)
     {
         // If the entering collider is the player...
-        if (other.gameObject == player && timer >= timeBetweenAttacks)
+        if (other.gameObject.tag == "Player" && timer >= timeBetweenAttacks)
         {
             // ... the player is in range.
-            Attack();
+            Attack(other);
         }
     }
 
@@ -45,8 +42,9 @@ public class EnemyAttack : MonoBehaviour
     }
 
 
-    void Attack()
+    void Attack(Collision2D other)
     {
+        PlayerH playerHealth = other.gameObject.GetComponent<PlayerH>();
         // Reset the timer.
         timer = 0f;
 
@@ -57,13 +55,13 @@ public class EnemyAttack : MonoBehaviour
             playerHealth.TakeDamage(attackDamage);
         }
 
-        if (player.transform.position.x > transform.position.x)
+        if (other.gameObject.transform.position.x > transform.position.x)
         {
-            player.rigidbody2D.AddForce(new Vector2(xKnockBack, yKnockBack));
+            other.gameObject.rigidbody2D.AddForce(new Vector2(xKnockBack, yKnockBack));
         }
         else
         {
-            player.rigidbody2D.AddForce(new Vector2(-xKnockBack, yKnockBack));
+            other.gameObject.rigidbody2D.AddForce(new Vector2(-xKnockBack, yKnockBack));
         }
     }
 }

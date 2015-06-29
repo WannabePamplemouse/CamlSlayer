@@ -14,8 +14,19 @@ public class Teleport : MonoBehaviour {
 	void Awake()
 	{
 		player = GameObject.FindGameObjectWithTag ("Player");
-		KC = player.GetComponent<KillCount>();
+        if(player != null)
+		    KC = player.GetComponent<KillCount>();
 	}
+
+    void Update()
+    {
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+                KC = player.GetComponent<KillCount>();
+        }
+    }
 
 	void OnTriggerEnter2D (Collider2D other)
     {

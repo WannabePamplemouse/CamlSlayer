@@ -5,7 +5,6 @@ public class Spike : MonoBehaviour {
 
 	PlayerH playerHealth;
 	EnemyHealth enemyHealth;
-	private bool playerInRange;
 
 	void OnTriggerEnter2D (Collider2D other)
 	{

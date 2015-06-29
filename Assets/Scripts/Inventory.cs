@@ -7,7 +7,7 @@ public class Inventory : MonoBehaviour {
     [SerializeField]
     public int bombs = 2;
     [SerializeField]
-    Image Bombe1, Bombe2, Bombe3, Bombe4, Bombe5, keyI;
+    public Image Bombe1, Bombe2, Bombe3, Bombe4, Bombe5, keyI;
 
     private int maxBombs = 3;
     public bool key = false;

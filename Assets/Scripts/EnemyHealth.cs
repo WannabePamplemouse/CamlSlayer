@@ -22,7 +22,8 @@ public class EnemyHealth : MonoBehaviour
     void Awake ()
 	{
 		player = GameObject.FindGameObjectWithTag ("Player");
-		KC = player.GetComponent<KillCount> ();
+        if(player != null)
+		    KC = player.GetComponent<KillCount> ();
 		currentHealth = startingHealth;
         HealthSlider.maxValue = startingHealth;
         HealthSlider.value = startingHealth;
@@ -30,6 +31,13 @@ public class EnemyHealth : MonoBehaviour
 
 	void Update ()
 	{
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+                KC = player.GetComponent<KillCount>();
+        }
+
         if (transform.position.y < -30)
             Death();
 	}

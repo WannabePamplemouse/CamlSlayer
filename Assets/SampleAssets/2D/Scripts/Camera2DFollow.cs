@@ -28,6 +28,10 @@ namespace UnitySampleAssets._2D
         // Update is called once per frame
         private void Update()
         {
+            if(target == null)
+            {
+                target = GameObject.FindGameObjectWithTag("Player").gameObject.transform;
+            }
 
             // only update lookahead pos if accelerating or changed direction
             float xMoveDelta = (target.position - lastTargetPosition).x;
