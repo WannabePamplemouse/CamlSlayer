@@ -23,6 +23,8 @@ public class SaveManagerScript : MonoBehaviour {
 
 	private string loadedtime;
 
+	private string[] levelloaded = new string[3];
+
 
 
 	void Start () 
@@ -59,6 +61,11 @@ public class SaveManagerScript : MonoBehaviour {
 		{
 			Load(i);
 		}
+
+		Debug.Log (Application.persistentDataPath);
+		Debug.Log (levelloaded [0]);
+		Debug.Log (levelloaded [1]);
+		Debug.Log (levelloaded [2]);
 	}
 	
 
@@ -108,22 +115,19 @@ public class SaveManagerScript : MonoBehaviour {
 			switch (selGridInt) 
 			{
 			case 0:
-				Load(0);
-				if(UIManagerScript.level == "")
-					UIManagerScript.level = "Monde1";
-				Application.LoadLevel(UIManagerScript.level);
+				if(levelloaded[0] == null)
+					levelloaded[0] = "Monde1";
+				Application.LoadLevel(levelloaded[0]);
 				break;
 			case 1:
-				Load(1);
-				if(UIManagerScript.level == "")
-					UIManagerScript.level = "Monde1";
-				Application.LoadLevel(UIManagerScript.level);
+				if(levelloaded[1] == null)
+					levelloaded[1] = "Monde1";
+				Application.LoadLevel(levelloaded[1]);
 				break;
 			case 2:
-				Load(2);
-				if(UIManagerScript.level == "")
-					UIManagerScript.level = "Monde1";
-				Application.LoadLevel(UIManagerScript.level);
+				if(levelloaded[2] == null)
+					levelloaded[2] = "Monde1";
+				Application.LoadLevel(levelloaded[2]);
 				break;
 			}
 		}
@@ -163,9 +167,6 @@ public class SaveManagerScript : MonoBehaviour {
 	
 	public void Load(int i)
 	{
-
-		UIManagerScript.level = "";
-
 		if(File.Exists(Application.persistentDataPath + "/filesaved" + i + ".dat"))
 		{
 			BinaryFormatter load = new BinaryFormatter ();
@@ -185,6 +186,7 @@ public class SaveManagerScript : MonoBehaviour {
 				chooseIcon(pic1);
 				userName1.text = "Game 1";
 				date1.text = loadedtime;
+				levelloaded[0] = UIManagerScript.level;
 			}
 
 			if(i == 1)
@@ -192,6 +194,7 @@ public class SaveManagerScript : MonoBehaviour {
 				chooseIcon(pic2);
 				userName2.text = "Game 2";
 				date2.text = loadedtime;
+				levelloaded[1] = UIManagerScript.level;
 			}
 
 			if(i == 2)
@@ -199,17 +202,18 @@ public class SaveManagerScript : MonoBehaviour {
 				chooseIcon(pic3);
 				userName3.text = "Game 3";
 				date3.text = loadedtime;
+				levelloaded[2] = UIManagerScript.level;
 			}
 		}
 	}
 
 	public void chooseIcon(Image img)
 	{
-		if (UIManagerScript.isWorld4finished)
+		if (UIManagerScript.isWorld3finished)
 			img.sprite = images [3];
-		else if (UIManagerScript.isWorld3finished)
-			img.sprite = images [2];
 		else if (UIManagerScript.isWorld2finished)
+			img.sprite = images [2];
+		else if (UIManagerScript.isWorld1finished)
 			img.sprite = images [1];
 		else
 			img.sprite = images [0];
