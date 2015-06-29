@@ -77,6 +77,6 @@ public class FireMulti : MonoBehaviour {
 	private void SyncedMovement()
 	{
 		syncTime += Time.deltaTime;
-		rigidbody.position = Vector3.Lerp (syncStartPosition, syncEndPosition, syncTime / syncDelay);
+		rigidbody2D.position = Vector3.Lerp (syncStartPosition, syncEndPosition, syncTime / syncDelay);
 	}
 }
