@@ -23,11 +23,15 @@ public class BossFinal : MonoBehaviour
 	void Start () 
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        if(player != null)
+        if (player != null)
+        {
             target = player.transform;
+            ph = player.GetComponent<PlayerH>();
+        }
+
         health = GetComponent<EnemyHealth>();
         rb = GetComponent<Rigidbody2D>();
-        ph = player.GetComponent<PlayerH>();
+        
 	}
 	
 	// Update is called once per frame
@@ -37,7 +41,10 @@ public class BossFinal : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
+            {
                 target = player.transform;
+                ph = player.GetComponent<PlayerH>();
+            }
         }
         else
         {

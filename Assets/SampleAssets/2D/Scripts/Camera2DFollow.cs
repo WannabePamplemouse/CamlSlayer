@@ -20,8 +20,11 @@ namespace UnitySampleAssets._2D
         // Use this for initialization
         private void Start()
         {
-            lastTargetPosition = target.position;
-            offsetZ = (transform.position - target.position).z;
+            if (target != null)
+            {
+                lastTargetPosition = target.position;
+                offsetZ = (transform.position - target.position).z;
+            }
             transform.parent = null;
         }
 
@@ -34,6 +37,8 @@ namespace UnitySampleAssets._2D
                 if(find != null)
                 {
                     target = find.gameObject.transform;
+                    lastTargetPosition = target.position;
+                    offsetZ = (transform.position - target.position).z;
                 }
             }
             else
