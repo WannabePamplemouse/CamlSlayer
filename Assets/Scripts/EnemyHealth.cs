@@ -94,6 +94,10 @@ public class EnemyHealth : MonoBehaviour
             UIManagerScript.isWorld4finished = true;
             checker.start_teleporting();
         }
+        else if (name == "BossFinalMulti")
+        {
+            Application.LoadLevel("Menu");
+        }
         else
         {
             GameObject checka = null;
