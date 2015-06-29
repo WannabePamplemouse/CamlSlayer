@@ -10,9 +10,20 @@ public class Trigger : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
         player = GameObject.FindGameObjectWithTag("Player");
-        attacks = player.GetComponent<Attacks>();
+        if(player != null)
+            attacks = player.GetComponent<Attacks>();
         enHealth = GetComponentInParent<EnemyHealth>();
 	}
+
+    void Update()
+    {
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+                attacks = player.GetComponent<Attacks>();
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D coll)
     {

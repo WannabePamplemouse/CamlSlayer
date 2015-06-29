@@ -23,7 +23,8 @@ public class BossFinal : MonoBehaviour
 	void Start () 
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        target = player.transform;
+        if(player != null)
+            target = player.transform;
         health = GetComponent<EnemyHealth>();
         rb = GetComponent<Rigidbody2D>();
         ph = player.GetComponent<PlayerH>();
@@ -32,32 +33,41 @@ public class BossFinal : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
-        if(facing_left && target.position.x > transform.position.x)
+        if(player == null)
         {
-            facing_left = false;
-            transform.localScale = new Vector2(1, 1);
+            player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+                target = player.transform;
         }
-        else if(!facing_left && target.position.x <= transform.position.x)
+        else
         {
-            facing_left = true;
-            transform.localScale = new Vector2(-1, 1);
-        }
+            if (facing_left && target.position.x > transform.position.x)
+            {
+                facing_left = false;
+                transform.localScale = new Vector2(1, 1);
+            }
+            else if (!facing_left && target.position.x <= transform.position.x)
+            {
+                facing_left = true;
+                transform.localScale = new Vector2(-1, 1);
+            }
 
-	    if(p2 && timer >= 2f) 
-        {
-            movement();
-            shoot_missile();
-            timer = 0;
-        }
-        else if(p3 && timer >= 3 && done_charging) 
-        {
-            done_charging = false;
-            StartCoroutine(charge());        
-        }
-        else if(!p1)
-        {
-            timer += Time.deltaTime;
-        }
+            if (p2 && timer >= 2f)
+            {
+                movement();
+                shoot_missile();
+                timer = 0;
+            }
+            else if (p3 && timer >= 3 && done_charging)
+            {
+                done_charging = false;
+                StartCoroutine(charge());
+            }
+            else if (!p1)
+            {
+                timer += Time.deltaTime;
+            }
+        }       
 	}
 
     void OnCollisionEnter2D(Collision2D coll)
