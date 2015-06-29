@@ -27,6 +27,11 @@ public class NetworkManager2 : MonoBehaviour
     private Vector3 syncStartPosition = Vector3.zero;
     private Vector3 syncEndPosition = Vector3.zero;
 
+    [SerializeField]
+    public GameObject[] enemies;
+
+    private GameObject[] ens = new GameObject[18];
+
     void Awake()
     {
         isMulti = true;
@@ -88,6 +93,13 @@ public class NetworkManager2 : MonoBehaviour
             }
         }
         inv.GetBombs(0);
+
+        int i = 0;
+        foreach(GameObject en in enemies)
+        {
+            ens[i] = (GameObject)Network.Instantiate(en, en.gameObject.transform.position, Quaternion.identity, 0);
+            i++;
+        }
     }
 
     void OnMasterServerEvent(MasterServerEvent masterServerEvent)
