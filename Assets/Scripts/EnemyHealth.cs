@@ -86,10 +86,11 @@ public class EnemyHealth : MonoBehaviour
         else if(name == "boss3")
         {
 			UIManagerScript.isWorld3finished = true;
+			
+			UIManagerScript.isWorld4finished = true;
         }
         else if (name == "Boss Final")
         {
-            UIManagerScript.isWorld4finished = true;
         }
         else if (name == "BossFinalMulti")
         {
