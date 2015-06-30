@@ -1,0 +1,48 @@
+Initialize engine version: 4.6.3f1 (4753d8b6ef2b)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1052 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
+- Completed reload, in  0.221 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 93.291145 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 3233.
+Total: 97.671349 ms (FindLiveObjects: 93.977013 ms CreateObjectMapping: 0.089958 ms MarkObjects: 1.740605 ms  DeleteObjects: 0.630312 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Inventory.Awake () [0x00000] in <filename unknown>:0 
+UnityEngine.Network:INTERNAL_CALL_Instantiate(Object, Vector3&, Quaternion&, Int32)
+UnityEngine.Network:Instantiate(Object, Vector3, Quaternion, Int32)
+NetworkManager2:OnServerInitialized()
+UnityEngine.Network:InitializeServer(Int32, Int32, Boolean)
+NetworkManager2:StartServer()
+NetworkManager2:OnGUI()
+ 
+(Filename:  Line: -1)
+
+Registration successfull !
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
