@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SaveManagerScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RobotControllerScript.cs">
     <Files>
-      <File FileName="Assets\SaveManagerScript.cs" Line="49" Column="35" />
+      <File FileName="Assets\Scripts\RobotControllerScript.cs" Line="163" Column="21" />
+      <File FileName="Assets\Scripts\EnemyHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\SaveManagerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\World4SoundController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\World2AudioControllerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\FireMulti.cs" Line="1" Column="1" />
@@ -10,7 +12,6 @@
       <File FileName="Assets\Resources\NetworkManager2.cs" Line="1" Column="1" />
       <File FileName="Assets\Scene\InGameCommandController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PanelResumeScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\RobotControllerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\UIManagerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Pauser.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Inventory.cs" Line="1" Column="1" />
@@ -19,7 +20,7 @@
       <File FileName="Assets\Scripts\PlayerEnergy.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\AudioControllerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\World3SoundControllerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EnemyHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TeleportBoss.cs" Line="44" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

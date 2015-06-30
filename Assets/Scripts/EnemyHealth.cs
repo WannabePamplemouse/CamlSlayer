@@ -16,8 +16,6 @@ public class EnemyHealth : MonoBehaviour
     private float xHearthforce;
     [SerializeField]
     private float yHearthforce;
-    [SerializeField]
-    CheckBoss checker;
 
     void Awake ()
 	{
@@ -92,7 +90,6 @@ public class EnemyHealth : MonoBehaviour
         else if (name == "Boss Final")
         {
             UIManagerScript.isWorld4finished = true;
-            checker.start_teleporting();
         }
         else if (name == "BossFinalMulti")
         {

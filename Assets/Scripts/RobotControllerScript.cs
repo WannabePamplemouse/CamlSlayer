@@ -145,11 +145,6 @@ public class RobotControllerScript : MonoBehaviour {
                 attacks.shootPoulet();
                 timer2 = 0;
             }
-            else if(cochon && timer2 > 0.75)
-            {
-                attacks.shootCochon();
-                timer2 = 0;
-            }
             else if (timer2 > 2)
             {
                 attacks.shootUnicorn();
@@ -165,22 +160,8 @@ public class RobotControllerScript : MonoBehaviour {
         else if (haveTromblon && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), firstAbilityFinal)) && energy.currentEnergy == energy.stratingEnergy) 
         {
             energy.currentEnergy = 0;
-            if(poulet)
-            {
-                poulet = false;
-                if(UIManagerScript.isWorld3finished)
-                    cochon = true;
-            }
-            else if(cochon)
-            {
-                if(UIManagerScript.isWorld3finished)
-                    cochon = false;
-            }
-            else
-            {
-                poulet = true;
-            }
-		} 
+			poulet = !poulet;
+		}
         else if (haveBomb && Input.GetKeyDown ((KeyCode)System.Enum.Parse (typeof(KeyCode), attackCommandFinal)) && timer2 > 0.5 && inventory.canBomb()) 
         {
 			timer = 0;
