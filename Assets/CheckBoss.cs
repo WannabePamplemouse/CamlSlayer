@@ -9,6 +9,11 @@ public class CheckBoss : MonoBehaviour {
     [SerializeField]
     Camera cam;
 
+    void Start()
+    {
+        can_teleport = false;
+    }
+
 	// Update is called once per frame
 	void Update () {
 	    if(can_teleport)

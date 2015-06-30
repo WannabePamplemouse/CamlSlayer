@@ -54,7 +54,7 @@ public class EnemyHealth : MonoBehaviour
 			Death ();
 		}
 
-        if(name == "Boss Final") // changer de partie pour le boss final
+        if(name == "Boss Final" || name == "BossFinalMulti") // changer de partie pour le boss final
         {
             if(currentHealth < 700)
             {
