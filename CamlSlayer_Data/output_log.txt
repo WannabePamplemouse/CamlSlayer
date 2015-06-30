@@ -18,7 +18,7 @@ Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed
 Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
 Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
 Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
-- Completed reload, in  0.045 seconds
+- Completed reload, in  0.042 seconds
 desktop: 2880x1620 59Hz; virtual: 2880x1620 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -42,7 +42,7 @@ Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed
 Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
 Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
 Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
-- Completed reload, in  0.047 seconds
+- Completed reload, in  0.057 seconds
 desktop: 2880x1620 59Hz; virtual: 2880x1620 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -50,17 +50,17 @@ Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed
 Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\System.dll (this message is harmless)
 Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 8.081889 ms
+UnloadTime: 6.328638 ms
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 3228.
-Total: 1.269393 ms (FindLiveObjects: 0.096404 ms CreateObjectMapping: 0.028958 ms MarkObjects: 0.560835 ms  DeleteObjects: 0.195375 ms)
+Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 3229.
+Total: 1.655013 ms (FindLiveObjects: 0.117665 ms CreateObjectMapping: 0.042887 ms MarkObjects: 0.727619 ms  DeleteObjects: 0.251459 ms)
 
-UnloadTime: 5.944851 ms
+UnloadTime: 4.841875 ms
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 3228.
-Total: 1.288454 ms (FindLiveObjects: 0.072212 ms CreateObjectMapping: 0.028958 ms MarkObjects: 0.517947 ms  DeleteObjects: 0.314874 ms)
+Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 3229.
+Total: 1.225039 ms (FindLiveObjects: 0.081009 ms CreateObjectMapping: 0.031524 ms MarkObjects: 0.549471 ms  DeleteObjects: 0.195375 ms)
 
 NullReferenceException: Object reference not set to an instance of an object
   at Inventory.Awake () [0x00000] in <filename unknown>:0 
@@ -107,59 +107,371 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename:  Line: -1)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
+ 
+(Filename:  Line: 2474)
+
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
+ 
+(Filename:  Line: 1681)
+
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
@@ -170,1478 +482,651 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename:  Line: -1)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.Attack (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.OnCollisionEnter2D (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
-(Filename:  Line: -1)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 31 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 31' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 33 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 33' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at Spike.OnTriggerEnter2D (UnityEngine.Collider2D other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at Spike.OnTriggerEnter2D (UnityEngine.Collider2D other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
-(Filename:  Line: 1681)
-
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
- 
-(Filename:  Line: 2474)
-
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
- 
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 38 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 38' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
-View ID AllocatedID: 57 not found during lookup. Strange behaviour may occur
+View ID AllocatedID: 39 not found during lookup. Strange behaviour may occur
  
 (Filename:  Line: 1681)
 
-Received state update for view id' AllocatedID: 57' but the NetworkView doesn't exist
+Received state update for view id' AllocatedID: 39' but the NetworkView doesn't exist
  
 (Filename:  Line: 2474)
 
