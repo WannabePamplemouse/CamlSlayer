@@ -2,592 +2,98 @@ Initialize engine version: 4.6.3f1 (4753d8b6ef2b)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
     Vendor:   Intel
-    VRAM:     896 MB
+    VRAM:     1052 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
-- Completed reload, in  0.044 seconds
-desktop: 2880x1620 59Hz; virtual: 2880x1620 at 0,0
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
+Loading C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
+- Completed reload, in  0.145 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
-Initialize engine version: 4.6.3f1 (4753d8b6ef2b)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
-    Vendor:   Intel
-    VRAM:     896 MB
-Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
-Loading C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
-- Completed reload, in  0.049 seconds
-desktop: 2880x1620 59Hz; virtual: 2880x1620 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\System.dll (this message is harmless)
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Hippolyte\Desktop\CamlSlayer\CamlSlayer_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 5.500948 ms
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Nicolas\Documents\CamlSlayer\CamlSlayer_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 8.357080 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 3233.
-Total: 1.278190 ms (FindLiveObjects: 0.074778 ms CreateObjectMapping: 0.029324 ms MarkObjects: 0.572564 ms  DeleteObjects: 0.203440 ms)
+Unloading 64 unused Assets to reduce memory usage. Loaded Objects now: 327.
+Total: 1.342131 ms (FindLiveObjects: 0.021734 ms CreateObjectMapping: 0.014489 ms MarkObjects: 0.175690 ms  DeleteObjects: 0.450999 ms)
 
-UnloadTime: 5.007193 ms
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 3233.
-Total: 1.529283 ms (FindLiveObjects: 0.076977 ms CreateObjectMapping: 0.028958 ms MarkObjects: 0.642211 ms  DeleteObjects: 0.215170 ms)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Inventory.Awake () [0x00000] in <filename unknown>:0 
-UnityEngine.Network:INTERNAL_CALL_Instantiate(Object, Vector3&, Quaternion&, Int32)
-UnityEngine.Network:Instantiate(Object, Vector3, Quaternion, Int32)
-NetworkManager2:OnServerInitialized()
-UnityEngine.Network:InitializeServer(Int32, Int32, Boolean)
-NetworkManager2:StartServer()
-NetworkManager2:OnGUI()
- 
-(Filename:  Line: -1)
-
-Registration successfull !
+C:/Users/Nicolas/AppData/LocalLow/DefaultCompany/CamlSlayer
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at Inventory.Awake () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Registration successfull !
+Null
  
 (Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
+Null
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Null
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+UnloadTime: 0.490243 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 4626.
+Total: 2.381786 ms (FindLiveObjects: 0.271686 ms CreateObjectMapping: 0.045884 ms MarkObjects: 1.255192 ms  DeleteObjects: 0.042866 ms)
+
 NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.Attack (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.OnCollisionEnter2D (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
+  at Poulet.Start () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.Attack (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.OnCollisionEnter2D (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+UnloadTime: 7.164678 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.Attack (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.OnCollisionEnter2D (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+Unloading 428 unused Assets to reduce memory usage. Loaded Objects now: 357.
+Total: 5.727757 ms (FindLiveObjects: 0.044073 ms CreateObjectMapping: 0.042866 ms MarkObjects: 0.389417 ms  DeleteObjects: 4.564335 ms)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.Attack (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.OnCollisionEnter2D (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
+C:/Users/Nicolas/AppData/LocalLow/DefaultCompany/CamlSlayer
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.Attack (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.OnCollisionEnter2D (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
+Null
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.Attack (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.OnCollisionEnter2D (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
+Null
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.Attack (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.OnCollisionEnter2D (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
+Null
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.Attack (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.OnCollisionEnter2D (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.Attack (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.OnCollisionEnter2D (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.Attack (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
-  at EnemyAttack.OnCollisionEnter2D (UnityEngine.Collision2D other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Teleport.OnTriggerEnter2D (UnityEngine.Collider2D other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-UnloadTime: 4.566589 ms
+UnloadTime: 0.679820 ms
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 1222 unused Assets to reduce memory usage. Loaded Objects now: 637.
-Total: 2.845229 ms (FindLiveObjects: 0.064147 ms CreateObjectMapping: 0.044720 ms MarkObjects: 0.618384 ms  DeleteObjects: 1.505090 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 645.
+Total: 2.249565 ms (FindLiveObjects: 0.058563 ms CreateObjectMapping: 0.080298 ms MarkObjects: 0.987731 ms  DeleteObjects: 0.031998 ms)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.RectTransform:INTERNAL_set_anchorMin (UnityEngine.Vector2&)
+  at UnityEngine.RectTransform.set_anchorMin (Vector2 value) [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.Slider.UpdateVisuals () [0x00000] in <filename unknown>:0 
+  at UnityEngine.UI.Slider.OnRectTransformDimensionsChange () [0x00000] in <filename unknown>:0 
+UnityEngine.Canvas:set_scaleFactor(Single)
+UnityEngine.UI.CanvasScaler:SetScaleFactor(Single)
+UnityEngine.UI.CanvasScaler:OnDisable()
  
 (Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at PlayerH.TakeDamage (Int32 amount) [0x00000] in <filename unknown>:0 
-  at SawBlade.OnTriggerEnter2D (UnityEngine.Collider2D coll) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-The server has disconnected from the client. Most likely the server has shut down.
- 
-(Filename:  Line: 745)
 
